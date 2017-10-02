@@ -10,7 +10,7 @@
 | Nom                     | Prénom                   | Email                   |
 | -------------           |-------------             |-------------            |
 | *NOM*                   | *Prénom*                 | *Email*                 |
-| **                   | **                 | **                 |
+| *NOM*                   | *Prénom*                 | *Email*                 |
 | *NOM*                   | *Prénom*                 | *Email*                 |
 | *NOM*                   | *Prénom*                 | *Email*                 |
 | *NOM*                   | *Prénom*                 | *Email*                 |
