@@ -13,14 +13,14 @@
 ### Évènements 
 *Quels sont les évènements qui ont marqué l'itération précédente? Répertoriez ici les évènements qui ont eu un impact sur ce qui était prévu à l'itération précédente.*
 > Une étape de brainstormaing était nécessaire pour récolter les différentes idées des membres de l'équipe. 
-> On s'est mis d'accord sur la technologie à utiliser, le choix était de faire un site web.
+> On s'est mis d'accord sur les technologies à utiliser, le choix était de faire un site web.
 > Le premier standup a été fait le lundi 2 octobre
 
 
 
 ### Taux de complétion de l'itération  
 *Quel est le nombre d'éléments terminés par rapport au nombre total d'éléments prévu pour l'itération?*
->4/4 (git trello choisir les technologie preparer l'envirennement de travail )
+> 4/4 (git trello choisir les technologie preparer l'envirennement de travail )
 
 
 ### Liste des User Stories terminées
@@ -50,9 +50,9 @@
 
 ### Titre des nouvelles User Stories  
 *Lister ici les nouveaux éléments pour l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
-> un client peut accéder a son compte personnel et consulter ses précédents achats 
->un utilisateur peut voir les différents models de sac proposé par notre site web
->un utilisateur peut mettre un sac dans son pannier et puis l'acheter 
+> un client peut accéder a son compte personnel et consulter ses précédents achats. 
+>un utilisateur peut voir les différents modèles de sac proposé par notre site web.
+>un utilisateur peut mettre un sac dans son panier et puis l'acheter. 
 
 ## Confiance 
 ### Taux de confiance de l'équipe dans l'itération  
