@@ -11,10 +11,10 @@
 | -------------           |-------------             |-------------            |
 | *CHERKAOUI SALHI*                   | *ROEYA*                 | *cher.roeya@hotmail.com*                 |
 | *LUO*                   | *Chunmei*                 | *luochunmei1109@gmail.com*                 |
-| *NOM*                   | *Prénom*                 | *Email*                 |
-| *NOM*                   | *Prénom*                 | *Email*                 |
-| *NOM*                   | *Prénom*                 | *Email*                 |
-| *NOM*                   | *Prénom*                 | *Email*                 |
+| *ZHAO*                   | *Xinru*                 | *zxinru0309@gmail.com*                 |
+| *JIA*                   | *Xuehui*                 | *jiaxuehui95@gmail.com*                 |
+| *SONG*                   | *Ruide*                 | *nsly2022335@gmail.com*                 |
+| *LI*                   | *Dinghao*                 | *dinghaoli666@gmail.com*                 |
 
 ### Sujet : Sacs sur mesure pour petite parisienne à Papa
 
