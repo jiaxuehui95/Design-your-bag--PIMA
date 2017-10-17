@@ -89,11 +89,29 @@ function pocketBaseColor4() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#2b542c");
 }
 
-function save(canvas) {
+function save() {
+    // var svgXml = $('.svg-wrap').html();
+    // var mySvg = document.querySelector(".svg-wrap");
+    // var svgXml = mySvg.outerHTML
+    // var canvas = document.createElement('canvas');  //准备空画布
+    // canvas.width = $('.svg-wrap svg').width();
+    // canvas.height = $('.svg-wrap svg').height();
+
+    // var context = canvas.getContext('2d');  //取得画布的2d绘图上下文
+    // context.drawImage(image, 0, 0);
+    // var img = document.createElement('img');
+    // img.src = image.src;
+    // console.log(image)
+    // document.body.appendChild(img);
+    // console.log(canvas);
     var image = new Image();
-    image.src = canvas.toDataURL("image/png");
-    // var imgAsDataURL = imgCanvas.toDataURL("image/png");
-     console.log(image);
+    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    var a = document.createElement('a');
+    //  a.href = canvas.toDataURL('image/png');
+    a.href=image.src;
+    a.download = "MyBag";  //设定下载名称
+    a.click(); //点击触发下载
+
 }
 
 ; (function(window) {
