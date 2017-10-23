@@ -1,5 +1,6 @@
 #/bin/sh 
 
+
 function oneDay(){
     add=`git log --author=$1 --since=1.day --pretty=format:"%H" | xargs git show | grep "^+" | wc -l`
     del=`git log --author=$1 --since=1.day --pretty=format:"%H" | xargs git show | grep "^-" | wc -l`
