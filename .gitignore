@@ -1,3 +1,7 @@
 
 \.idea/
 .DS_Store
+/PIMA_code/config.php
+/PIMA_code/admin/config.php
+/upload/system/storage/cache/*
+!/upload/system/storage/cache/index.html

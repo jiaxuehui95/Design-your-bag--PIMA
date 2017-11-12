@@ -11,11 +11,11 @@
 
 <title>SACSTUDIO</title>
 
-<link rel="stylesheet" href="catalog/view/javascript/css/bootstrap.min.css">
-<link rel="stylesheet" href="catalog/view/javascript/css/font-awesome.min.css">
+<link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
+<link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
 
 <!-- Main css -->
-<link rel="stylesheet" href="catalog/view/javascript/css/style.css">
+<link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
 </head>
