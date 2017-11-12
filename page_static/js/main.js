@@ -785,7 +785,7 @@ function myBagImage()
         var backpack = new svgAnimation({
             canvas: new Snap('#canvas'),
             svg: 'bag.svg',
-            data: 'https://raw.githubusercontent.com/hellomichael/svgAnimation/master/example/json/backpack.json',
+            data: 'bag.json',
             duration: 2000,
             steps: 10
         });
