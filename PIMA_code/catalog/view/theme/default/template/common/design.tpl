@@ -147,22 +147,31 @@
                                    <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="pocketBaseColor4()"></div>
                               </div>
                          </div>
+                         <h3>La taille</h3>
+                         <div class="row" style="padding-bottom: 20px">
+                              <div class="col-md-6 col-sm-12">
+                                   <div style="width: 100px; height: 25px; text-align:center; background-color: whitesmoke;" ><span>petite</span></div>
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                   <div style="width: 100px; height: 25px; text-align:center; background-color: whitesmoke; "><span>grande</span></div>
+                              </div>
+                         </div>
                          <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
                          <!--<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
                     </div>
                     <div class="clearfix"></div>
                     <div style=" text-align: center; ">
                          <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
-                      height: 70px; padding-top: 20px; text-align: center" onclick="download()">
+                         height: 70px; padding-top: 20px; text-align: center" onclick="download()">
                               <span>Download l'image du sac</span>
                          </div>
                          
-                    <a href="<?php echo $href_about ?>" style="padding-left: 20px">
-                    <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
-                      height: 70px; padding-top: 20px; text-align: center" onclick="save()">
-                         <span>Enregistrez votre sac</span>
-                    </div>
-                    </a>
+                         <a href="<?php echo $href_about ?>" style="padding-left: 20px">
+                           <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
+                           height: 70px; padding-top: 20px; text-align: center" onclick="save()">
+                             <span>Enregistrez votre sac</span>
+                           </div>
+                         </a>
                     </div>
 
                      <hr>
