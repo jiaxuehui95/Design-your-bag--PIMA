@@ -11,15 +11,15 @@
 
      <title>Information</title>
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
+     <link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
 
      <!-- Main css -->
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-     <script src="js/main.js"></script>
-     <script src="js/snap.svg.js"></script>
 
+     <script src="catalog/view/theme/default/js/snap.svg.js"></script>
+     <script src="catalog/view/theme/default/js/main.js"></script>
 </head>
 <body>
 
@@ -43,9 +43,9 @@
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="index.html">About us</a></li>
+                    <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
+                    <li><a href="<?php echo $href_design ?>" >Design</a></li>
+                    <li><a href="<?php echo $href_about ?>">About us</a></li>
 
                </ul>
           </div>
@@ -63,7 +63,7 @@
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <div class="section-title">
                          <h1>Votre Information</h1>
-                         <h2>Remplir Votre information pour votre commande s'il vous plaît</h2>
+                         <h2>Remplir Votre information pour votre compte</h2>
                     </div>
 
                     <form action="#" method="post">
@@ -93,35 +93,36 @@
                               Email
                               <input type="email" class="form-control" placeholder="Email">
                          </div>
-                         {*<div class="col-md-12 col-sm-12">*}
-                              {*<p><h3>L'Adress</h3><p>*}
-                         {*</div>*}
+                         <!--
+                         <div class="col-md-12 col-sm-12">
+                              <p><h3>L'Adress</h3><p>
+                         </div>
 
-                         {*<div class="col-md-4 col-sm-4">*}
-                              {*Code postal **}
-                              {*<input type="codepostal" class="form-control" placeholder="Code Postal">*}
-                         {*</div>*}
-                         {*<div class="col-md-4 col-sm-4">*}
-                              {*Ville **}
-                              {*<input type="ville" class="form-control" placeholder="Ville">*}
-                         {*</div>*}
-                         {*<div class="col-md-4 col-sm-4">*}
-                              {*Pays **}
-                              {*<input type="Pays" class="form-control" placeholder="Pays">*}
-                         {*</div>*}
-                         {*<div class="col-md-2 col-sm-2">*}
-                              {*N°*}
-                              {*<input type="numero" class="form-control" placeholder="N°">*}
-                         {*</div>*}
-                         {*<div class="col-md-3 col-sm-3">*}
-                              {*Voie **}
-                              {*<input type="voie" class="form-control" placeholder="5,rue de l'exemple">*}
-                         {*</div>*}
-                         {*<div class="col-md-7 col-sm-7">*}
-                              {*Complément d’adresse **}
-                              {*<input type="adress" class="form-control" placeholder="Bâtiment D,appartement 511">*}
-                         {*</div>*}
-
+                         <div class="col-md-4 col-sm-4">
+                              Code postal *
+                              <input type="codepostal" class="form-control" placeholder="Code Postal">
+                         </div>
+                         <div class="col-md-4 col-sm-4">
+                              Ville *
+                              <input type="ville" class="form-control" placeholder="Ville">
+                         </div>
+                         <div class="col-md-4 col-sm-4">
+                              Pays *
+                              <input type="Pays" class="form-control" placeholder="Pays">
+                         </div>
+                         <div class="col-md-2 col-sm-2">
+                              N°
+                              <input type="numero" class="form-control" placeholder="N°">
+                         </div>
+                         <div class="col-md-3 col-sm-3">
+                              Voie *
+                              <input type="voie" class="form-control" placeholder="5,rue de l'exemple">
+                         </div>
+                         <div class="col-md-7 col-sm-7">
+                              Complément d’adresse *
+                              <input type="adress" class="form-control" placeholder="Bâtiment D,appartement 511">
+                         </div>
+                         -->
                          <div class="col-md-4 col-sm-3">
                               <input type="submit" class="form-control" value="Valider">
                          </div>
@@ -129,12 +130,14 @@
                          <div class="col-md-4 col-sm-3">
                               <input type="submit" class="form-control" onclick="javascript:history.back(-1);" value="Annuler">
                          </div>
+
                     </form>
                </div>
+
           </div>
      </div>
 </section>
-<!--<script>myBagImage()</script>-->
+<script>myBagImage()</script>
 <!-- Footer Section -->
 
 <footer>
@@ -179,9 +182,9 @@
 
 <!-- SCRIPTS -->
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="catalog/view/theme/default/js/jquery.js"></script>
+<script src="catalog/view/theme/default/js/bootstrap.min.js"></script>
+<script src="catalog/view/theme/default/js/custom.js"></script>
 
 </body>
 </html>

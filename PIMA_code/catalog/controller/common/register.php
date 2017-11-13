@@ -1,5 +1,5 @@
 <?php
-class ControllerRegister extends Controller {
+class ControllerCommonRegister extends Controller {
 	public function index() {
 		
 		$data['href_index']= $this->url->link('common/index');
