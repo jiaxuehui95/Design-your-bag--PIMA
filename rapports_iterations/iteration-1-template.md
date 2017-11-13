@@ -12,8 +12,8 @@
 ## Bilan de l'itération précédente  
 ### Évènements 
 *Quels sont les évènements qui ont marqué l'itération précédente? Répertoriez ici les évènements qui ont eu un impact sur ce qui était prévu à l'itération précédente.*
-> développment Backend : création de la base de données .
-> on a pas pu faire régulièrement des stand up à cause des vacances et ainsi de l'indisponibilité de plusieurs personnes de l'équipe
+> - développment Backend : création de la base de données .
+> - on a pas pu faire régulièrement des stand up à cause des vacances et ainsi de l'indisponibilité de plusieurs personnes de l'équipe
 
 
 ### Taux de complétion de l'itération  
@@ -55,10 +55,10 @@
 
 ### Titre des nouvelles User Stories  
 *Lister ici les nouveaux éléments pour l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
-> un utilisateur peut s'inscrire
-> un utilisateur peut changer la taille de son
-> un utilisateur peut ajouter plusieurs modèles de sac dans son panier
-> un client peut accéder a son compte personnel et consulter ses précédents achats.
+> - un utilisateur peut s'inscrire
+> - un utilisateur peut changer la taille de son
+> - un utilisateur peut ajouter plusieurs modèles de sac dans son panier
+> - un client peut accéder a son compte personnel et consulter ses précédents achats.
  
 
 ## Confiance 
