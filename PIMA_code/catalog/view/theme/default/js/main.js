@@ -784,8 +784,8 @@ function myBagImage()
     setTimeout(function(){
         var backpack = new svgAnimation({
             canvas: new Snap('#canvas'),
-            svg: 'bag.svg',
-            data: 'bag.json',
+            svg: 'catalog/view/theme/default/bag.svg',
+            data: 'catalog/view/theme/default/bag.json',
             duration: 2000,
             steps: 10
         });
