@@ -104,12 +104,16 @@ function save() {
     // document.body.appendChild(img);
     var image = new Image();
     image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    window.localStorage.setItem('bagImage', image.src);
+}
+function download() {
+    var image = new Image();
+    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
     var a = document.createElement('a');
     //  a.href = canvas.toDataURL('image/png');
     a.href=image.src;
-    a.download = "MyBag";  //设定下载名称
-   // a.click(); //点击触发下载
-    window.localStorage.setItem('bagImage', image.src);
+    a.download = "MyBag";
+    a.click();
 }
 
 function myBagImage()

@@ -70,10 +70,12 @@
 
                </div>
                <div class="col-md-6 col-sm-6">
+                    <a class="noChangeLink" href="<?php echo $href_design ?>">
                     <div class="buttonStart" style="font-size: 40px; width: 600px; border: 1px black solid;
                       height: 100px; padding-top: 20px; margin-left: -25px;"> 
                           <span>Start to design your bags</span> 
                     </div>
+                    </a>
                </div>
                 <div class="col-md-3 col-sm-3">
           

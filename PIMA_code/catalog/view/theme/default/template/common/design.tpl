@@ -150,11 +150,19 @@
                          <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
                          <!--<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
                     </div>
-
                     <div class="clearfix"></div>
-                    <div class="buttonStart" style="font-size: 20px; width: 350px; border: 1px black solid;
-                      height: 70px; padding-top: 20px; margin: auto; text-align: center" onclick="save()">
+                    <div style=" text-align: center; ">
+                         <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
+                      height: 70px; padding-top: 20px; text-align: center" onclick="download()">
+                              <span>Download l'image du sac</span>
+                         </div>
+                         
+                    <a href="<?php echo $href_about ?>" style="padding-left: 20px">
+                    <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
+                      height: 70px; padding-top: 20px; text-align: center" onclick="save()">
                          <span>Enregistrez votre sac</span>
+                    </div>
+                    </a>
                     </div>
 
                      <hr>

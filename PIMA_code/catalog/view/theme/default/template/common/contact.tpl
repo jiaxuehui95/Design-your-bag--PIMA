@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
+     <script src="catalog/view/theme/default/js/snap.svg.js"></script>
+     <script src="catalog/view/theme/default/js/main.js"></script>
 </head>
 <body>
 
@@ -134,7 +136,7 @@
           </div>
      </div>
 </section>
-
+<script>myBagImage()</script>
 <!-- Footer Section -->
 
 <footer>
