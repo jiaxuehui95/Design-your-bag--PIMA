@@ -37,23 +37,18 @@
      <div class="container">
 
           <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <a href="<?php echo $href_index ?>" class="navbar-brand"><i class="fa fa-magnet"></i></a>
+               <img style="width: 100px;" src="images/logo.png">
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo $href_index ?>">Projects</a></li>
-                    <li><a href="<?php echo $href_design ?>">Our Studio</a></li>
-                    <li><a href="<?php echo $href_blog ?>">Blog</a></li>
-                    <li class="active"><a href="<?php echo $href_about ?>">Information</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="index.html">About us</a></li>
+
                </ul>
           </div>
 
-  </div>
+     </div>
 </div>
 
 
