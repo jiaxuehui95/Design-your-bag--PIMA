@@ -44,6 +44,7 @@
                     <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
                     <li><a href="<?php echo $href_design ?>" >Design</a></li>
                     <li><a href="<?php echo $href_about ?>">About us</a></li>
+                    <li><a href="<?php echo $href_register ?>">Register</a></li>
                     
                </ul>
           </div>
