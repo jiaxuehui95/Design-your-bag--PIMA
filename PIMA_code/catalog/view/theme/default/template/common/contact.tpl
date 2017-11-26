@@ -54,8 +54,9 @@
 </div>
 
 
-<!-- Contact Section -->
 
+
+<!-- Contact Section -->
 <section id="contact">
      <div class="container">
           <div class="row">
@@ -122,13 +123,20 @@
                               <input type="adress" class="form-control" placeholder="Bâtiment D,appartement 511">
                          </div>
 
-                         <div class="col-md-4 col-sm-3">
-                              <input type="submit" class="form-control" value="Valider">
+
+                         <div class="col-md-6 col-sm-6">
+                              <input type="submit" class="form-control" style="display: inline-block" value="Valider">
                          </div>
 
-                         <div class="col-md-4 col-sm-3">
-                              <input type="submit" class="form-control" onclick="javascript:history.back(-1);" value="Annuler">
-                         </div>
+                              <div class="col-md-4 col-sm-3">
+                              <a  href="<?php echo $href_design ?>" >
+                                   <div class="buttonStart" style="display: inline-block;  border-radius: 100px; font-weight: 400; width: 320px;
+                           height: 50px;  padding-left: 15px; padding-right: 15px;  text-align: center ;position: absolute;top: 10px;"">
+                                        <span style="position:relative; top:15px">Annuler</span>
+                                   </div>
+                              </a>
+
+
 
                     </form>
                </div>
