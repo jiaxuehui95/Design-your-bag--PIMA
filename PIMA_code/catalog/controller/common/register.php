@@ -122,10 +122,8 @@ class ControllerCommonRegister extends Controller {
 				return !$this->error;
 			}	
 		}	
-
-
 		else {
-			$this->error['warning'] = $this->language->get('error_telephone');
+			$this->error['warning'] = $this->language->get('error_email');
 			return !$this->error;
 		}
 

@@ -11,11 +11,11 @@
 
     <title>Mon achat</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
 </head>
@@ -37,15 +37,22 @@
     <div class="container">
 
         <div class="navbar-header">
-            <img style="width: 100px;" src="images/logo.png">
+            <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="index.html">About us</a></li>
-
-            </ul>
+                    <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
+                    <li><a href="<?php echo $href_design ?>" >Design</a></li>
+                    <li><a href="<?php echo $href_about ?>">About us</a></li>
+                      <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
+                      <li><a href="<?php echo $href_logout ?>">Logout</a></li>                    
+               </ul>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="<?php echo $href_changer ?>">Changer information</a></li>
+                    <li><a href="<?php echo $href_commande ?>" >Précédents achats</a></li>                  
+               </ul>
         </div>
 
     </div>
@@ -65,11 +72,11 @@
                 <div class="blog-post-thumb">
                     <div class="blog-post-image">
                         <a href="single-post.html">
-                            <img src="images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
+                            <img src="catalog/view/theme/default/images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
                         </a>
                     </div>
                     <div class="blog-post-format">
-                        <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle">User name</a></span>
+                        <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle">User name</a></span>
                         <span><i class="fa fa-date"></i> Jan 30, 2016</span>
                     </div>
                     <div class="blog-post-des">
@@ -80,11 +87,11 @@
                 <div class="blog-post-thumb">
                     <div class="blog-post-image">
                         <a href="single-post.html">
-                            <img src="images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
+                            <img src="catalog/view/theme/default/images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
                         </a>
                     </div>
                     <div class="blog-post-format">
-                        <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle">User name</a></span>
+                        <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle">User name</a></span>
                         <span><i class="fa fa-date"></i> Jan 30, 2016</span>
                     </div>
                     <div class="blog-post-des">
@@ -141,9 +148,9 @@
 
 <!-- SCRIPTS -->
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="catalog/view/theme/default/js/jquery.js"></script>
+<script src="catalog/view/theme/default/js/bootstrap.min.js"></script>
+<script src="catalog/view/theme/default/js/custom.js"></script>
 
 </body>
 </html>

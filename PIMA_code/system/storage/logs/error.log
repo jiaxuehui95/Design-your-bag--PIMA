@@ -1,2 +1,0 @@
-2017-11-26 1:32:01 - PHP Notice:  Undefined index: fax in D:\wamp64\wamp\www\PIMA2017\PIMA_code\catalog\model\account\customer.php on line 8
-2017-11-26 1:32:01 - PHP Notice:  Undefined variable: customer_group_info in D:\wamp64\wamp\www\PIMA2017\PIMA_code\catalog\model\account\customer.php on line 8
