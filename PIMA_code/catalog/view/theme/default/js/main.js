@@ -7,125 +7,178 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
+var handleColor,baseColor,coverColor,pocketTopColor, pocketBaseColor;
 
 function handleColor1() {
     document.getElementById("handle-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('handle', "#272C40");
+    handleColor="#272C40";
 }
 
 function handleColor2() {
     document.getElementById("handle-color").setAttribute("fill", "#1b6d85");
     window.localStorage.setItem('handle', "#1b6d85");
+    handleColor="#1b6d85";
 }
 
 function handleColor3() {
     document.getElementById("handle-color").setAttribute("fill", "brown");
     window.localStorage.setItem('handle', "brown");
+    handleColor="brown";
 }
 
 function handleColor4() {
     document.getElementById("handle-color").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('handle', "#2b542c");
+    handleColor= "#2b542c";
 }
 
 function baseColor1() {
     document.getElementById("base-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('base', "#272C40");
+    baseColor="#272C40";
 }
 
 function baseColor2() {
     document.getElementById("base-color").setAttribute("fill", "#1b6d85");
     window.localStorage.setItem('base', "#1b6d85");
+    baseColor="#1b6d85";
 }
 
 function baseColor3() {
     document.getElementById("base-color").setAttribute("fill", "brown");
     window.localStorage.setItem('base', "brown");
+    baseColor="brown";
 }
 
 function baseColor4() {
     document.getElementById("base-color").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('base', "#2b542c");
+    baseColor="#2b542c";
 }
 
 function coverColor1() {
     document.getElementById("cover-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('cover', "#272C40");
+    coverColor="#272C40";
 }
 
 function coverColor2() {
     document.getElementById("cover-color").setAttribute("fill", "#1b6d85");
     window.localStorage.setItem('cover', "#1b6d85");
+    coverColor="#1b6d85";
 }
 
 function coverColor3() {
     document.getElementById("cover-color").setAttribute("fill", "brown");
     window.localStorage.setItem('cover', "brown");
+    coverColor="brown";
 }
 
 function coverColor4() {
     document.getElementById("cover-color").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('cover', "#2b542c");
+    coverColor= "#2b542c";
 }
 
 function pocketTopColor1() {
     document.getElementById("pocket").setAttribute("fill", "#4D556B");
     window.localStorage.setItem('pocketTop', "#4D556B");
+    pocketTopColor="#4D556B";
 }
 
 function pocketTopColor2() {
     document.getElementById("pocket").setAttribute("fill", "#1b6d85");
     window.localStorage.setItem('pocketTop', "#1b6d85");
+    pocketTopColor="#1b6d85";
 }
 
 function pocketTopColor3() {
     document.getElementById("pocket").setAttribute("fill", "brown");
     window.localStorage.setItem('pocketTop', "brown");
+    pocketTopColor="brown";
 }
 
 function pocketTopColor4() {
     document.getElementById("pocket").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('pocketTop', "#2b542c");
+    pocketTopColor="#2b542c";
 }
 
 
 function pocketBaseColor1() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#394054");
     window.localStorage.setItem('pocketBase', "#394054");
+    pocketBaseColor="#394054";
 }
 
 function pocketBaseColor2() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#1b6d85");
     window.localStorage.setItem('pocketBase', "#1b6d85");
+    pocketBaseColor="#1b6d85";
 }
 
 function pocketBaseColor3() {
     document.getElementById("pocket-base-color").setAttribute("fill", "brown");
     window.localStorage.setItem('pocketBase', "brown");
+    pocketBaseColor="brown";
 }
 
 function pocketBaseColor4() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('pocketBase', "#2b542c");
+    pocketBaseColor= "#2b542c";
+}
+
+function createXMLHttpRequest() {
+    var xmlHttp;
+    if (window.XMLHttpRequest) {
+        xmlHttp = new XMLHttpRequest();
+        if (xmlHttp.overrideMimeType)
+            xmlHttp.overrideMimeType('text/xml');
+    } else if (window.ActiveXObject) {
+        try {
+            xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+            try {
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {
+            }
+        }
+    }
+    return xmlHttp;
+}
+
+function getStatusBack(){
+    if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+        var b = xmlHttp.responseText;
+        alert(b);
+        console.log(b);
+
+    }
 }
 
 function save() {
-    // var svgXml = $('.svg-wrap').html();
-    // var mySvg = document.querySelector(".svg-wrap");
-    // var svgXml = mySvg.outerHTML
-    // var canvas = document.createElement('canvas');  //准备空画布
-    // canvas.width = $('.svg-wrap svg').width();
-    // canvas.height = $('.svg-wrap svg').height();
-
-    // var context = canvas.getContext('2d');  //取得画布的2d绘图上下文
-    // context.drawImage(image, 0, 0);
-    // var img = document.createElement('img');
-    // img.src = image.src;
-    // document.body.appendChild(img);
     var image = new Image();
     image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
     window.localStorage.setItem('bagImage', image.src);
+    var radio = document.getElementsByName("size");
+    var size="petit";
+    if(radio[1].checked)
+    {
+        size="grand";
+    }
+    xmlHttp = createXMLHttpRequest();
+    var url = "catalog/model/product/product.php";
+    xmlHttp.open("POST", url, true);
+    xmlHttp.onreadystatechange = getStatusBack;
+    xmlHttp.setRequestHeader("Content-Type",
+        "application/x-www-form-urlencoded;");
+    xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
+        "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size);
+    xmlHttp.send("image="+image.src);
 }
+
 function download() {
     var image = new Image();
     image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
