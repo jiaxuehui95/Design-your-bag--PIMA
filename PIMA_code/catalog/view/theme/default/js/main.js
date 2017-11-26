@@ -7,7 +7,7 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
-var handleColor,baseColor,coverColor,pocketTopColor, pocketBaseColor;
+var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054";
 
 function handleColor1() {
     document.getElementById("handle-color").setAttribute("fill", "#272C40");
@@ -174,6 +174,7 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
+    console.log(handleColor);
     xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
         "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size);
     xmlHttp.send("image="+image.src);
