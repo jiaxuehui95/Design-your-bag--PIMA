@@ -104,37 +104,6 @@
                               Confirm *
                               <input type="password" name = "confirm" class="form-control" placeholder="Confirm">
                          </div>
-
-                         <!--
-                         <div class="col-md-12 col-sm-12">
-                              <p><h3>L'Adress</h3><p>
-                         </div>
-
-                         <div class="col-md-4 col-sm-4">
-                              Code postal *
-                              <input type="codepostal" class="form-control" placeholder="Code Postal">
-                         </div>
-                         <div class="col-md-4 col-sm-4">
-                              Ville *
-                              <input type="ville" class="form-control" placeholder="Ville">
-                         </div>
-                         <div class="col-md-4 col-sm-4">
-                              Pays *
-                              <input type="Pays" class="form-control" placeholder="Pays">
-                         </div>
-                         <div class="col-md-2 col-sm-2">
-                              N°
-                              <input type="numero" class="form-control" placeholder="N°">
-                         </div>
-                         <div class="col-md-3 col-sm-3">
-                              Voie *
-                              <input type="voie" class="form-control" placeholder="5,rue de l'exemple">
-                         </div>
-                         <div class="col-md-7 col-sm-7">
-                              Complément d’adresse *
-                              <input type="adress" class="form-control" placeholder="Bâtiment D,appartement 511">
-                         </div>
-                         -->
                          <div class="col-md-4 col-sm-3">
                               <input type="submit" class="form-control" value="Valider">
                          </div>
