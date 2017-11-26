@@ -10,83 +10,103 @@ http://www.hellomichael.com/
 
 function handleColor1() {
     document.getElementById("handle-color").setAttribute("fill", "#272C40");
+    window.localStorage.setItem('handle', "#272C40");
 }
 
 function handleColor2() {
     document.getElementById("handle-color").setAttribute("fill", "#1b6d85");
+    window.localStorage.setItem('handle', "#1b6d85");
 }
 
 function handleColor3() {
     document.getElementById("handle-color").setAttribute("fill", "brown");
+    window.localStorage.setItem('handle', "brown");
 }
 
 function handleColor4() {
     document.getElementById("handle-color").setAttribute("fill", "#2b542c");
+    window.localStorage.setItem('handle', "#2b542c");
 }
 
 function baseColor1() {
     document.getElementById("base-color").setAttribute("fill", "#272C40");
+    window.localStorage.setItem('base', "#272C40");
 }
 
 function baseColor2() {
     document.getElementById("base-color").setAttribute("fill", "#1b6d85");
+    window.localStorage.setItem('base', "#1b6d85");
 }
 
 function baseColor3() {
     document.getElementById("base-color").setAttribute("fill", "brown");
+    window.localStorage.setItem('base', "brown");
 }
 
 function baseColor4() {
     document.getElementById("base-color").setAttribute("fill", "#2b542c");
+    window.localStorage.setItem('base', "#2b542c");
 }
 
 function coverColor1() {
     document.getElementById("cover-color").setAttribute("fill", "#272C40");
+    window.localStorage.setItem('cover', "#272C40");
 }
 
 function coverColor2() {
     document.getElementById("cover-color").setAttribute("fill", "#1b6d85");
+    window.localStorage.setItem('cover', "#1b6d85");
 }
 
 function coverColor3() {
     document.getElementById("cover-color").setAttribute("fill", "brown");
+    window.localStorage.setItem('cover', "brown");
 }
 
 function coverColor4() {
     document.getElementById("cover-color").setAttribute("fill", "#2b542c");
+    window.localStorage.setItem('cover', "#2b542c");
 }
 
 function pocketTopColor1() {
     document.getElementById("pocket").setAttribute("fill", "#4D556B");
+    window.localStorage.setItem('pocketTop', "#4D556B");
 }
 
 function pocketTopColor2() {
     document.getElementById("pocket").setAttribute("fill", "#1b6d85");
+    window.localStorage.setItem('pocketTop', "#1b6d85");
 }
 
 function pocketTopColor3() {
     document.getElementById("pocket").setAttribute("fill", "brown");
+    window.localStorage.setItem('pocketTop', "brown");
 }
 
 function pocketTopColor4() {
     document.getElementById("pocket").setAttribute("fill", "#2b542c");
+    window.localStorage.setItem('pocketTop', "#2b542c");
 }
 
 
 function pocketBaseColor1() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#394054");
+    window.localStorage.setItem('pocketBase', "#394054");
 }
 
 function pocketBaseColor2() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#1b6d85");
+    window.localStorage.setItem('pocketBase', "#1b6d85");
 }
 
 function pocketBaseColor3() {
     document.getElementById("pocket-base-color").setAttribute("fill", "brown");
+    window.localStorage.setItem('pocketBase', "brown");
 }
 
 function pocketBaseColor4() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#2b542c");
+    window.localStorage.setItem('pocketBase', "#2b542c");
 }
 
 function save() {

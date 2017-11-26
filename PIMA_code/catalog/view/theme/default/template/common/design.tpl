@@ -150,10 +150,10 @@
                          <h3>La taille</h3>
                          <div class="row" style="padding-bottom: 20px">
                               <div class="col-md-6 col-sm-12">
-                                   <div style="width: 100px; height: 25px; text-align:center; background-color: whitesmoke;" ><span>petite</span></div>
+                                   <input name="size" type="radio" checked style="display: inline-block; margin-right: 10px"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>petite</span></div>
                               </div>
-                              <div class="col-md-6 col-sm-12">
-                                   <div style="width: 100px; height: 25px; text-align:center; background-color: whitesmoke; "><span>grande</span></div>
+                               <div class="col-md-6 col-sm-12">
+                                   <input name="size" type="radio" style="display: inline-block; margin-right: 10px"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>grande</span></div>
                               </div>
                          </div>
                          <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
@@ -169,7 +169,7 @@
                          <a href="<?php echo $href_about ?>" style="padding-left: 20px">
                            <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                            height: 70px; padding-top: 20px; text-align: center" onclick="save()">
-                             <span>Enregistrez votre sac</span>
+                             <span>Passer la commande</span>
                            </div>
                          </a>
                     </div>
