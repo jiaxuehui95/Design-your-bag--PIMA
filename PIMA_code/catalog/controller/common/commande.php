@@ -1,9 +1,12 @@
 <?php
 class ControllerCommonCommande extends Controller {
     public function index(){
-        
-        $this->load->model('account/customer');
+        $this->load->model('product/product');
 
+        $customer_id= $this->customer->getId();
+		$products= $this->model_product_product-> getProductsByCustomerId($customer_id);
+        $data['products']=$products;
+        $data['firstname']=$this->customer->getFirstName();
         $data['href_index']= $this->url->link('common/index');
 		$data['href_design']= $this->url->link('common/design');
 		$data['href_about']= $this->url->link('common/about');

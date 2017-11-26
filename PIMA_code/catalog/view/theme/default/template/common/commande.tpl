@@ -68,36 +68,21 @@
                 <div class="section-title">
                     <h2>Mon achats</h2>
                 </div>
-
+                <?php foreach($products as $product ){ ?>
                 <div class="blog-post-thumb">
-                    <div class="blog-post-image">
-                        <a href="single-post.html">
-                            <img src="catalog/view/theme/default/images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
-                        </a>
-                    </div>
+                    <h2>Product</h2>
+                    <p>Size:   <?php echo $product['size']?>  </p>
+                    <p>HandleColor:  <?php echo $product['handleColor']?></p>
+                    <p>BaseColor:    <?php echo $product['baseColor']?></p>
                     <div class="blog-post-format">
-                        <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle">User name</a></span>
-                        <span><i class="fa fa-date"></i> Jan 30, 2016</span>
+                        <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
+                        <span><i class="fa fa-date"></i><?php echo $product['date_added']?></span>
                     </div>
                     <div class="blog-post-des">
                         <a href="single-post.html" class="btn btn-default">More Details</a>
                     </div>
                 </div>
-
-                <div class="blog-post-thumb">
-                    <div class="blog-post-image">
-                        <a href="single-post.html">
-                            <img src="catalog/view/theme/default/images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
-                        </a>
-                    </div>
-                    <div class="blog-post-format">
-                        <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle">User name</a></span>
-                        <span><i class="fa fa-date"></i> Jan 30, 2016</span>
-                    </div>
-                    <div class="blog-post-des">
-                        <a href="single-post.html" class="btn btn-default">More Details</a>
-                    </div>
-                </div>
+                <?php }?>
             </div>
 
         </div>

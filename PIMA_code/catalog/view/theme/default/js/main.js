@@ -169,7 +169,7 @@ function save() {
         size="grand";
     }
     xmlHttp = createXMLHttpRequest();
-    var url = "catalog/model/product/product.php";
+    var url = "index.php?route=common/product";
     xmlHttp.open("POST", url, true);
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",

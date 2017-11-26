@@ -48,7 +48,14 @@
                     <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
                     <li><a href="<?php echo $href_design ?>" >Design</a></li>
                     <li><a href="<?php echo $href_about ?>">About us</a></li>
-
+                    <?php if ($logged) { ?>
+                      <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
+                      <li><a href="<?php echo $href_logout ?>">Logout</a></li>
+                    <?php } else { ?>
+                      <li><a href="<?php echo $href_register ?>">Register</a></li>
+                      <li><a href="<?php echo $href_login ?>">Login</a></li>
+                    <?php } ?>
+                    
                </ul>
           </div>
 
@@ -166,13 +173,14 @@
                          height: 70px; padding-top: 20px; text-align: center" onclick="download()">
                               <span>Download l'image du sac</span>
                          </div>
-                         
-                         <a href="<?php echo $href_about ?>" style="padding-left: 20px">
+                         <?php if($logged) { ?>
+                         <a href="<?php echo $href_commande ?>" style="padding-left: 20px">
                            <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                            height: 70px; padding-top: 20px; text-align: center" onclick="save()">
                              <span>Passer la commande</span>
                            </div>
                          </a>
+                         <?php } ?>
                     </div>
 
                      <hr>
