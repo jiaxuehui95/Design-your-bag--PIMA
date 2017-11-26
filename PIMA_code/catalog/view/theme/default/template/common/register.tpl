@@ -39,7 +39,7 @@
      <div class="container">
 
           <div class="navbar-header">
-               <img style="width: 100px;" src="images/logo.png">
+               <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
@@ -66,33 +66,43 @@
                          <h2>Remplir Votre information pour votre compte</h2>
                     </div>
 
-                    <form action="#" method="post">
+                    <?php if ($error_warning) { ?>
+                        <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> 
+                        <?php echo $error_warning; ?></div>
+                    <?php } ?>
+                    
+                    <form action="<?php echo $href_register ?>" method="post">
 
                          <p><h3>L'information personnel</h3><p>
 
-                              <select class="Civilite">
-                                   <option>Civilité *</option>
-                                   <option>Mme</option>
-                                   <option>Mlle</option>
-                                   <option>M.</option>
-                              </select>
 
+                         
                          <div class="col-md-6 col-sm-6">
-                              Nom *
-                              <input type="nom" class="form-control" placeholder="Nom">
+                              nom *
+                              <input type="text" name = "firstname" class="form-control" placeholder="nom">
                          </div>
                          <div class="col-md-6 col-sm-6">
-                              Prénom *
-                              <input type="prenom" class="form-control" placeholder="Prénom">
+                              Prenom *
+                              <input type="lastname" name = "lastname" class="form-control" placeholder="prenom">
                          </div>
                          <div class="col-md-6 col-sm-6">
                               Numéro de téléphone *
-                              <input type="telephone" class="form-control" placeholder="Mobile/Fixe">
+                              <input type="telephone" name= "telephone" class="form-control" placeholder="Mobile/Fixe">
                          </div>
                          <div class="col-md-6 col-sm-6">
                               Email
-                              <input type="email" class="form-control" placeholder="Email">
+                              <input type="email" name = "email" class="form-control" placeholder="Email">
                          </div>
+                        
+                         <div class="col-md-6 col-sm-6">
+                              Password *
+                              <input type="password" name = "password" class="form-control" placeholder="password">
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              Confirm *
+                              <input type="password" name = "confirm" class="form-control" placeholder="Confirm">
+                         </div>
+
                          <!--
                          <div class="col-md-12 col-sm-12">
                               <p><h3>L'Adress</h3><p>
@@ -127,9 +137,7 @@
                               <input type="submit" class="form-control" value="Valider">
                          </div>
 
-                         <div class="col-md-4 col-sm-3">
-                              <input type="submit" class="form-control" onclick="javascript:history.back(-1);" value="Annuler">
-                         </div>
+                         
 
                     </form>
                </div>

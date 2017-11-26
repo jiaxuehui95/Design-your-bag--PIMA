@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Information</title>
+     <title>Information</title>
 
-<link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
-<link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
+     <link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
+     <link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
 
-<!-- Main css -->
-<link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+     <!-- Main css -->
+     <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
      <script src="catalog/view/theme/default/js/snap.svg.js"></script>
      <script src="catalog/view/theme/default/js/main.js"></script>
@@ -39,13 +39,15 @@
      <div class="container">
 
           <div class="navbar-header">
-               <img style="width: 100px;" src="images/logo.png">
+               <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
                     <li><a href="<?php echo $href_design ?>" >Design</a></li>
                     <li><a href="<?php echo $href_about ?>">About us</a></li>
+                    <li><a href="<?php echo $href_register ?>">Register</a></li>
+                    <li><a href="<?php echo $href_login ?>">Login</a></li>
 
                </ul>
           </div>
@@ -62,43 +64,35 @@
 
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <div class="section-title">
-                         <h1>Votre Information</h1>
-                         <h2>Remplir Votre information pour votre commande s'il vous plaît</h2>
+                         <h1>Login</h1>
                     </div>
 
-                    <form action="#" method="post">
+                    <?php if ($error_warning) { ?>
+                        <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> 
+                        <?php echo $error_warning; ?></div>
+                    <?php } ?>
+                    
+                    <form action="<?php echo $href_login ?>" method="post">
 
                          <p><h3>L'information personnel</h3><p>
 
-                         <select class="Civilite">
-                              <option>Civilité *</option>
-                              <option>Mme</option>
-                              <option>Mlle</option>
-                              <option>M.</option>
-                         </select>
-
-                         <div class="col-md-6 col-sm-6">
-                         Nom *
-                              <input type="nom" class="form-control" placeholder="Nom">
-                         </div>
-                         <div class="col-md-6 col-sm-6">
-                              Prénom *
-                              <input type="prenom" class="form-control" placeholder="Prénom">
-                         </div>
                          <div class="col-md-6 col-sm-6">
                               Numéro de téléphone *
-                              <input type="telephone" class="form-control" placeholder="Mobile/Fixe">
+                              <input type="telephone" name= "telephone" class="form-control" placeholder="Mobile/Fixe">
                          </div>
+                        
                          <div class="col-md-6 col-sm-6">
-                              Email
-                              <input type="email" class="form-control" placeholder="Email">
+                              Password *
+                              <input type="password" name = "password" class="form-control" placeholder="password">
                          </div>
+
+                         <!--
                          <div class="col-md-12 col-sm-12">
                               <p><h3>L'Adress</h3><p>
                          </div>
 
                          <div class="col-md-4 col-sm-4">
-                         Code postal *
+                              Code postal *
                               <input type="codepostal" class="form-control" placeholder="Code Postal">
                          </div>
                          <div class="col-md-4 col-sm-4">
@@ -121,14 +115,12 @@
                               Complément d’adresse *
                               <input type="adress" class="form-control" placeholder="Bâtiment D,appartement 511">
                          </div>
-
+                         -->
                          <div class="col-md-4 col-sm-3">
                               <input type="submit" class="form-control" value="Valider">
                          </div>
 
-                         <div class="col-md-4 col-sm-3">
-                              <input type="submit" class="form-control" onclick="javascript:history.back(-1);" value="Annuler">
-                         </div>
+                         
 
                     </form>
                </div>
@@ -162,7 +154,7 @@
 
                <div class="col-md-6 col-sm-6">
                     <div class="footer-copyright">
-                         <p>© 2016 Magnet Studio | All Rights Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p> 
+                         <p>© 2016 Magnet Studio | All Rights Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
                     </div>
                </div>
 
@@ -173,7 +165,7 @@
                          <li><a href="#" class="fa fa-linkedin"></a></li>
                     </ul>
                </div>
-               
+
           </div>
      </div>
 </footer>

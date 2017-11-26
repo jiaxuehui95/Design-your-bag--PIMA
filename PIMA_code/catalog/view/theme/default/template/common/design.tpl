@@ -166,7 +166,7 @@
                               <span>Download l'image du sac</span>
                          </div>
                          
-                         <a href="<?php echo $href_confirmer ?>" style="padding-left: 20px">
+                         <a href="<?php echo $href_about ?>" style="padding-left: 20px">
                            <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                            height: 70px; padding-top: 20px; text-align: center" onclick="save()">
                              <span>Enregistrez votre sac</span>

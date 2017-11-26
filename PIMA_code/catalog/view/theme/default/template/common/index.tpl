@@ -44,7 +44,13 @@
                     <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
                     <li><a href="<?php echo $href_design ?>" >Design</a></li>
                     <li><a href="<?php echo $href_about ?>">About us</a></li>
-                    <li><a href="<?php echo $href_register ?>">Register</a></li>
+                    <?php if ($logged) { ?>
+                      <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
+                      <li><a href="<?php echo $href_logout ?>">Logout</a></li>
+                    <?php } else { ?>
+                      <li><a href="<?php echo $href_register ?>">Register</a></li>
+                      <li><a href="<?php echo $href_login ?>">Login</a></li>
+                    <?php } ?>
                     
                </ul>
           </div>
