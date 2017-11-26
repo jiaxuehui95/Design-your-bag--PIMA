@@ -64,31 +64,50 @@
     <h2>Mon Compte</h2>
 </div>
 <!-- Contact Section -->
-
-
 <section id="contact">
     <div class="container">
         <div class="row">
+        <?php if ($error_warning) { ?>
+                        <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> 
+                        <?php echo $error_warning; ?></div>
+                    <?php } ?>
+             <form action="<?php echo $action ?>" method="post">
                     <div class="col-md-10 col-sm-10">
-                        <p><h3>Nom : <?php echo $firstname ?></h3></p>
+                        <p><h3>Nom : </h3></p>
+                        <input type="text" name= "firstname" value="<?php echo $firstname; ?>" class="form-control" >
                     </div>
-            <br>
+
                     <div class="col-md-12 col-sm-12">
-                        <p><h3>Prénom : <?php echo $lastname ?></h3></p>
+                        <p><h3>Prénom :</h3></p>
+                        <input type="text" name= "lastname" value="<?php echo $lastname; ?>" class="form-control" >
                     </div>
-            <br>
+
                     <div class="col-md-6 col-sm-6">
-                        <p><h3>Numéro de téléphone : <?php echo $telephone ?></h3></p>
+                        <p><h3>Numéro de téléphone : </h3></p>
+                        <input type="text" name= "telephone" value="<?php echo $telephone; ?>" class="form-control" >
+                    
                     </div>
-            <br>
+          
                     <div class="col-md-12 col-sm-12">
-                        <p><h3>Email : <?php echo $email ?></h3></p>
+                        <p><h3>Email :</h3></p>
+                        <input type="text" name= "email" value="<?php echo $email; ?>" class="form-control" >
+                    
                     </div>
+                     <div class="col-md-4 col-sm-3">
+                              <input type="submit" class="form-control" value="Changer">
+                    </div>
+                </form>
 
             </div>
         </div>
     </div>
 </section>
+               </div>
+
+          </div>
+     </div>
+</section>
+
 <!--<script>myBagImage()</script>-->
 <!-- Footer Section -->
 
