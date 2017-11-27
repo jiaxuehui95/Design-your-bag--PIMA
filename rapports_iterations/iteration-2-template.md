@@ -24,11 +24,11 @@
 
 ### Liste des User Stories terminées
 *Quelles sont les User Stories qui ont été validées par le PO à la fin de l'itération ?*
->en tant q'utilisateur, je  peux m'inscrire et devenir client .
->en tant q'utilisateur, je  peux me déconecter à n'importe quel moment de la navigation .
->en tant q'utilisateur, je  peux changer la taille  de mon sac.
->en tant q'utilisateur, je  peux consulter mes précedents achats .
->en tant q'utilisateur, je  peux ajouter plusieurs modèles de sacs dans mon panier .
+> -en tant q'utilisateur, je  peux m'inscrire et devenir client .
+> -en tant q'utilisateur, je  peux me déconecter à n'importe quel moment de la navigation .
+> -en tant q'utilisateur, je  peux changer la taille  de mon sac.
+> -en tant q'utilisateur, je  peux consulter mes précedents achats .
+> -en tant q'utilisateur, je  peux sauvegarder mon achat et télecharger l'image de mon sac .
 
 ## Rétrospective de l'itération précédente
   
@@ -60,7 +60,7 @@
 *Lister ici les nouveaux éléments pour l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
 >un client peut suivre sa commande une fois son sac acheté .
 >un client peut ajouter des émôticones sur son sac  sélectionné.
->un client peut payer son panier par plusieurs moyens de paiement .
+>en tant q'utilisateur, je  peux ajouter plusieurs modèles de sacs dans mon panier .
 >un client  peut écrire sur son sac sélectionné .
  
 
