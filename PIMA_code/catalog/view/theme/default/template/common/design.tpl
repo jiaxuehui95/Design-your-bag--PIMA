@@ -66,7 +66,20 @@
 <!-- About Section -->
 
 <section id="about">
+
      <div class="container">
+          <div class="row" style="text-align: center;">
+                <div style="width: 300px; text-align: center; display: inline-block;">
+                    <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray" >sac a dos</div></a>
+                </div>
+                <div  style="width: 300px; text-align: center; display: inline-block;">
+                    <a href="<?php echo $href_design ?>" ><div style="font-size: 30px">sac a main</div></a>
+                </div>
+                <div  style="width: 300px; text-align: center;display: inline-block;">
+                    <a href="<?php echo $href_design ?>" ><div style="font-size: 30px">sac d'ordinateur</div></a>
+                </div>
+
+          </div>
           <div class="row">
 
                <div class="col-md-offset-1 col-md-10 col-sm-12">
