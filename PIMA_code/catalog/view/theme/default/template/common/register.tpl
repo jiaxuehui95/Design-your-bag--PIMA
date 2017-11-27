@@ -88,11 +88,11 @@
                               <input type="lastname" name = "lastname" class="form-control" placeholder="prenom">
                          </div>
                          <div class="col-md-6 col-sm-6">
-                              Numéro de téléphone *
+                              Numéro de téléphone
                               <input type="telephone" name= "telephone" class="form-control" placeholder="Mobile/Fixe">
                          </div>
                          <div class="col-md-6 col-sm-6">
-                              Email
+                              Email *
                               <input type="email" name = "email" class="form-control" placeholder="Email">
                          </div>
                         

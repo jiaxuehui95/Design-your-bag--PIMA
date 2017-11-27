@@ -77,8 +77,8 @@
                          <p><h3>L'information personnel</h3><p>
 
                          <div class="col-md-6 col-sm-6">
-                              Numéro de téléphone *
-                              <input type="telephone" name= "telephone" class="form-control" placeholder="Mobile/Fixe">
+                              E-mail *
+                              <input type="email" name= "email" class="form-control" placeholder="Mobile/Fixe">
                          </div>
                         
                          <div class="col-md-6 col-sm-6">

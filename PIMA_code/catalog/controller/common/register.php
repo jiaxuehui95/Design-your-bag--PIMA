@@ -31,7 +31,7 @@ class ControllerCommonRegister extends Controller {
 				$this->model_account_activity->addActivity('register', $activity_data);
 			}
 
-			$this->response->redirect($this->url->link('common/index'));
+			$this->response->redirect($this->url->link('common/compte'));
 		}
 
 
@@ -105,24 +105,26 @@ class ControllerCommonRegister extends Controller {
 		}
 		
 		if(isset($this->request->post['telephone'])){
-			if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+			if ((utf8_strlen($this->request->post['telephone']) > 32)) {
 				$this->error['warning'] = $this->language->get('error_telephone');
 				return !$this->error;
 			}
 
-			if ($this->model_account_customer->getTotalCustomersByTelephone($this->request->post['telephone'])) {
-				$this->error['warning'] = $this->language->get('error_exists');
-				return !$this->error;
-			}
+
 
 		}
 
 		if (isset($this->request->post['email']) && ($this->request->post['email'] !=" " )){
 			
-			if ((utf8_strlen($this->request->post['email']) > 96) || !preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $this->request->post['email'])) {
+			if ((utf8_strlen($this->request->post['email']) < 1) || (utf8_strlen($this->request->post['email']) > 96) || !preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $this->request->post['email'])) {
 				$this->error['warning'] = $this->language->get('error_email');
 				return !$this->error;
-			}	
+			}
+
+            if ($this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
+                $this->error['warning'] = $this->language->get('error_exists');
+                return !$this->error;
+            }
 		}	
 		else {
 			$this->error['warning'] = $this->language->get('error_email');

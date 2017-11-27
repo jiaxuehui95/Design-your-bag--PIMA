@@ -1,3 +1,3 @@
 <?php 
-$_['error_login']         = 'telephone ou password sont bal';
+$_['error_login']         = 'email ou password sont bal';
 ?>

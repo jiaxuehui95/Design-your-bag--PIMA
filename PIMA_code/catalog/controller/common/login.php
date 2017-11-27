@@ -34,10 +34,10 @@ class ControllerCommonLogin extends Controller {
 			$data['error_warning'] = '';
         }
         
-        if (isset($this->request->post['telephone'])) {
-			$data['telephone'] = $this->request->post['telephone'];
+        if (isset($this->request->post['email'])) {
+			$data['email'] = $this->request->post['email'];
 		} else {
-			$data['telephone'] = '';
+			$data['email'] = '';
 		}
 
 		if (isset($this->request->post['password'])) {
@@ -57,9 +57,9 @@ class ControllerCommonLogin extends Controller {
     protected function validate() {
 
 		// Check if customer has been approved.
-		$customer_info = $this->model_account_customer->getCustomerByTelephone($this->request->post['telephone']);
+		$customer_info = $this->model_account_customer->getCustomerByEmail($this->request->post['email']);
 		if (!empty($customer_info)) {
-			if ($this->customer->login($this->request->post['telephone'], $this->request->post['password'])) {
+			if ($this->customer->login($this->request->post['email'], $this->request->post['password'])) {
                 
                 return true;
 			}
