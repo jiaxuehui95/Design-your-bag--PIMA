@@ -92,13 +92,8 @@ class ControllerCommonChanger extends Controller {
                 }
                 
                 if(isset($this->request->post['telephone'])){
-                    if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+                    if ( utf8_strlen($this->request->post['telephone']) > 32) {
                         $this->error['warning'] = $this->language->get('error_telephone');
-                        return !$this->error;
-                    }
-        
-                    if (($this->customer->getTelephone() !=$this->request->post['telephone']) && $this->model_account_customer->getTotalCustomersByTelephone($this->request->post['telephone'])){
-                        $this->error['warning'] = $this->language->get('error_exists');
                         return !$this->error;
                     }
         
@@ -110,6 +105,11 @@ class ControllerCommonChanger extends Controller {
                         $this->error['warning'] = $this->language->get('error_email');
                         return !$this->error;
                     }	
+                            
+                    if (($this->customer->getEmail() !=$this->request->post['email']) && $this->model_account_customer->getTotalCustomersByEmail($this->request->post['telephone'])){
+                        $this->error['warning'] = $this->language->get('error_exists');
+                        return !$this->error;
+                    }
                 }	      
                 else {
                     $this->error['warning'] = $this->language->get('error_telephone');
