@@ -72,8 +72,13 @@
                 <div class="blog-post-thumb">
                     <h2>Product</h2>
                     <p>Size:   <?php echo $product['size']?>  </p>
-                    <p>HandleColor:  <?php echo $product['handleColor']?></p>
-                    <p>BaseColor:    <?php echo $product['baseColor']?></p>
+                         <p style="display: inline-block; padding-right: 50px;">Couverture <div style="width: 20px; height: 20px; background-color: <?php echo $product['handleColor']?>; display: inline-block"></div></p>
+                     <p style="display: inline-block; padding-right: 50px">Corps <div style="width: 20px; height: 20px; background-color: <?php echo $product['baseColor']?>; display: inline-block"></div></p>
+                    <p style="display: inline-block; padding-right: 50px">Poignée <div style="width: 20px; height: 20px; background-color: <?php echo $product['coverColor']?>; display: inline-block"></div></p>
+                    <p style="display: inline-block; padding-right: 50px">Couverture de la poche <div style="width: 20px; height: 20px; background-color: <?php echo $product['pocketTopColor']?>; display: inline-block"></div></p>
+                    <p style="display: inline-block; padding-right: 50px">La poche <div style="width: 20px; height: 20px; background-color: <?php echo $product['pocketBaseColor']?>; display: inline-block"></div></p>
+
+
                     <div class="blog-post-format">
                         <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
                         <span><i class="fa fa-date"></i><?php echo $product['date_added']?></span>

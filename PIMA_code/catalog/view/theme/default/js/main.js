@@ -160,7 +160,7 @@ function getStatusBack(){
 
 function save() {
     var image = new Image();
-    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
     window.localStorage.setItem('bagImage', image.src);
     var radio = document.getElementsByName("size");
     var size="petit";
@@ -178,7 +178,6 @@ function save() {
     xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
         "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
 }
-
 function download() {
     var image = new Image();
     image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);

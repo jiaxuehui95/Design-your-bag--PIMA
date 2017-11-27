@@ -136,7 +136,6 @@
           </div>
      </div>
 </section>
-<script>myBagImage()</script>
 <!-- Footer Section -->
 
 <footer>
