@@ -160,7 +160,7 @@ function getStatusBack(){
 
 function save() {
     var image = new Image();
-    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
     window.localStorage.setItem('bagImage', image.src);
     var radio = document.getElementsByName("size");
     var size="petit";
@@ -170,6 +170,9 @@ function save() {
     }
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
+    image.src = (image.src).replace(/\&/g, "%26");  
+    image.src = (image.src).replace(/\+/g, "%2B");
+    
     xmlHttp.open("POST", url, true);
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
@@ -178,7 +181,6 @@ function save() {
     xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
         "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
 }
-
 function download() {
     var image = new Image();
     image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
