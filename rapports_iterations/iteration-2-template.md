@@ -24,7 +24,6 @@
 
 ### Liste des User Stories terminées
 *Quelles sont les User Stories qui ont été validées par le PO à la fin de l'itération ?*
-> 111
 > *en tant q'utilisateur, je  peux m'inscrire et devenir client .*
 > -en tant q'utilisateur, je  peux me déconecter à n'importe quel moment de la navigation .
 > -en tant q'utilisateur, je  peux changer la taille  de mon sac.
