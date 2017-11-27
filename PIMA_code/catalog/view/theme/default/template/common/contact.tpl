@@ -143,26 +143,20 @@
           <div class="row">
 
                <div class="col-md-3 col-sm-3">
-                    <i class="fa fa-magnet"></i>
+                    <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
                </div>
 
                <div class="col-md-4 col-sm-4">
-                    <p>124 Market Street, Suite 3570 San Francisco, CA 3042 United States</p>
+                    <p>1 Square de la Résistance, 91000 Évry, FRANCE</p>
                </div>
 
                <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
-                    <p><a href="mailto:youremail@gmail.com">hello@yourstudio.co</a></p>
-                    <p>(+01) 2048937 / 02 203403</p>
+                    <p><a href="mailto:youremail@gmail.com">contace@sacstudio.com</a></p>
+                    <p>(+33) 0783665346</p>
                </div>
 
                <div class="clearfix col-md-12 col-sm-12">
                     <hr>
-               </div>
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="footer-copyright">
-                         <p>© 2016 Magnet Studio | All Rights Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p> 
-                    </div>
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -172,7 +166,7 @@
                          <li><a href="#" class="fa fa-linkedin"></a></li>
                     </ul>
                </div>
-               
+
           </div>
      </div>
 </footer>
