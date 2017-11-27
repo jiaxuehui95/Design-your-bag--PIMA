@@ -3,6 +3,9 @@
 .DS_Store
 /PIMA_code/config.php
 /PIMA_code/admin/config.php
-/PIMA_code/system/storage/logs/error.log
+
+/PIMA_code/system/storage/logs/*
+!/PIMA_code/system/storage/logs/index.html
+
 /PIMA_code/system/storage/cache/*
 !/upload/system/storage/cache/index.html
