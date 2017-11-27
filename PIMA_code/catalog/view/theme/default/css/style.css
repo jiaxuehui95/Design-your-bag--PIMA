@@ -8,6 +8,10 @@ body {
 }
 
 
+.buttonStart a:visited{
+     color: black;
+}
+
 .buttonStart:hover{
      background-color: rgba(0, 0, 0, 0.57);
      color: white;
@@ -81,6 +85,10 @@ a {
 a:hover, a:active, a:focus {
   color: #4d638c;
   outline: none;
+}
+
+a:visited {
+  color: black;
 }
 
 * {

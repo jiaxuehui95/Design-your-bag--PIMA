@@ -66,18 +66,14 @@
 
             <div class="col-md-offset-1 col-md-10 col-sm-12">
                 <div class="section-title">
-                    <h2>Mon achats</h2>
+                    <h2>Mes achats</h2>
                 </div>
                 <?php foreach($products as $product ){ ?>
                 <div class="blog-post-thumb">
+                    <div style="display: inline-block;">
                     <h2>Product</h2>
-                    <p>Size:   <?php echo $product['size']?>  </p>
-                         <p style="display: inline-block; padding-right: 50px;">Couverture <div style="width: 20px; height: 20px; background-color: <?php echo $product['handleColor']?>; display: inline-block"></div></p>
-                     <p style="display: inline-block; padding-right: 50px">Corps <div style="width: 20px; height: 20px; background-color: <?php echo $product['baseColor']?>; display: inline-block"></div></p>
-                    <p style="display: inline-block; padding-right: 50px">Poignée <div style="width: 20px; height: 20px; background-color: <?php echo $product['coverColor']?>; display: inline-block"></div></p>
-                    <p style="display: inline-block; padding-right: 50px">Couverture de la poche <div style="width: 20px; height: 20px; background-color: <?php echo $product['pocketTopColor']?>; display: inline-block"></div></p>
-                    <p style="display: inline-block; padding-right: 50px">La poche <div style="width: 20px; height: 20px; background-color: <?php echo $product['pocketBaseColor']?>; display: inline-block"></div></p>
 
+                    <p >Size:   <?php echo $product['size']?>  </p>
 
                     <div class="blog-post-format">
                         <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
@@ -86,6 +82,9 @@
                     <div class="blog-post-des">
                         <a href="single-post.html" class="btn btn-default">More Details</a>
                     </div>
+                    </div>
+                   <img style="display: inline-block;" src="<?php echo $product['image']?>" height="300px" wigth="300px">
+                       
                 </div>
                 <?php }?>
             </div>

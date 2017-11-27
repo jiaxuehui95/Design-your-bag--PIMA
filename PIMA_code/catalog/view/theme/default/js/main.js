@@ -7,7 +7,7 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
-var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054";
+var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054", size="S";
 
 function handleColor1() {
     document.getElementById("handle-color").setAttribute("fill", "#272C40");
@@ -130,6 +130,72 @@ function pocketBaseColor4() {
     pocketBaseColor= "#2b542c";
 }
 
+function sizeBag(){
+    var radio = document.getElementsByName("size");
+    console.log("sss");
+     if(radio[0].checked)
+    {
+         document.getElementById("backpack").setAttribute("viewBox","0 0 500 500");
+        size="S";
+    }
+    if(radio[1].checked)
+    {
+        document.getElementById("backpack").setAttribute("viewBox","40 30 400 400");
+        size="M";
+    }
+    if(radio[2].checked)
+    {
+         document.getElementById("backpack").setAttribute("viewBox","60 60 350 350");
+        size="L";
+    }
+
+}
+function emoji(){
+    var radio = document.getElementsByName("emoji");
+    if(radio[0].checked)
+    {
+         document.getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+          document.getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+         document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+         document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+          document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+
+
+    }
+    if(radio[1].checked)
+    {
+       document.getElementById("sad").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    } 
+    else
+        document.getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[2].checked)
+    {
+       document.getElementById("kiss").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    } 
+    else
+        document.getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[3].checked)
+    {
+       document.getElementById("happy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    } 
+    else
+        document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[4].checked)
+    {
+       document.getElementById("laughing").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    } 
+    else
+        document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[5].checked)
+    {
+       document.getElementById("surprised").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    } 
+    else
+        document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+
+
+}
+
 function createXMLHttpRequest() {
     var xmlHttp;
     if (window.XMLHttpRequest) {
@@ -162,12 +228,6 @@ function save() {
     var image = new Image();
     image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
     window.localStorage.setItem('bagImage', image.src);
-    var radio = document.getElementsByName("size");
-    var size="petit";
-    if(radio[1].checked)
-    {
-        size="grand";
-    }
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
     image.src = (image.src).replace(/\&/g, "%26");  
