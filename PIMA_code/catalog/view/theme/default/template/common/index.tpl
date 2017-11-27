@@ -101,8 +101,8 @@
                               <img src="catalog/view/theme/default/images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
-                                             <h3>Project Name</h3>
-                                             <small>Brand Identity</small>
+                                             <h3></h3>
+                                             <small></small>
                                         </div>
                                    </div>
                          </div>
@@ -114,8 +114,8 @@
                               <img src="catalog/view/theme/default/images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
-                                             <h3>Project Name</h3>
-                                             <small>Web Development</small>
+                                             <h3></h3>
+                                             <small></small>
                                         </div>
                                    </div>
                          </div>
@@ -127,8 +127,8 @@
                               <img src="catalog/view/theme/default/images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
-                                             <h3>Project Name</h3>
-                                             <small>Mobile App</small>
+                                             <h3></h3>
+                                             <small></small>
                                         </div>
                                    </div>
                          </div>
@@ -140,8 +140,8 @@
                               <img src="catalog/view/theme/default/images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
-                                             <h3>Project Name</h3>
-                                             <small>Logo Design</small>
+                                             <h3></h3>
+                                             <small></small>
                                         </div>
                                    </div>
                          </div>
@@ -153,8 +153,8 @@
                               <img src="catalog/view/theme/default/images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
-                                             <h3>Project Name</h3>
-                                             <small>Social marketing</small>
+                                             <h3></h3>
+                                             <small></small>
                                         </div>
                                    </div>
                          </div>
@@ -167,8 +167,8 @@
                               <img src="catalog/view/theme/default/images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
-                                             <h3>Project Name</h3>
-                                             <small>Fyler Design</small>
+                                             <h3></h3>
+                                             <small></small>
                                         </div>
                                    </div>
                          </div>
@@ -176,7 +176,7 @@
                </div>
 
                <div class="col-md-12 col-sm-12 text-center">
-                    <h3>hello, if you interest working together. just send message <a href="contact.html">contact page</a></h3>
+                    <!--<h3>hello, if you interest working together. just send message <a href="contact.html">contact page</a></h3>-->
                </div>
 
           </div>
