@@ -83,7 +83,7 @@
                         <a href="single-post.html" class="btn btn-default">More Details</a>
                     </div>
                     </div>
-                   <img style="display: inline-block;" src="<?php echo $product['image']?>" height="300px" wigth="300px">
+                   <img style="display: inline-block; margin-bottom: 200px" src="<?php echo $product['image']?>" height="300px" wigth="300px">
                        
                 </div>
                 <?php }?>
