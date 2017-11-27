@@ -170,6 +170,9 @@ function save() {
     }
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
+    image.src = (image.src).replace(/\&/g, "%26");  
+    image.src = (image.src).replace(/\+/g, "%2B");
+    
     xmlHttp.open("POST", url, true);
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",

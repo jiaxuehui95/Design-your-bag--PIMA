@@ -4,6 +4,7 @@ class ControllerCommonProduct extends Controller {
 		$customer_id= $this->customer->getId();
 
 		$this->load->model('product/product');
+		$this->log->write($this->request->post);
 		$this->model_product_product->addProduct($customer_id, $this->request->post);
 		$data['href_index']= $this->url->link('common/index');
 		$data['href_design']= $this->url->link('common/design');
