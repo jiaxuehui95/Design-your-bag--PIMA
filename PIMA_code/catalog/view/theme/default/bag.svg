@@ -132,7 +132,7 @@
 	<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M218.9,237.9c-0.8,0-1.5,0.7-1.5,1.5v1.9c0,0.8,0.7,1.5,1.5,1.5
 		s1.5-0.7,1.5-1.5v-1.9C220.4,238.6,219.6,237.9,218.9,237.9z"/>
 </g>
-<svg id="sad" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px"
+<svg id="sad" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px"
 	 width="50px" height="50px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
 <g>
@@ -164,7 +164,7 @@
 </g>
 </svg>
 
-<svg id="happy" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
+<svg id="happy" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
 	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
@@ -204,7 +204,7 @@
 <g>
 </svg>
 
-<svg id="kiss" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
+<svg id="kiss" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
 	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
@@ -236,7 +236,7 @@
 <g>
 </svg>
 
-<svg id="laughing" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
+<svg id="laughing" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
 	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="255.996" cy="256.006" r="218.495"/>
@@ -291,7 +291,7 @@
 <g>
 </svg>
 
-<svg id="surprised" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+<svg id="surprised" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.005" cy="256.004" r="246.855"/>
 <path style="fill:#E09B2D;" d="M126.308,385.694c-88.802-88.802-95.799-228.426-20.999-325.241
 	c-8.286,6.401-16.258,13.399-23.858,20.999c-96.401,96.401-96.401,252.698,0,349.099s252.698,96.401,349.099,0
@@ -338,4 +338,5 @@
 	C299.031,372.789,278.288,389.607,254.346,389.607z"/>
 
 </svg>
+	<text id="yourText" style="fill:black;font-size:6pt;" x="244" y="342"></text>
 </svg>

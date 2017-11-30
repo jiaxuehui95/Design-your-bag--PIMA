@@ -150,6 +150,12 @@ function sizeBag(){
     }
 
 }
+
+function texte() {
+    document.getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
+
+}
+
 function emoji(){
     var radio = document.getElementsByName("emoji");
     if(radio[0].checked)
@@ -159,8 +165,6 @@ function emoji(){
          document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
          document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
           document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-
-
     }
     if(radio[1].checked)
     {
@@ -192,9 +196,8 @@ function emoji(){
     } 
     else
         document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-
-
 }
+
 
 function createXMLHttpRequest() {
     var xmlHttp;

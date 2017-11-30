@@ -201,6 +201,16 @@
                                   <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/surprised.svg" height="30px" width="30px">
                               </div>
                          </div>
+                         <h3>Texte sur logo</h3>
+                         <div class="row" style="padding-bottom: 20px">
+                              <div class="col-md-12 col-sm-12">
+                              <input id="nidewenzi" style="outline: none" type="text" maxlength="3">
+                                   <div class="buttonStart" onclick="texte()" style=" display: inline-block; font-size: 10px; width: 70px; border: 1px gray solid;
+                           height: 25px; margin-left: 10px; text-align: center; line-height: 2">
+                                        <span>Confirmer</span>
+                                   </div>
+                              </div>
+                         </div>
                          <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
                          <!--<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
                     </div>
