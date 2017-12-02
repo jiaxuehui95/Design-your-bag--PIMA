@@ -33,6 +33,19 @@ function handleColor4() {
     handleColor= "#2b542c";
 }
 
+function handleColor5() {
+    document.getElementById("handle-color").setAttribute("fill", "#d27b53");
+    window.localStorage.setItem('base', "#d27b53");
+    baseColor="#d27b53";
+}
+
+function handleColor6() {
+    document.getElementById("handle-color").setAttribute("fill", "#e96ba8");
+    window.localStorage.setItem('base', "#e96ba8");
+    baseColor="#e96ba8";
+}
+
+
 function baseColor1() {
     document.getElementById("base-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('base', "#272C40");
@@ -57,6 +70,19 @@ function baseColor4() {
     baseColor="#2b542c";
 }
 
+function baseColor5() {
+    document.getElementById("base-color").setAttribute("fill", "#d27b53");
+    window.localStorage.setItem('base', "#d27b53");
+    baseColor="#d27b53";
+}
+
+function baseColor6() {
+    document.getElementById("base-color").setAttribute("fill", "#e96ba8");
+    window.localStorage.setItem('base', "#e96ba8");
+    baseColor="#e96ba8";
+}
+
+
 function coverColor1() {
     document.getElementById("cover-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('cover', "#272C40");
@@ -79,6 +105,18 @@ function coverColor4() {
     document.getElementById("cover-color").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('cover', "#2b542c");
     coverColor= "#2b542c";
+}
+
+function coverColor5() {
+    document.getElementById("cover-color").setAttribute("fill", "#d27b53");
+    window.localStorage.setItem('base', "#d27b53");
+    baseColor="#d27b53";
+}
+
+function coverColor6() {
+    document.getElementById("cover-color").setAttribute("fill", "#e96ba8");
+    window.localStorage.setItem('base', "#e96ba8");
+    baseColor="#e96ba8";
 }
 
 function pocketTopColor1() {
@@ -105,6 +143,18 @@ function pocketTopColor4() {
     pocketTopColor="#2b542c";
 }
 
+function pocketTopColor5() {
+    document.getElementById("pocket").setAttribute("fill", "#d27b53");
+    window.localStorage.setItem('base', "#d27b53");
+    baseColor="#d27b53";
+}
+
+function pocketTopColor6() {
+    document.getElementById("pocket").setAttribute("fill", "#e96ba8");
+    window.localStorage.setItem('base', "#e96ba8");
+    baseColor="#e96ba8";
+}
+
 
 function pocketBaseColor1() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#394054");
@@ -128,6 +178,18 @@ function pocketBaseColor4() {
     document.getElementById("pocket-base-color").setAttribute("fill", "#2b542c");
     window.localStorage.setItem('pocketBase', "#2b542c");
     pocketBaseColor= "#2b542c";
+}
+
+function pocketBaseColor5() {
+    document.getElementById("pocket-base-color").setAttribute("fill", "#d27b53");
+    window.localStorage.setItem('base', "#d27b53");
+    baseColor="#d27b53";
+}
+
+function pocketBaseColor6() {
+    document.getElementById("pocket-base-color").setAttribute("fill", "#e96ba8");
+    window.localStorage.setItem('base', "#e96ba8");
+    baseColor="#e96ba8";
 }
 
 function sizeBag(){
@@ -196,6 +258,57 @@ function emoji(){
     } 
     else
         document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+}
+
+function colorUpDown() {
+    if(document.getElementById("color").getAttribute("src")==="catalog/view/theme/default/down.png")
+    {
+        document.getElementById("color").setAttribute("src","catalog/view/theme/default/up.png");
+        document.getElementById("color-content").setAttribute("style","display:block");
+    }
+    else
+    {
+        document.getElementById("color").setAttribute("src","catalog/view/theme/default/down.png");
+        document.getElementById("color-content").setAttribute("style","display:none");
+    }
+}
+function sizeUpDown() {
+    if(document.getElementById("size").getAttribute("src")==="catalog/view/theme/default/down.png")
+    {
+        document.getElementById("size").setAttribute("src","catalog/view/theme/default/up.png");
+        document.getElementById("size-content").setAttribute("style","display:block");
+    }
+    else
+    {
+        document.getElementById("size").setAttribute("src","catalog/view/theme/default/down.png");
+        document.getElementById("size-content").setAttribute("style","display:none");
+    }
+}
+
+function emojiUpDown() {
+    if(document.getElementById("emoji").getAttribute("src")==="catalog/view/theme/default/down.png")
+    {
+        document.getElementById("emoji").setAttribute("src","catalog/view/theme/default/up.png");
+        document.getElementById("emoji-content").setAttribute("style","display:block");
+    }
+    else
+    {
+        document.getElementById("emoji").setAttribute("src","catalog/view/theme/default/down.png");
+        document.getElementById("emoji-content").setAttribute("style","display:none");
+    }
+}
+
+function textUpDown() {
+    if(document.getElementById("text").getAttribute("src")==="catalog/view/theme/default/down.png")
+    {
+        document.getElementById("text").setAttribute("src","catalog/view/theme/default/up.png");
+        document.getElementById("text-content").setAttribute("style","display:block");
+    }
+    else
+    {
+        document.getElementById("text").setAttribute("src","catalog/view/theme/default/down.png");
+        document.getElementById("text-content").setAttribute("style","display:none");
+    }
 }
 
 
