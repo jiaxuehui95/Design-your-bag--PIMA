@@ -724,3 +724,15 @@ footer .footer-copyright {
 
 }
 
+ .progress {
+     width: 300px;
+     background: #ddd;
+ }
+.curRate {
+    width: 75%;
+    background: #ff3f7d;
+}
+.round-conner {
+    height: 30px;
+    border-radius: 15px;
+}
