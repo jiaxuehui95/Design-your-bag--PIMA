@@ -72,7 +72,7 @@
                         <?php echo $error_warning; ?></div>
                     <?php } ?>
              <form action="<?php echo $action ?>" method="post">
-                    <div class="col-md-10 col-sm-10">
+                    <div class="col-md-12 col-sm-12">
                         <p><h3>Nom : </h3></p>
                         <input type="text" name= "firstname" value="<?php echo $firstname; ?>" class="form-control" >
                     </div>
