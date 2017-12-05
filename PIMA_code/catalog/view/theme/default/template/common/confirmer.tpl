@@ -11,15 +11,15 @@
 
     <title>Confirmer votre commande</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="js/snap.svg.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/style.css">
+    <script src="catalog/view/theme/default/js/snap.svg.js"></script>
+    <script src="catalog/view/theme/default/js/main.js"></script>
 
 </head>
 <body>
@@ -40,11 +40,11 @@
     <div class="container">
 
         <div class="navbar-header">
-            <img style="width: 100px;" src="images/logo.png">
+            <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="catalog/view/theme/default/index.html">Home</a></li>
                 <li><a href="design.html">Design</a></li>
                 <li><a href="index.html">About us</a></li>
 
@@ -55,79 +55,37 @@
 </div>
 
 
-<!-- About Section -->
-
-<section id="about">
+<!-- Commande Section -->
+<section id="contact">
     <div class="container">
         <div class="row">
 
             <div class="col-md-offset-1 col-md-10 col-sm-12">
-                <div class="section-title">
-                    <h1>Confirmer votre commande</h1>
+                <div style="position: relative;text-align: center;">
+                    <h1>Confirmer Votre Commande</h1>
                 </div>
 
-                <div class="col-md-7 col-sm-12">
-                    <script>myBagImage()</script>
-                </div>
+                <div>
+                    <h3 style="display: inline-block;">Votre Sac</h3>
 
-                <div class="col-md-5 col-sm-12">
-                    <h2>votre commande</h2>
-                    <h3>Couverture</h3>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <div style="width: 20px; height: 20px; background-color: #272C40" onclick="coverColor1()" ></div>
-                        </div>
+                    <p >Size:   <?php echo $product['size']?>  </p>
+
+                    <div class="blog-post-format">
+                        <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
+                        <span><i class="fa fa-date"></i><?php echo $product['date_added']?></span>
                     </div>
-                    <h3>Corps</h3>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColor1()" ></div>
-                        </div>
-                    </div>
-                    <h3>Poignée </h3>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColor1()" ></div>
-                        </div>
-                    </div>
-                    <h3>Couverture de la poche</h3>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <div style="width: 20px; height: 20px; background-color: #4D556B" onclick="pocketTopColor1()" ></div>
-                        </div>
-                    </div>
-                    <h3>La poche</h3>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <div style="width: 20px; height: 20px; background-color: #394054" onclick="pocketBaseColor1()" ></div>
-                        </div>
-                    </div>
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
-                    <!--<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
+
+                <img style="display: inline-block; margin-bottom: 200px" src="<?php echo $product['image']?>" height="300px" wigth="300px">
                 </div>
 
-                    
-                    <div class="col-md-6 col-sm-6">
-                    <input type="submit" class="buttonStart" style="display: inline-block;   font-weight: 400; width: 370px;
-                           height: 34px;  padding-left: 15px; padding-right: 15px;  text-align: center ;position: absolute;top: 10px;" value="Confirmer" onclick="javascript:location.href='<?php echo $href_about ?>'">
+                <div>
+                    <h3 style="display: inline-block">Votre adress</h3>
+                    <div style="display: inline-block" onclick="AdressUpDown()">
+                        <img id="size" style="margin-bottom: 8px" height="20px" width="20px" src="catalog/view/theme/default/down.png">
+                    </div>
                 </div>
-                    <div class="col-md-6 col-sm-6">
-                    <a  href="<?php echo $href_design ?>" >
-                        <div class="buttonStart" style="display: inline-block;   font-weight: 400; width: 370px;
-                           height: 34px;  padding-left: 15px; padding-right: 15px;  text-align: center ;position: absolute;top: 10px;">
-                        <span style="position:relative; top:7px">Modifier</span>
-                </div>
-                </a>
-                </div>
-
-
-
-
-
 
             </div>
-
-        </div>
         </div>
     </div>
 </section>
@@ -171,9 +129,9 @@
 
 <!-- SCRIPTS -->
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="catalog/view/theme/default/js/jquery.js"></script>
+<script src="catalog/view/theme/default/js/bootstrap.min.js"></script>
+<script src="catalog/view/theme/default/js/custom.js"></script>
 
 </body>
 </html>
