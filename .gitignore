@@ -10,4 +10,4 @@
 /PIMA_code/system/storage/cache/*
 !/upload/system/storage/cache/index.html
 
-/PIMA_code/system/storage/logs/*
+./PIMA_code/system/storage/logs/*
