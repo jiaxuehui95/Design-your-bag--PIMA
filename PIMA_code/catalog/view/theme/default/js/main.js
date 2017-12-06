@@ -194,7 +194,6 @@ function pocketBaseColor6() {
 
 function sizeBag(){
     var radio = document.getElementsByName("size");
-    console.log("sss");
      if(radio[0].checked)
     {
          document.getElementById("backpack").setAttribute("viewBox","0 0 500 500");
@@ -334,9 +333,8 @@ function createXMLHttpRequest() {
 function getStatusBack(){
     if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
         var b = xmlHttp.responseText;
-        alert(b);
-        console.log(b);
-
+        // alert(b);
+        // console.log(b);
     }
 }
 
@@ -353,7 +351,6 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    console.log(image.src);
     xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
         "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
 }

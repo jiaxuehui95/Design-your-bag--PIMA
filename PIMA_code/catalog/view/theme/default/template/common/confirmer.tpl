@@ -44,9 +44,8 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="index.html">About us</a></li>
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="design.html">Projet</a></li>
 
             </ul>
         </div>

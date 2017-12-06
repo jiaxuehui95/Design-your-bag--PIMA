@@ -41,15 +41,14 @@
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
-                    <li><a href="<?php echo $href_design ?>" >Design</a></li>
-                    <li><a href="<?php echo $href_about ?>">About us</a></li>
+                    <li class="active"><a href="<?php echo $href_index ?>">Accueil</a></li>
+                    <li><a href="<?php echo $href_design ?>" >Projet</a></li>
                     <?php if ($logged) { ?>
                       <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
-                      <li><a href="<?php echo $href_logout ?>">Logout</a></li>
+                      <li><a href="<?php echo $href_logout ?>">Déconnexion</a></li>
                     <?php } else { ?>
                       <li><a href="<?php echo $href_register ?>">Register</a></li>
-                      <li><a href="<?php echo $href_login ?>">Login</a></li>
+                      <li><a href="<?php echo $href_login ?>">Connexion</a></li>
                     <?php } ?>
                     
                </ul>

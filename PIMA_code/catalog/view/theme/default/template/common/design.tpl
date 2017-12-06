@@ -45,15 +45,14 @@
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
-                    <li><a href="<?php echo $href_design ?>" >Design</a></li>
-                    <li><a href="<?php echo $href_about ?>">About us</a></li>
+                    <li class="active"><a href="<?php echo $href_index ?>">Accueil</a></li>
+                    <li><a href="<?php echo $href_design ?>" >Projet</a></li>
                     <?php if ($logged) { ?>
                     <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
-                    <li><a href="<?php echo $href_logout ?>">Logout</a></li>
+                    <li><a href="<?php echo $href_logout ?>">Déconnexion</a></li>
                     <?php } else { ?>
                     <li><a href="<?php echo $href_register ?>">Register</a></li>
-                    <li><a href="<?php echo $href_login ?>">Login</a></li>
+                    <li><a href="<?php echo $href_login ?>">Connexion</a></li>
                     <?php } ?>
 
                </ul>
@@ -68,7 +67,7 @@
 <section id="about">
 
      <div class="container">
-          <div class="row" style="text-align: center;">
+          <div class="row" style="display: none;text-align: center;">
                <div style="width: 300px; text-align: center; display: inline-block;">
                     <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray" >Sac à dos</div></a>
                </div>
@@ -84,7 +83,7 @@
 
                <div class=" col-md-12 col-sm-12">
                     <div class="section-title">
-                         <h1>Faites votre design</h1>
+                         <h1>Faites votre projet</h1>
                     </div>
 
                     <div class="col-md-5 col-sm-12">
@@ -92,7 +91,7 @@
                     </div>
 
                     <div class="col-md-7 col-sm-12">
-                         <h2>Votre design</h2>
+                         <h2>Votre projet</h2>
                          <div>
                               <h3 style="display: inline-block">Les couleurs</h3>
                               <div style="display: inline-block" onclick="colorUpDown()">
@@ -274,7 +273,7 @@
                          </div>
                     </div>
                          <div class="clearfix"></div>
-                         <div style=" text-align: center; ">
+                         <div style=" text-align: center; margin-top: 50px ">
                               <div class="buttonStart" style="display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                          height: 70px; padding-top: 20px; text-align: center" onclick="download()">
                                    <span>Télécharger un aperçu du sac</span>
@@ -291,40 +290,9 @@
                     </div>
 
                               <hr>
+         <hr>
 
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 
-                              <hr>
-
-                              <div class="col-md-4 col-sm-6">
-                                   <h3>Web Development</h3>
-                                   <ul>
-                                        <li>Online Shopping Site</li>
-                                        <li>Wordpress CMS</li>
-                                        <li>Bootstrap themes</li>
-                                        <li>Web Application</li>
-                                   </ul>
-                              </div>
-
-                              <div class="col-md-4 col-sm-6">
-                                   <h3>Brand Identity</h3>
-                                   <ul>
-                                        <li>Logo Design</li>
-                                        <li>Personal Branding</li>
-                                        <li>Flyer Design</li>
-                                        <li>Creative Direction</li>
-                                   </ul>
-                              </div>
-
-                              <div class="col-md-4 col-sm-6">
-                                   <h3>Social marketing</h3>
-                                   <ul>
-                                        <li>facebook, twitter.</li>
-                                        <li>Page Maintenance</li>
-                                        <li>Social media</li>
-                                   </ul>
-                              </div>
                          </div>
                     </div>
                </div>

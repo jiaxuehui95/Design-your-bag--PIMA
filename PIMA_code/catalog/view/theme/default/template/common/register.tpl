@@ -43,11 +43,10 @@
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="<?php echo $href_index ?>">Home</a></li>
-                    <li><a href="<?php echo $href_design ?>" >Design</a></li>
-                    <li><a href="<?php echo $href_about ?>">About us</a></li>
+                    <li class="active"><a href="<?php echo $href_index ?>">Accueil</a></li>
+                    <li><a href="<?php echo $href_design ?>" >Projet</a></li>
                     <li><a href="<?php echo $href_register ?>">Register</a></li>
-                    <li><a href="<?php echo $href_login ?>">Login</a></li>
+                    <li><a href="<?php echo $href_login ?>">Connexion</a></li>
 
                </ul>
           </div>
@@ -64,8 +63,8 @@
 
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <div class="section-title">
-                         <h1>Votre Information</h1>
-                         <h2>Remplir Votre information pour votre compte</h2>
+                         <h1>Vos Informations</h1>
+                         <h2>Remplir Vos informations pour votre compte</h2>
                     </div>
 
                     <?php if ($error_warning) { ?>
@@ -75,7 +74,7 @@
                     
                     <form action="<?php echo $href_register ?>" method="post">
 
-                         <p><h3>L'information personnel</h3><p>
+                         <p><h3>Informations personnelles</h3><p>
 
 
                          
@@ -116,7 +115,6 @@
           </div>
      </div>
 </section>
-<script>myBagImage()</script>
 <!-- Footer Section -->
 
 <footer>
