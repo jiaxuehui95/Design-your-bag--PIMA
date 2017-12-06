@@ -57,6 +57,7 @@
     </div>
 </div>
 
+<div style = "text-align: center ;length : 100%">
 <!-- Blog Section -->
 
 <section id="blog">
@@ -134,5 +135,6 @@
 <script src="catalog/view/theme/default/js/bootstrap.min.js"></script>
 <script src="catalog/view/theme/default/js/custom.js"></script>
 
+</div>
 </body>
 </html>

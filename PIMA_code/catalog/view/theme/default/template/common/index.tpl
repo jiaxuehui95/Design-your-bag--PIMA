@@ -84,7 +84,7 @@
                     </a>
                </div>
                 <div class="col-md-3 col-sm-3">
-          
+
                </div>
           </div>
      </div>
@@ -97,7 +97,7 @@
 
                <div class="col-md-4 col-sm-6">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/bag1.jpg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>

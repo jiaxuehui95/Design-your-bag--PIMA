@@ -39,7 +39,7 @@
      <div class="container">
 
           <div class="navbar-header">
-               <img style="width: 100px;" src="images/logo.png">
+               <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
@@ -52,89 +52,128 @@
      </div>
 </div>
 
+<!-- Home Section -->
 
-<!-- Contact Section -->
+<section id="home">
+     <div class="container">
 
-<section id="contact">
+
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>About us</h1>
+                    <hr>
+               </div>
+
+          </div>
+          <div class="row">
+               <div class="col-md-2 col-sm-3">
+
+               </div>
+               <div class="col-md-8 col-sm-8">
+                   <h2>Ce sont un groupe d'entrepreneurs jeunes qui réussissent.</h2>
+                    <h2>On a vocation à la qualité des demandes de la clientèle personnalisé.</h2>
+                    <h2>On crée les sacs uniques au monde.</h2>
+               </div>
+               <div class="col-md-2 col-sm-2">
+
+               </div>
+          </div>
+     </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio">
      <div class="container">
           <div class="row">
 
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <div class="section-title">
-                         <h1>Votre Information</h1>
-                         <h2>Remplir Votre information pour votre commande s'il vous plaît</h2>
+               <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                         <img src="catalog/view/theme/default/images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
+                         <div class="portfolio-overlay">
+                              <div class="portfolio-item">
+                                   <h3></h3>
+                                   <small></small>
+                              </div>
+                         </div>
                     </div>
+                    </a>
+               </div>
 
-                    <form action="#" method="post">
+               <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                         <img src="catalog/view/theme/default/images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
+                         <div class="portfolio-overlay">
+                              <div class="portfolio-item">
+                                   <h3></h3>
+                                   <small></small>
+                              </div>
+                         </div>
+                    </div>
+                    </a>
+               </div>
 
-                         <p><h3>L'information personnel</h3><p>
+               <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                         <img src="catalog/view/theme/default/images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
+                         <div class="portfolio-overlay">
+                              <div class="portfolio-item">
+                                   <h3></h3>
+                                   <small></small>
+                              </div>
+                         </div>
+                    </div>
+                    </a>
+               </div>
 
-                         <select class="Civilite">
-                              <option>Civilité *</option>
-                              <option>Mme</option>
-                              <option>Mlle</option>
-                              <option>M.</option>
-                         </select>
+               <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                         <img src="catalog/view/theme/default/images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
+                         <div class="portfolio-overlay">
+                              <div class="portfolio-item">
+                                   <h3></h3>
+                                   <small></small>
+                              </div>
+                         </div>
+                    </div>
+                    </a>
+               </div>
 
-                         <div class="col-md-6 col-sm-6">
-                         Nom *
-                              <input type="nom" class="form-control" placeholder="Nom">
+               <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                         <img src="catalog/view/theme/default/images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
+                         <div class="portfolio-overlay">
+                              <div class="portfolio-item">
+                                   <h3></h3>
+                                   <small></small>
+                              </div>
                          </div>
-                         <div class="col-md-6 col-sm-6">
-                              Prénom *
-                              <input type="prenom" class="form-control" placeholder="Prénom">
-                         </div>
-                         <div class="col-md-6 col-sm-6">
-                              Numéro de téléphone *
-                              <input type="telephone" class="form-control" placeholder="Mobile/Fixe">
-                         </div>
-                         <div class="col-md-6 col-sm-6">
-                              Email
-                              <input type="email" class="form-control" placeholder="Email">
-                         </div>
-                         <div class="col-md-12 col-sm-12">
-                              <p><h3>L'Adress</h3><p>
-                         </div>
+                    </div>
+                    </a>
+               </div>
 
-                         <div class="col-md-4 col-sm-4">
-                         Code postal *
-                              <input type="codepostal" class="form-control" placeholder="Code Postal">
+               <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                         <div class="portfolio-thumb">
+                              <img src="catalog/view/theme/default/images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
+                              <div class="portfolio-overlay">
+                                   <div class="portfolio-item">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </div>
                          </div>
-                         <div class="col-md-4 col-sm-4">
-                              Ville *
-                              <input type="ville" class="form-control" placeholder="Ville">
-                         </div>
-                         <div class="col-md-4 col-sm-4">
-                              Pays *
-                              <input type="Pays" class="form-control" placeholder="Pays">
-                         </div>
-                         <div class="col-md-2 col-sm-2">
-                              N°
-                              <input type="numero" class="form-control" placeholder="N°">
-                         </div>
-                         <div class="col-md-3 col-sm-3">
-                              Voie *
-                              <input type="voie" class="form-control" placeholder="5,rue de l'exemple">
-                         </div>
-                         <div class="col-md-7 col-sm-7">
-                              Complément d’adresse *
-                              <input type="adress" class="form-control" placeholder="Bâtiment D,appartement 511">
-                         </div>
+                    </a>
+               </div>
 
-                         <div class="col-md-4 col-sm-3">
-                              <input type="submit" class="form-control" value="Valider">
-                         </div>
-
-                         <div class="col-md-4 col-sm-3">
-                              <input type="submit" class="form-control" onclick="javascript:history.back(-1);" value="Annuler">
-                         </div>
-
-                    </form>
+               <div class="col-md-12 col-sm-12 text-center">
+                    <!--<h3>hello, if you interest working together. just send message <a href="contact.html">contact page</a></h3>-->
                </div>
 
           </div>
      </div>
 </section>
+
 <!-- Footer Section -->
 
 <footer>

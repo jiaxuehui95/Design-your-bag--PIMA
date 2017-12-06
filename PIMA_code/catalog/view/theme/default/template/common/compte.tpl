@@ -65,10 +65,10 @@
 <!-- Contact Section -->
 
 
-<section id="contact">
+<section id="contact" style = "text-align: center ;length : 100%">
     <div class="container">
         <div class="row">
-                    <div class="col-md-10 col-sm-10">
+                    <div class="col-md-12 col-sm-12">
                         <p><h3>Nom : <?php echo $firstname ?></h3></p>
                     </div>
             <br>
@@ -76,7 +76,7 @@
                         <p><h3>Prénom : <?php echo $lastname ?></h3></p>
                     </div>
             <br>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-12 col-sm-12">
                         <p><h3>Numéro de téléphone : <?php echo $telephone ?></h3></p>
                     </div>
             <br>
