@@ -11,14 +11,14 @@
 
     <title>SuivreMonCommande</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/bootstrap.min.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/font-awesome.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="catalog/view/theme/default/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-    <script src="js/main.js"></script>
-    <script src="js/snap.svg.js"></script>
+    <script src="catalog/view/theme/default/js/main.js"></script>
+    <script src="catalog/view/theme/default/js/snap.svg.js"></script>
 
 
 </head>
@@ -47,7 +47,7 @@
     <div class="container">
 
         <div class="navbar-header">
-            <img style="width: 100px;" src="images/logo.png">
+            <img style="width: 100px;" src="catalog/view/theme/default/images/logo.png">
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -173,9 +173,9 @@
 
 <!-- SCRIPTS -->
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="catalog/view/theme/default/js/jquery.js"></script>
+<script src="catalog/view/theme/default/js/bootstrap.min.js"></script>
+<script src="catalog/view/theme/default/js/custom.js"></script>
 
 
 </body>
