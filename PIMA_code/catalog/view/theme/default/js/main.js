@@ -310,6 +310,15 @@ function textUpDown() {
     }
 }
 
+function AdressModifier(){
+    if(document.getElementById("modifier-content").getAttribute("style")==="display:none") {
+        document.getElementById("modifier-content").setAttribute("style", "display:block");
+    }
+    else{
+        document.getElementById("modifier-content").setAttribute("style", "display:none");
+    }
+}
+
 
 function createXMLHttpRequest() {
     var xmlHttp;
@@ -370,6 +379,8 @@ function myBagImage()
     img.src = window.localStorage.getItem('bagImage');
     document.getElementById("contact").appendChild(img);
 }
+
+
 
 ; (function(window) {
     'use strict';
