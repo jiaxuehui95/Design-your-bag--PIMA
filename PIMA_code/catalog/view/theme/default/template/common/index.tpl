@@ -91,13 +91,13 @@
 </section>
 
 <!-- Portfolio Section -->
-<section id="portfolio">
+<section id="portfolio" style="padding-bottom: 40px ; padding-top: 40px" >
      <div class="container">
           <div class="row">
 
                <div class="col-md-4 col-sm-6">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/bag1.jpg" class="img-responsive" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/bag1.jpeg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>
@@ -110,7 +110,7 @@
 
                <div class="col-md-4 col-sm-6">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/bag2.jpeg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>
@@ -123,7 +123,21 @@
 
                <div class="col-md-4 col-sm-6">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/bag3.jpeg" class="img-responsive" alt="Portfolio">
+                                   <div class="portfolio-overlay">
+                                        <div class="portfolio-item">
+                                             <h3></h3>
+                                             <small></small>
+                                        </div>
+                                   </div>
+                         </div>
+                    </a>
+               </div>
+               </div>
+               <div class="row">
+               <div class="col-md-4 col-sm-6">
+                         <div class="portfolio-thumb">
+                              <img src="catalog/view/theme/default/images/bag4.jpeg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>
@@ -136,20 +150,7 @@
 
                <div class="col-md-4 col-sm-6">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3></h3>
-                                             <small></small>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-
-               <div class="col-md-4 col-sm-6">
-                         <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/bag5.jpeg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>
@@ -163,7 +164,7 @@
                <div class="col-md-4 col-sm-6">
                     <a href="single-project.html">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/bag6.jpeg" class="img-responsive" alt="Portfolio">
                                    <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>
