@@ -6,40 +6,32 @@ class ControllerCommonChanger extends Controller {
         $this->load->model('account/customer');
 
         $this->load->language('common/changer');
-		$this->load->model('account/customer');
-
+        
+        $customer_info = $this->model_account_customer->getCustomer($this->customer->getId());
+        $address = $this->model_account_customer->getAddressByCustomerId($this->customer->getId());
+        
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-			 $this->model_account_customer->editCustomer($this->request->post);
-
-			// Add to activity log
-			if ($this->config->get('config_customer_activity')) {
-				$this->load->model('account/activity');
-
-				$activity_data = array(
-					'customer_id' => $customer_id,
-					'name'        => $this->request->post['firstname']
-				);
-
-				$this->model_account_activity->addActivity('register', $activity_data);
-			}
+			 $customer = $this->model_account_customer->editCustomer($this->request->post);
+             $this->model_account_customer->editAddressByCustomerId($this->request->post,$this->customer->getId());
 
 			$this->response->redirect($this->url->link('common/compte'));
         }
         
-        $customer_info = $this->model_account_customer->getCustomer($this->customer->getId());
+        
 
-        if (!empty($customer_info)){
+        if (!empty($customer_info) || !empty($address) ){
             $data['firstname'] =  $customer_info['firstname'];
             $data['lastname'] = $customer_info['lastname'];
             $data['telephone'] = $customer_info['telephone'];
             $data['email'] = $customer_info['email'];
+            $data['address'] = $address;
         }
         else{
             $data['firstname'] = ' ';
             $data['lastname'] = ' ';
             $data['telephone'] = ' ';
             $data['email'] = ' ';
-
+            $data['address'] = ' ';
         }
 
         //error information
@@ -63,10 +55,16 @@ class ControllerCommonChanger extends Controller {
 		
 		if (isset($this->request->post['email'])) {
 			$data['email'] = $this->request->post['email'];
-		} 
+        } 
+        
 		if (isset($this->request->post['telephone'])) {
 			$data['telephone'] = $this->request->post['telephone'];
-		} 
+        } 
+        
+        if (isset($this->request->post['address'])) {
+			$data['address'] = $this->request->post['address'];
+        } 
+        
 
         $data['href_index']= $this->url->link('common/index');
 		$data['href_design']= $this->url->link('common/design');
@@ -75,6 +73,7 @@ class ControllerCommonChanger extends Controller {
         $data['href_logout']= $this->url->link('common/logout');
         $data['href_changer']= $this->url->link('common/changer');
         $data['href_commande']= $this->url->link('common/commande');
+        $data['footer'] = $this->load->controller('common/footer');
 
         $this->response->setOutput($this->load->view('common/changer',$data));
     }

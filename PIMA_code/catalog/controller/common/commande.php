@@ -14,6 +14,7 @@ class ControllerCommonCommande extends Controller {
         $data['href_logout']= $this->url->link('common/logout');
         $data['href_changer']= $this->url->link('common/changer');
         $data['href_commande']= $this->url->link('common/commande');
+        $data['footer'] = $this->load->controller('common/footer');
 
         $this->response->setOutput($this->load->view('common/commande',$data));
     }

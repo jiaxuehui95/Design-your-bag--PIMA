@@ -12,7 +12,8 @@ class ControllerCommonHome extends Controller {
 		$data['hello']= $this->language->get('hello');
 		$data['herf']=  $this->url->link('common/a');
 		$data['index'] =$this->url->link('common/index');
-	
+		$data['footer'] = $this->load->controller('common/footer');
+
 		$this->response->setOutput($this->load->view('common/home', $data));
 	}
 }

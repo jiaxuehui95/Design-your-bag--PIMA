@@ -7,6 +7,7 @@ class ControllerCommonBlog extends Controller {
 		$data['href_about']= $this->url->link('common/about');
 		$data['href_blog']= $this->url->link('common/blog');
 		$data['href_singlepost']= $this->url->link('common/singlepost');
+		$data['footer'] = $this->load->controller('common/footer');
 		$this->response->setOutput($this->load->view('common/blog',$data));
 	}
 }

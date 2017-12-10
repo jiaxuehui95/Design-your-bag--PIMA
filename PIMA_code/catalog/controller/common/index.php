@@ -11,6 +11,7 @@ class ControllerCommonIndex extends Controller {
 		$data['href_compte']= $this->url->link('common/compte');
 		$data['href_login']= $this->url->link('common/login');
 		$data['href_logout']= $this->url->link('common/logout');
+		$data['footer'] = $this->load->controller('common/footer');
 		$this->response->setOutput($this->load->view('common/index',$data));
 	}
 }

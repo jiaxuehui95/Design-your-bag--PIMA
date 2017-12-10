@@ -1,6 +1,6 @@
 <?php
 class ModelAccountCustomer extends Model {
-	public function addCustomer($data) {
+	public function addCustomer($data,$address) {
 
 		$data['newsletter'] = 1;
         $customer_group_id = 1;
@@ -10,6 +10,11 @@ class ModelAccountCustomer extends Model {
 
 		$customer_id = $this->db->getLastId();
 
+		$this->db->query("INSERT INTO " . DB_PREFIX . "address SET customer_id = '" . (int)$customer_id . "', firstname = '" . $this->db->escape($address['firstname']) . "', lastname = '', company = '" . $this->db->escape($address['company']) . "', address_1 = '" . $this->db->escape($address) . "', address_2 = '', city = '" . $this->db->escape($address['city']) . "', postcode = '" . $this->db->escape($address['postcode']) . "', country_id = '" . (int)$address['country_id'] . "', zone_id = '" . (int)$address['zone_id'] . "', custom_field = '" . $this->db->escape(isset($address['custom_field']) ? json_encode($address['custom_field']) : '') . "'");
+		
+		$address_id = $this->db->getLastId();
+		
+		$this->db->query("UPDATE " . DB_PREFIX . "customer SET address_id = '" . (int)$address_id . "' WHERE customer_id = '" . (int)$customer_id . "'");
 		return $customer_id;
     }
 
@@ -33,17 +38,24 @@ class ModelAccountCustomer extends Model {
 
     public function deleteLoginAttempts($email) {
 		$this->db->query("DELETE FROM `" . DB_PREFIX . "customer_login` WHERE email = '" . $this->db->escape(utf8_strtolower($email)) . "'");
-    }
-    public function getTotalCustomersByTelephone($telephone) {
-		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer WHERE telephone = '" . $this->db->escape(utf8_strtolower($telephone)) . "'");
-
-		return $query->row['total'];
-	}
+		}
+		
     public function getTotalCustomersByEmail($email) {
         $query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer WHERE email = '" . $this->db->escape(utf8_strtolower($email)) . "'");
 
         return $query->row['total'];
-    }
+		}
+		
+		public function getAddressByCustomerId($id){
+				$query = $this->db->query("SELECT address_1 FROM " . DB_PREFIX . "address WHERE customer_id = '" . (int)$id . "'");
+			return $query->row['address_1'];
+		}
+
+		public function editAddressByCustomerId($data,$id){
+			$this->db->query("UPDATE " . DB_PREFIX . "address  SET address_1 = '" . $this->db->escape($data['address']) . "' WHERE customer_id = '" . (int)$id . "'");
+			
+		}
+
 }
     
-    ?>
+?>

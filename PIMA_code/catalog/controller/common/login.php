@@ -51,6 +51,8 @@ class ControllerCommonLogin extends Controller {
 		$data['href_about']= $this->url->link('common/about');
 		$data['href_register']= $this->url->link('common/register');
 		$data['href_login']= $this->url->link('common/login');
+		$data['footer'] = $this->load->controller('common/footer');
+
         $this->response->setOutput($this->load->view('common/login',$data));
     }
 

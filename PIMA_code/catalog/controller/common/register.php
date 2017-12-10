@@ -11,7 +11,7 @@ class ControllerCommonRegister extends Controller {
 		$this->load->model('account/customer');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-			$customer_id = $this->model_account_customer->addCustomer($this->request->post);
+			$customer_id = $this->model_account_customer->addCustomer($this->request->post,$address);
 
 			// Clear any previous login attempts for unregistered accounts.
 			$this->model_account_customer->deleteLoginAttempts($this->request->post['telephone']);
@@ -82,6 +82,8 @@ class ControllerCommonRegister extends Controller {
 			$data['confirm'] = '';
 		}
 
+		$address= '';
+
 		$data['href_index']= $this->url->link('common/index');
 		$data['href_design']= $this->url->link('common/design');
 		$data['href_about']= $this->url->link('common/about');
@@ -89,6 +91,8 @@ class ControllerCommonRegister extends Controller {
 		$data['href_compte']= $this->url->link('common/compte');
 		$data['href_login']= $this->url->link('common/login');
 		$data['href_logout']= $this->url->link('common/logout');
+		$data['footer'] = $this->load->controller('common/footer');
+
 		$this->response->setOutput($this->load->view('common/register',$data));
 	}
 

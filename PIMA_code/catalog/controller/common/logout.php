@@ -4,6 +4,8 @@ class ControllerCommonLogout extends Controller {
         if ($this->customer->isLogged()) {
             $this->customer->logout();
         }
+        $data['footer'] = $this->load->controller('common/footer');
+
         $this->response->redirect($this->url->link('common/index'));
     }
 }
