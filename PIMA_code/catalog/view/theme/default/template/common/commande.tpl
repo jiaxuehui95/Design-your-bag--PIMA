@@ -71,11 +71,11 @@
                 <?php foreach($products as $product ){ ?>
                 <div class="blog-post-thumb">
                     <div style="display: inline-block;">
-                    <h2>Product</h2>
+                    <h2>Produit</h2>
                         <p >ID:   <?php echo $product['product_id']?>  </p>
-                        <p >Size:   <?php echo $product['size']?>  </p>
-                        <p >Address: <?php echo $product['address']?>  </p>
-                        <p >Status:  <?php echo $product['status']?>  </p>
+                        <p >Taille:   <?php echo $product['size']?>  </p>
+                        <p >Adresse: <?php echo $product['address']?>  </p>
+                        <p >Statut:  <?php echo $product['status']?>  </p>
                     <div class="blog-post-format">
                         <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
                         <span><i class="fa fa-date"></i><?php echo $product['date_added']?></span>
