@@ -221,11 +221,13 @@ function emoji(){
     var radio = document.getElementsByName("emoji");
     if(radio[0].checked)
     {
-         document.getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-          document.getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-         document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-         document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-          document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
     if(radio[1].checked)
     {
@@ -257,6 +259,18 @@ function emoji(){
     } 
     else
         document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[6].checked)
+    {
+        document.getElementById("atom").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[7].checked)
+    {
+        document.getElementById("snowman").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
 
 function colorUpDown() {
