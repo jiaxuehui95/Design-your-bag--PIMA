@@ -89,7 +89,7 @@
 
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        <!--应该是包的图片--><img style="display: inline-block;" src="catalog/view/theme/default/images/author-image1.jpg" height="300px" wigth="300px">
+                        <!--应该是包的图片--><img style="display: inline-block;" src="<?php echo $product['image']?>" height="300px" wigth="300px">
                     </div>
                 </div>
 
