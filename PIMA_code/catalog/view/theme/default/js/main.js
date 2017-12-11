@@ -228,6 +228,9 @@ function emoji(){
         document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         document.getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
     if(radio[1].checked)
     {
@@ -271,6 +274,24 @@ function emoji(){
     }
     else
         document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[8].checked)
+    {
+        document.getElementById("cherry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[9].checked)
+    {
+        document.getElementById("watermelon").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[10].checked)
+    {
+        document.getElementById("strawberry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
 
 function colorUpDown() {
