@@ -165,7 +165,7 @@
 </svg>
 
 <svg id="happy" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
-	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
 <path style="fill:#E09B2D;" d="M126.306,385.694c-88.801-88.802-95.798-228.426-20.998-325.242
@@ -202,10 +202,11 @@
 	C512,114.841,397.159,0,255.999,0z M255.999,493.701c-131.068,0-237.7-106.632-237.7-237.7c0-131.069,106.632-237.702,237.7-237.702
 	c131.069,0,237.702,106.632,237.702,237.702C493.701,387.068,387.068,493.701,255.999,493.701z"/>
 <g>
+</g>
 </svg>
 
 <svg id="kiss" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
-	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
 <path style="fill:#E09B2D;" d="M126.308,385.694c-88.802-88.802-95.799-228.426-20.999-325.241
@@ -234,10 +235,11 @@
 	c14.19-7.41,19.707-24.983,12.298-39.173c-7.41-14.192-24.983-19.708-39.173-12.298c-4.48,2.339-10.006,0.604-12.346-3.876
 	C390.766,281.656,380.633,275.976,370.158,275.976z"/>
 <g>
+</g>
 </svg>
 
 <svg id="laughing" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
-	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="255.996" cy="256.006" r="218.495"/>
 <path style="fill:#E09B2D;" d="M141.207,370.794c-78.6-78.6-84.793-202.183-18.586-287.875c-7.334,5.666-14.39,11.859-21.117,18.586
@@ -289,6 +291,7 @@
 	c2.13,0,4.229-0.133,6.297-0.367C454.064,340.956,430.408,382.646,395.264,413.707z M456.405,279.486
 	c-21.724,0-39.398-17.674-39.398-39.398v-39.399h39.398c21.724,0,39.398,17.674,39.398,39.398S478.129,279.486,456.405,279.486z"/>
 <g>
+</g>
 </svg>
 
 <svg id="surprised" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
