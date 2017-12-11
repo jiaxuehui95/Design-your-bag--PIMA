@@ -47,7 +47,7 @@
                       <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
                       <li><a href="<?php echo $href_logout ?>">Déconnexion</a></li>
                     <?php } else { ?>
-                      <li><a href="<?php echo $href_register ?>">Register</a></li>
+                      <li><a href="<?php echo $href_register ?>">S'inscrire</a></li>
                       <li><a href="<?php echo $href_login ?>">Connexion</a></li>
                     <?php } ?>
                     
@@ -66,7 +66,7 @@
           <div class="row">
 
                <div class="col-md-12 col-sm-12">
-                    <h2>The creative bags &  studio. </br>We are young designers and focused on brand identity.</h2>
+                    <h2>Les sacs créatifs et le studio. </br>Nous sommes de jeunes designers et concentrés sur l'identité de marque.</h2>
                     <hr>
                </div>
 
@@ -79,7 +79,7 @@
                     <a class="noChangeLink" href="<?php echo $href_design ?>">
                     <div class="buttonStart" style="font-size: 40px; width: 600px; border: 1px black solid;
                       height: 100px; padding-top: 20px; margin-left: -25px;"> 
-                          <span>Start to design your bags</span> 
+                          <span>Commencer à concevoir</span>
                     </div>
                     </a>
                </div>
