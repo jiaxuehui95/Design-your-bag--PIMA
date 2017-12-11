@@ -343,7 +343,7 @@
 </svg>
 
 	<svg version="1.1" id="atom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
-	 viewBox="0 0 470 470" style="enable-background:new 0 0 470 470;" xml:space="preserve">
+	 viewBox="0 0 470 470" style="display:none;enable-background:new 0 0 470 470;" xml:space="preserve">
 <g>
 	<path style="fill:#D5E6DA;" d="M40.65,246.972c2.116-3.562,6.718-4.73,10.279-2.615l138.051,82.063
 		c-1.706-41.44-20.014-76.038-50.359-94.076c-14.883-8.848-31.651-13.333-49.837-13.333c-21.301,0-43.573,6.262-64.65,18.143
@@ -399,7 +399,7 @@
 	</svg>
 
 	<svg version="1.1" id="snowman" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
-	 viewBox="0 0 511.998 511.998" style="enable-background:new 0 0 511.998 511.998;" xml:space="preserve">
+	 viewBox="0 0 511.998 511.998" style="display:none; enable-background:new 0 0 511.998 511.998;" xml:space="preserve">
 <g>
 
 		<rect x="107.234" y="160.722" transform="matrix(-0.9973 0.0729 -0.0729 -0.9973 257.0102 479.1907)" style="fill:#F49D18;" width="25.051" height="167.128"/>
