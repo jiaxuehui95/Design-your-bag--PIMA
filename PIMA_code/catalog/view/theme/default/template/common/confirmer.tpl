@@ -74,9 +74,10 @@
                 <div class="col-md-12 col-sm-12" style="margin-bottom: 50px">
                     <h2 style="display: block;">Votre Sac</h2>
                     <div class="col-md-6 col-sm-6" >
-                        <p>Prix: 显示价格</p>
-                        <p >Size:  显示包尺寸  </p>
-                        <p >Texte sur logo: 显示文字 </p>
+                        <p>Prix: 100$</p>
+                        <p >Size:  <?php echo $product['size']?>  </p>
+                        
+                   <!--     <p >Texte sur logo: 显示文字 </p>
                         <p>Emoji:表情</p>
                         <p >Les couleurs:</p>
                         <h4 style="margin-left: 20px;">Couverture:显示颜色</h4>
@@ -84,7 +85,7 @@
                         <h4 style="margin-left: 20px;">Poignée:颜色</h4>
                         <h4 style="margin-left: 20px;">Couverture de la poche:颜色</h4>
                         <h4 style="margin-left: 20px;">Poche:颜色</h4>
-
+                    -->
 
                     </div>
                     <div class="col-md-6 col-sm-6">
@@ -96,7 +97,7 @@
                     <?php if ($error_warning) { ?>
                         <font color="red"><?php echo $error_warning; ?></font>
                     <?php } ?>
-                    <h2 style="display:block">Adresse de livraison</h2>
+                    <h2 style="display:block">Adresse a livraison</h2>
                     <form action="<?php echo $action ?>" method="post">
                         <div class="col-md-12 col-sm-12" style="display: block">
                             <div class="row" style="padding-bottom: 20px">
@@ -113,7 +114,7 @@
                         <div>
                             <h2  class="col-md-12 col-sm-12" style="display: block" >Choisissez une méthode de payer </h2>
                                 <div class="row" style="margin-left: 30px">
-                                    <label><input name="Pay" type="radio"  value="Paiement à l'arrivée" />Paiement à l'arrivée </label>
+                                    <label><input name="Pay" type="radio"  value="Paiement à l'arrivée" />Paiement à la livraison </label>
                                     <label><input name="Pay" type="radio" value="Visa" />Visa </label>
                                     <label><input name="Pay" type="radio" value="Paypal" />Paypal </label>
                                     <label><input name="Pay" type="radio" value="UnionPay" />UnionPay </label>
