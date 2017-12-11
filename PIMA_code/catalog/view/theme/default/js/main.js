@@ -231,6 +231,13 @@ function emoji(){
         document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
     if(radio[1].checked)
     {
@@ -292,6 +299,48 @@ function emoji(){
     }
     else
         document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[11].checked)
+    {
+        document.getElementById("speechbubble").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[12].checked)
+    {
+        document.getElementById("galaxy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[13].checked)
+    {
+        document.getElementById("galaxy1").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[14].checked)
+    {
+        document.getElementById("galaxy2").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[15].checked)
+    {
+        document.getElementById("galaxy3").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[16].checked)
+    {
+        document.getElementById("galaxy4").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[17].checked)
+    {
+        document.getElementById("alien").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
 
 function colorUpDown() {

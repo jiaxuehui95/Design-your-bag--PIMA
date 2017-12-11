@@ -267,8 +267,32 @@
                                    <div class="col-md-2 col-sm-12">
                                         <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/strawberry.svg" height="30px" width="30px">
                                    </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/speechbubble.svg" height="30px" width="30px">
+                                   </div>
+                              </div>
+                              <div class="row" style="padding-bottom: 20px">
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy1.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy2.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy3.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy4.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/alien.svg" height="30px" width="30px">
+                                   </div>
                               </div>
                          </div>
+
                          <div>
                               <h3 style="display: inline-block">Texte sur logo</h3>
                               <div style="display: inline-block" onclick="textUpDown()">
