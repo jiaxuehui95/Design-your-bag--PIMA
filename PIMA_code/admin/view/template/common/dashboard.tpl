@@ -17,7 +17,7 @@
     <div class="hipsum">
         <div class="jumbotron">
             <h1>Clients </h1>
-            <p>explication...........................................etc</p>
+            <p>explication <?php echo $nomber?> etc</p>
         </div>
 
         <table class="table table-bordered">
