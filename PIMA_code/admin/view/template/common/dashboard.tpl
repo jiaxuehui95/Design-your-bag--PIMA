@@ -40,6 +40,12 @@
             <p>Nombre de client total:  <?php echo $num_user?> </p>
         </div>
 
+        <form name="foo" action="" method="POST" id="foo">
+            <label for="bar">A bar</label>
+            <input id="bar" name="bar" type="text" value="" />
+            <input type="submit" value="Send" />
+        </form>
+
         <table class="table table-bordered">
             <thead>
             <tr>
