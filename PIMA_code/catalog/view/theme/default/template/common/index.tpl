@@ -66,7 +66,7 @@
           <div class="row">
 
                <div class="col-md-12 col-sm-12">
-                    <h2>Les sacs créatifs et le studio. </br>Nous sommes de jeunes designers et concentrés sur l'identité de marque.</h2>
+                    <h2>Les sacs créatifs. </br>Nous sommes de jeunes designers et concentrés sur l'identité de marque.</h2>
                     <hr>
                </div>
 
