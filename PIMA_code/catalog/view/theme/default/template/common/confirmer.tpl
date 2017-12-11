@@ -112,13 +112,13 @@
                             </div>
                         </div>
                         <div>
-                            <h2  class="col-md-12 col-sm-12" style="display: block" >Choisissez une méthode de payer </h2>
+                            <h2  class="col-md-12 col-sm-12" style="display: block" >Choisissez une moyen de payer </h2>
                                 <div class="row" style="margin-left: 30px">
-                                    <label><input name="Pay" type="radio"  value="Paiement à l'arrivée" />Paiement à la livraison </label>
-                                    <label><input name="Pay" type="radio" value="Visa" />Visa </label>
-                                    <label><input name="Pay" type="radio" value="Paypal" />Paypal </label>
-                                    <label><input name="Pay" type="radio" value="UnionPay" />UnionPay </label>
-                                    <label><input name="Pay" type="radio" value="Alipay" />Alipay </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio"  value="Paiement à l'arrivée" /><span>Paiement à l'arrivée</span> </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Visa" />Visa </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Paypal" />Paypal </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="UnionPay" />UnionPay </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Alipay" />Alipay </label>
                                 </div>
                         </div>
 
