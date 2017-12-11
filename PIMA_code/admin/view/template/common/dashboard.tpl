@@ -13,11 +13,31 @@
 <?php echo $column_left ?>
 
 <!-- Content -->
+<!-- Ajax
+<script>
+    function showHint(str) {
+        if (str.length == 0) {
+            document.getElementById("txtHint").innerHTML = "";
+            return;
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "gethint.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    }
+</script>
+ -->
+
 <div class="main">
     <div class="hipsum">
         <div class="jumbotron">
             <h1>Clients </h1>
-            <p>explication <?php echo $nomber?> etc</p>
+            <p>Nombre de client total:  <?php echo $num_user?> </p>
         </div>
 
         <table class="table table-bordered">
