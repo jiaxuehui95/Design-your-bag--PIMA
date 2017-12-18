@@ -46,6 +46,42 @@ function handleColor6() {
 }
 
 
+
+
+function handleColorCommon(element) {
+    if(element == 1) {
+        document.getElementById("handle-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+    if(element == 2) {
+        document.getElementById("handle-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 3) {
+        document.getElementById("handle-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 4) {
+        document.getElementById("handle-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 5) {
+        document.getElementById("handle-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element == 6) {
+        document.getElementById("handle-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+}
+
+
 function baseColor1() {
     document.getElementById("base-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('base', "#272C40");
@@ -81,6 +117,42 @@ function baseColor6() {
     window.localStorage.setItem('base', "#e96ba8");
     baseColor="#e96ba8";
 }
+
+
+function baseColorCommon(element){
+    if(element == 1) {
+        document.getElementById("base-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+    if(element == 2) {
+        document.getElementById("base-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 3) {
+        document.getElementById("base-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 4) {
+        document.getElementById("base-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 5) {
+        document.getElementById("base-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element == 6) {
+        document.getElementById("base-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+}
+
+
 
 
 function coverColor1() {
@@ -119,6 +191,41 @@ function coverColor6() {
     baseColor="#e96ba8";
 }
 
+
+function coverColorCommon(element) {
+    if(element == 1) {
+        document.getElementById("cover-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 2) {
+        document.getElementById("cover-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 3) {
+        document.getElementById("cover-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 4) {
+        document.getElementById("cover-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element ==5) {
+        document.getElementById("cover-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+    if(element == 6) {
+        document.getElementById("cover-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+}
+
+
 function pocketTopColor1() {
     document.getElementById("pocket").setAttribute("fill", "#4D556B");
     window.localStorage.setItem('pocketTop', "#4D556B");
@@ -153,6 +260,40 @@ function pocketTopColor6() {
     document.getElementById("pocket").setAttribute("fill", "#e96ba8");
     window.localStorage.setItem('base', "#e96ba8");
     baseColor="#e96ba8";
+}
+
+
+function pocketTopCommon(element) {
+    if(element == 1) {
+        document.getElementById("pocket").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 2) {
+        document.getElementById("pocket").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 3) {
+        document.getElementById("pocket").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 4) {
+        document.getElementById("pocket").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element ==5) {
+        document.getElementById("pocket").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+    if(element == 6) {
+        document.getElementById("pocket").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
 }
 
 
@@ -191,6 +332,40 @@ function pocketBaseColor6() {
     window.localStorage.setItem('base', "#e96ba8");
     baseColor="#e96ba8";
 }
+
+function pocketBaseCommon(element) {
+    if(element == 1) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 2) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 3) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 4) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element ==5) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+    if(element == 6) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+}
+
 
 function sizeBag(){
     var radio = document.getElementsByName("size");
