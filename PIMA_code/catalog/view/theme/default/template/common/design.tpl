@@ -102,7 +102,7 @@
                               <div style="font-size: 20px;margin-top: 10px">Couverture</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="coverColorChange'#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="coverColorChange('#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="coverColorChange('#1b6d85')"></div>
@@ -144,7 +144,7 @@
                               <div  style="font-size: 20px;margin-top: 10px">Corps</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColorChange'#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColorChange('#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="baseColorChange('#1b6d85')"></div>
@@ -184,7 +184,7 @@
                               <div  style="font-size: 20px;margin-top: 10px">Poignée </div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColorChange'#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColorChange('#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColorChange('#1b6d85')"></div>
@@ -226,7 +226,7 @@
                               <div style="font-size: 20px;margin-top: 10px">Couverture de la poche</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="pocketTopColorChange'#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="pocketTopColorChange('#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="pocketTopColorChange('#1b6d85')"></div>
@@ -266,7 +266,7 @@
                               <div style="font-size: 20px;margin-top: 10px">Poche</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="pocketBaseColorChange'#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="pocketBaseColorChange('#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="pocketBaseColorChange('#1b6d85')"></div>
