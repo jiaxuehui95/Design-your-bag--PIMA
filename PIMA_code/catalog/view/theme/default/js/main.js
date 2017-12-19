@@ -46,6 +46,42 @@ function handleColor6() {
 }
 
 
+
+
+function handleColorCommon(element) {
+    if(element == 1) {
+        document.getElementById("handle-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+    if(element == 2) {
+        document.getElementById("handle-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 3) {
+        document.getElementById("handle-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 4) {
+        document.getElementById("handle-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 5) {
+        document.getElementById("handle-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element == 6) {
+        document.getElementById("handle-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+}
+
+
 function baseColor1() {
     document.getElementById("base-color").setAttribute("fill", "#272C40");
     window.localStorage.setItem('base', "#272C40");
@@ -81,6 +117,42 @@ function baseColor6() {
     window.localStorage.setItem('base', "#e96ba8");
     baseColor="#e96ba8";
 }
+
+
+function baseColorCommon(element){
+    if(element == 1) {
+        document.getElementById("base-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+    if(element == 2) {
+        document.getElementById("base-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 3) {
+        document.getElementById("base-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 4) {
+        document.getElementById("base-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 5) {
+        document.getElementById("base-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element == 6) {
+        document.getElementById("base-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+}
+
+
 
 
 function coverColor1() {
@@ -119,6 +191,41 @@ function coverColor6() {
     baseColor="#e96ba8";
 }
 
+
+function coverColorCommon(element) {
+    if(element == 1) {
+        document.getElementById("cover-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 2) {
+        document.getElementById("cover-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 3) {
+        document.getElementById("cover-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 4) {
+        document.getElementById("cover-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element ==5) {
+        document.getElementById("cover-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+    if(element == 6) {
+        document.getElementById("cover-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+}
+
+
 function pocketTopColor1() {
     document.getElementById("pocket").setAttribute("fill", "#4D556B");
     window.localStorage.setItem('pocketTop', "#4D556B");
@@ -153,6 +260,40 @@ function pocketTopColor6() {
     document.getElementById("pocket").setAttribute("fill", "#e96ba8");
     window.localStorage.setItem('base', "#e96ba8");
     baseColor="#e96ba8";
+}
+
+
+function pocketTopCommon(element) {
+    if(element == 1) {
+        document.getElementById("pocket").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 2) {
+        document.getElementById("pocket").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 3) {
+        document.getElementById("pocket").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 4) {
+        document.getElementById("pocket").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element ==5) {
+        document.getElementById("pocket").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+    if(element == 6) {
+        document.getElementById("pocket").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
 }
 
 
@@ -192,6 +333,40 @@ function pocketBaseColor6() {
     baseColor="#e96ba8";
 }
 
+function pocketBaseCommon(element) {
+    if(element == 1) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#fcff1b");
+        window.localStorage.setItem('base', "#fcff1b");
+        baseColor="#fcff1b";
+    }
+    if(element == 2) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ffb3b7");
+        window.localStorage.setItem('base', "#ffb3b7");
+        baseColor="#ffb3b7";
+    }
+    if(element == 3) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ffa03a");
+        window.localStorage.setItem('base', "#ffa03a");
+        baseColor="#ffa03a";
+    }
+    if(element == 4) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ff477a");
+        window.localStorage.setItem('base', "#ff477a");
+        baseColor="#ff477a";
+    }
+    if(element ==5) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#ca47ff");
+        window.localStorage.setItem('base', "#ca47ff");
+        baseColor="#ca47ff";
+    }
+    if(element == 6) {
+        document.getElementById("pocket-base-color").setAttribute("fill", "#d0ff87");
+        window.localStorage.setItem('base', "#d0ff87");
+        baseColor="#d0ff87";
+    }
+}
+
+
 function sizeBag(){
     var radio = document.getElementsByName("size");
      if(radio[0].checked)
@@ -228,6 +403,16 @@ function emoji(){
         document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         document.getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
     if(radio[1].checked)
     {
@@ -271,6 +456,66 @@ function emoji(){
     }
     else
         document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[8].checked)
+    {
+        document.getElementById("cherry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[9].checked)
+    {
+        document.getElementById("watermelon").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[10].checked)
+    {
+        document.getElementById("strawberry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[11].checked)
+    {
+        document.getElementById("speechbubble").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[12].checked)
+    {
+        document.getElementById("galaxy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[13].checked)
+    {
+        document.getElementById("galaxy1").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[14].checked)
+    {
+        document.getElementById("galaxy2").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[15].checked)
+    {
+        document.getElementById("galaxy3").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[16].checked)
+    {
+        document.getElementById("galaxy4").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+    if(radio[17].checked)
+    {
+        document.getElementById("alien").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+    }
+    else
+        document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
 
 function colorUpDown() {
