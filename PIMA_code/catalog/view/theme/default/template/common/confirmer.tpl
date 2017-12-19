@@ -94,9 +94,7 @@
                 </div>
 
                 <div style="margin-top: 200px">
-                    <?php if ($error_warning) { ?>
-                        <font color="red"><?php echo $error_warning; ?></font>
-                    <?php } ?>
+
                     <h2 style="display:block">Adresse a livraison</h2>
                     <form action="<?php echo $action ?>" method="post">
                         <div class="col-md-12 col-sm-12" style="display: block">
@@ -122,7 +120,9 @@
                                 </div>
                         </div>
 
-
+                        <?php if ($error_warning) { ?>
+                        <font color="red"><?php echo $error_warning; ?></font>
+                        <?php } ?>
                         <div class="blog-post-des" style="margin-top: 50px">
                             <input type="submit" class="btn btn-default" value="Confirmer">
                         </div>
