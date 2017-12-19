@@ -19,7 +19,7 @@
      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
      <script src="catalog/view/theme/default/js/snap.svg.js"></script>
-     <script src="catalog/view/theme/default/js/main.js"></script>
+     <script src="catalog/view/theme/default/js/handBag.js"></script>
      <script src="catalog/view/theme/default/js/jqery.js"></script>
 
 </head>
@@ -69,10 +69,10 @@
      <div class="container">
           <div class="row" style="display: block;text-align: center;">
                <div style="width: 300px; text-align: center; display: inline-block;">
-                    <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray" >Sac à dos</div></a>
+                    <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black;" >Sac à dos</div></a>
                </div>
                <div  style="width: 300px; text-align: center; display: inline-block;">
-                    <a href="<?php echo $href_hand ?>" ><div style="font-size: 30px; color: black; ">Sac à main</div></a>
+                    <a href="<?php echo $href_design-hand ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray">Sac à main</div></a>
                </div>
                <div  style="width: 300px; text-align: center;display: inline-block;">
                     <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black; ">Sac d'ordinateur</div></a>
@@ -87,7 +87,9 @@
                     </div>
 
                     <div class="col-md-5 col-sm-12">
-                         <div id="canvas"></div>
+                         <div  style="padding-top: 100px; width: 300px; height: 300px">
+                              <embed id="handBag" src="catalog/view/theme/default/handBag.svg"></embed>
+                         </div>
                     </div>
 
                     <div class="col-md-7 col-sm-12">
@@ -99,27 +101,6 @@
                               </div>
                          </div>
                          <div id="color-content" style="display: block">
-                              <div style="font-size: 20px;margin-top: 10px">Couverture</div>
-                              <div class="row">
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="coverColor1()" ></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="coverColor2()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="coverColor3()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="coverColor4()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="coverColor5()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="coverColor6()"></div>
-                                   </div>
-                              </div>
                               <div  style="font-size: 20px;margin-top: 10px">Corps</div>
                               <div class="row">
                                    <div class="col-md-2 col-sm-12">
@@ -144,64 +125,43 @@
                               <div  style="font-size: 20px;margin-top: 10px">Poignée </div>
                               <div class="row">
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColor1()" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColor(1)" ></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColor2()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColor(2)"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="handleColor3()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="handleColor(3)"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="handleColor4()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="handleColor(4)"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="handleColor5()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="handleColor(5)"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="handleColor6()"></div>
-                                   </div>
-                              </div>
-                              <div style="font-size: 20px;margin-top: 10px">Couverture de la poche</div>
-                              <div class="row">
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #4D556B" onclick="pocketTopColor1()" ></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="pocketTopColor2()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="pocketTopColor3()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="pocketTopColor4()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="pocketTopColor5()"></div>
-                                   </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="pocketTopColor6()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="handleColor(6)"></div>
                                    </div>
                               </div>
-                              <div style="font-size: 20px;margin-top: 10px">Poche</div>
+                              <div style="font-size: 20px;margin-top: 10px">face</div>
                               <div class="row">
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #394054" onclick="pocketBaseColor1()" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #4D556B" onclick="faceColor1()" ></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="pocketBaseColor2()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="faceColor2()"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="pocketBaseColor3()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="faceColor3()"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="pocketBaseColor4()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="faceColor4()"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="pocketBaseColor5()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="faceColor5()"></div>
                                    </div>
                                    <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="pocketBaseColor6()"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="faceColor6()"></div>
                                    </div>
                               </div>
                          </div>
