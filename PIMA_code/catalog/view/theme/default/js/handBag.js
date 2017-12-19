@@ -58,116 +58,25 @@ function efface() {
 
 function emoji(){
     var radio = document.getElementsByName("emoji");
+    var i=1;
     if(radio[0].checked)
     {
         for(i in emojis)
         {
-            document.getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         }
     }
-    if(radio[1].checked)
+    for(i;i<emojis.length;i++)
     {
-        document.getElementById("handBag").getSVGDocument().getElementById("sad").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+        if(radio[i].checked)
+        {
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+        }
+        else
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[2].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("kiss").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[3].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("happy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[4].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("laughing").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[5].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("surprised").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[6].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("atom").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[7].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("snowman").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[8].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("cherry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[9].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("watermelon").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[10].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("strawberry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[11].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("speechbubble").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[12].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[13].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy1").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[14].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy2").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[15].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy3").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[16].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy4").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[17].checked)
-    {
-        document.getElementById("handBag").getSVGDocument().getElementById("alien").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("handBag").getSVGDocument().getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
+
 function emojiLocate() {
     var radio = document.getElementsByName("emojiLocate");
     if (radio[0].checked) {

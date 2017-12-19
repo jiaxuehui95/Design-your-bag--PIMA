@@ -68,6 +68,7 @@ function efface() {
 
 function emoji(){
     var radio = document.getElementsByName("emoji");
+    var i=1;
    if(radio[0].checked)
     {
         for(i in emojis)
@@ -75,108 +76,15 @@ function emoji(){
             document.getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         }
     }
-    if(radio[1].checked)
+    for(i;i<emojis.length;i++)
     {
-       document.getElementById("sad").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    } 
-    else
-        document.getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[2].checked)
-    {
-       document.getElementById("kiss").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    } 
-    else
-        document.getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[3].checked)
-    {
-       document.getElementById("happy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    } 
-    else
-        document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[4].checked)
-    {
-       document.getElementById("laughing").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    } 
-    else
-        document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[5].checked)
-    {
-       document.getElementById("surprised").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    } 
-    else
-        document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[6].checked)
-    {
-        document.getElementById("atom").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+        if(radio[i].checked)
+        {
+            document.getElementById(emojis[i-1]).setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+        }
+        else
+            document.getElementById(emojis[i-1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
-    else
-        document.getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[7].checked)
-    {
-        document.getElementById("snowman").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[8].checked)
-    {
-        document.getElementById("cherry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[9].checked)
-    {
-        document.getElementById("watermelon").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[10].checked)
-    {
-        document.getElementById("strawberry").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[11].checked)
-    {
-        document.getElementById("speechbubble").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[12].checked)
-    {
-        document.getElementById("galaxy").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[13].checked)
-    {
-        document.getElementById("galaxy1").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[14].checked)
-    {
-        document.getElementById("galaxy2").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[15].checked)
-    {
-        document.getElementById("galaxy3").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[16].checked)
-    {
-        document.getElementById("galaxy4").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-    if(radio[17].checked)
-    {
-        document.getElementById("alien").setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
-    }
-    else
-        document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
 
 function emojiLocate() {
