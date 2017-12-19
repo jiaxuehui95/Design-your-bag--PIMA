@@ -315,13 +315,22 @@
                          <div id="size-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" checked style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 40*60</span></div>
+                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / >
+                                        <div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" >
+                                             <span>S 40*60</span>
+                                        </div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 60*80</span></div>
+                                        <input name="size" type="radio" checked style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / >
+                                        <div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" >
+                                             <span>M 60*80</span>
+                                        </div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>L 80*100</span></div>
+                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()"/ >
+                                        <div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; ">
+                                             <span>L 80*100</span>
+                                        </div>
                                    </div>
                               </div>
                          </div>
@@ -392,6 +401,25 @@
                                         <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/alien.svg" height="30px" width="30px">
                                    </div>
                               </div>
+                              <div class="row" style="padding-bottom: 20px">
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio" checked  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>Poignée droite</span>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>Poignée gauche</span>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>Poche</span>
+                                    </div>
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>centre</span>
+                                    </div>
+                              </div>
+
                          </div>
 
                          <div>

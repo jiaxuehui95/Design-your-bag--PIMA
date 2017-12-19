@@ -87,9 +87,7 @@
                     </div>
 
                     <div class="col-md-5 col-sm-12">
-                         <div  style="padding-top: 100px; width: 300px; height: 300px">
-                              <embed id="handBag" src="catalog/view/theme/default/handBag.svg"></embed>
-                         </div>
+                         <embed height="350px" weight="350px" id="handBag" src="catalog/view/theme/default/handBag.svg"></embed>
                     </div>
 
                     <div class="col-md-7 col-sm-12">
@@ -103,65 +101,119 @@
                          <div id="color-content" style="display: block">
                               <div  style="font-size: 20px;margin-top: 10px">Corps</div>
                               <div class="row">
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColor1()" ></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColorCommen(1)" ></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="baseColor2()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="baseColorCommen(2)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="baseColor3()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="baseColorCommen(3)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="baseColor4()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="baseColorCommen(4)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="baseColor5()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="baseColorCommen(5)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="baseColor6()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="baseColorCommen(6)"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="baseColorCommen(7)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="baseColorCommen(8)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="baseColorCommen(9)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="baseColorCommen(10)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="baseColorCommen(11)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="baseColorCommen(12)" ></div>
                                    </div>
                               </div>
                               <div  style="font-size: 20px;margin-top: 10px">Poignée </div>
                               <div class="row">
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColor(1)" ></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColorCommen(1)" ></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColor(2)"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColorCommen(2)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="handleColor(3)"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="handleColorCommen(3)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="handleColor(4)"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="handleColorCommen(4)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="handleColor(5)"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="handleColorCommen(5)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="handleColor(6)"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="handleColorCommen(6)"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="handleColorCommen(7)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="handleColorCommen(8)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="handleColorCommen(9)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="handleColorCommen(10)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="handleColorCommen(11)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="handleColorCommen(12)" ></div>
                                    </div>
                               </div>
                               <div style="font-size: 20px;margin-top: 10px">face</div>
                               <div class="row">
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #4D556B" onclick="faceColor1()" ></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="faceColorCommen(1)" ></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="faceColor2()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="faceColorCommen(2)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="faceColor3()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="faceColorCommen(3)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="faceColor4()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="faceColorCommen(4)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="faceColor5()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="faceColorCommen(5)"></div>
                                    </div>
-                                   <div class="col-md-2 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="faceColor6()"></div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="faceColorCommen(6)"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="faceColorCommen(7)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="faceColorCommen(8)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="faceColorCommen(9)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="faceColorCommen(10)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="faceColorCommen(11)" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="faceColorCommen(12)" ></div>
                                    </div>
                               </div>
                          </div>
@@ -174,10 +226,10 @@
                          <div id="size-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" checked style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 40*60</span></div>
+                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 40*60</span></div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 60*80</span></div>
+                                        <input name="size" type="radio"  checked style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 60*80</span></div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
                                         <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>L 80*100</span></div>
@@ -213,15 +265,65 @@
                               </div>
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-2 col-sm-12">
-                                         <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/atom.svg" height="30px" width="30px">
-                                    </div>
-                                    <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/atom.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
                                         <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/snowman.svg" height="30px" width="30px">
-                                    </div>
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/cherry.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/watermelon.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/strawberry.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/speechbubble.svg" height="30px" width="30px">
+                                   </div>
+                              </div>
+                              <div class="row" style="padding-bottom: 20px">
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy1.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy2.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy3.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/galaxy4.svg" height="30px" width="30px">
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                        <input name="emoji" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emoji()"/ ><img src="catalog/view/theme/default/alien.svg" height="30px" width="30px">
+                                   </div>
+                              </div>
+                              <div class="row" style="padding-bottom: 20px">
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio" checked  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>Poignée droite</span>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>Poignée gauche</span>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>Poche</span>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                        <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
+                                        <span>centre</span>
+                                   </div>
                               </div>
                          </div>
                          <div>
-                              <h3 style="display: inline-block">Texte sur logo</h3>
+                              <h3 style="display: inline-block">Texte</h3>
                               <div style="display: inline-block" onclick="textUpDown()">
                                    <img id="text" style="margin-bottom: 8px" height="20px" width="20px" src="catalog/view/theme/default/down.png">
                               </div>
@@ -229,7 +331,7 @@
                          <div id="text-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-12 col-sm-12">
-                                        <input id="nidewenzi" style="outline: none" type="text" maxlength="3">
+                                        <input id="nidewenzi" style="outline: none" type="text" maxlength="5">
                                         <div class="buttonStart" onclick="texte()" style=" display: inline-block; font-size: 10px; width: 70px; border: 1px gray solid;
                            height: 25px; margin-left: 10px; text-align: center; line-height: 2">
                                              <span>Confirmer</span>

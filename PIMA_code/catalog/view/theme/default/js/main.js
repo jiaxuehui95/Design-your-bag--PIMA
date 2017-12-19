@@ -8,6 +8,8 @@ http://www.hellomichael.com/
 */
 
 var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054", size="S";
+var emojis= new Array(18);
+emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
 function handleColor1() {
     document.getElementById("handle-color").setAttribute("fill", "#272C40");
@@ -394,25 +396,12 @@ function texte() {
 
 function emoji(){
     var radio = document.getElementsByName("emoji");
-    if(radio[0].checked)
+   if(radio[0].checked)
     {
-        document.getElementById("sad").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("kiss").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("happy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("laughing").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("surprised").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("atom").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("snowman").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("cherry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("watermelon").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("strawberry").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("speechbubble").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("galaxy").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("galaxy1").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("galaxy2").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("galaxy3").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("galaxy4").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
-        document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        for(i in emojis)
+        {
+            document.getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        }
     }
     if(radio[1].checked)
     {
@@ -518,7 +507,35 @@ function emoji(){
         document.getElementById("alien").setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
 }
 
-function colorUpDown() {
+function emojiLocate() {
+    var radio = document.getElementsByName("emojiLocate");
+    if (radio[0].checked) {
+        for(i in emojis) {
+            document.getElementById(emojis[i]).setAttribute("x", "256");
+            document.getElementById(emojis[i]).setAttribute("y", "153");
+        }
+    }
+    if (radio[1].checked) {
+        for(i in emojis) {
+            document.getElementById(emojis[i]).setAttribute("x", "193");
+            document.getElementById(emojis[i]).setAttribute("y", "153");
+        }
+    }
+     if (radio[2].checked) {
+         for(i in emojis) {
+             document.getElementById(emojis[i]).setAttribute("x", "226");
+             document.getElementById(emojis[i]).setAttribute("y", "269");
+         }
+    }
+    if (radio[3].checked) {
+        for(i in emojis) {
+            document.getElementById(emojis[i]).setAttribute("x", "226");
+            document.getElementById(emojis[i]).setAttribute("y", "173");
+        }
+    }
+}
+
+    function colorUpDown() {
     if(document.getElementById("color").getAttribute("src")==="catalog/view/theme/default/down.png")
     {
         document.getElementById("color").setAttribute("src","catalog/view/theme/default/up.png");
