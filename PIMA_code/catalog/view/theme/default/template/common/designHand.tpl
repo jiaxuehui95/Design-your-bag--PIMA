@@ -102,118 +102,121 @@
                               <div  style="font-size: 20px;margin-top: 10px">Corps</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColorCommen(1)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColorChange'#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="baseColorCommen(2)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="baseColorChange('#1b6d85')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="baseColorCommen(3)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="baseColorChange('brown')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="baseColorCommen(4)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="baseColorChange('#2b542c')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="baseColorCommen(5)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="baseColorChange('#d27b53')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="baseColorCommen(6)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="baseColorChange('#e96ba8')"></div>
+                                   </div>
+
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="baseColorChange('#d0ff87')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="baseColorCommen(7)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="baseColorChange('#fcff1b')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="baseColorCommen(8)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="baseColorChange('#ffb3b7')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="baseColorCommen(9)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="baseColorChange('#ffa03a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="baseColorCommen(10)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="baseColorChange('#ff477a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="baseColorCommen(11)" ></div>
-                                   </div>
-                                   <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="baseColorCommen(12)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="baseColorChange('#ca47ff')" ></div>
                                    </div>
                               </div>
                               <div  style="font-size: 20px;margin-top: 10px">Poignée </div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColorCommen(1)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColorChange'#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColorCommen(2)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColorChange('#1b6d85')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="handleColorCommen(3)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="handleColorChange('brown')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="handleColorCommen(4)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="handleColorChange('#2b542c')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="handleColorCommen(5)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="handleColorChange('#d27b53')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="handleColorCommen(6)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="handleColorChange('#e96ba8')"></div>
+                                   </div>
+
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="handleColorChange('#d0ff87')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="handleColorCommen(7)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="handleColorChange('#fcff1b')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="handleColorCommen(8)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="handleColorChange('#ffb3b7')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="handleColorCommen(9)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="handleColorChange('#ffa03a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="handleColorCommen(10)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="handleColorChange('#ff477a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="handleColorCommen(11)" ></div>
-                                   </div>
-                                   <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="handleColorCommen(12)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="handleColorChange('#ca47ff')" ></div>
                                    </div>
                               </div>
                               <div style="font-size: 20px;margin-top: 10px">face</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="faceColorCommen(1)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="faceColorChange'#272C40')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="faceColorCommen(2)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="faceColorChange('#1b6d85')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="faceColorCommen(3)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="faceColorChange('brown')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="faceColorCommen(4)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="faceColorChange('#2b542c')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="faceColorCommen(5)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="faceColorChange('#d27b53')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="faceColorCommen(6)"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="faceColorChange('#e96ba8')"></div>
+                                   </div>
+
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="faceColorChange('#d0ff87')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="faceColorCommen(7)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="faceColorChange('#fcff1b')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="faceColorCommen(8)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="faceColorChange('#ffb3b7')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="faceColorCommen(9)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="faceColorChange('#ffa03a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="faceColorCommen(10)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="faceColorChange('#ff477a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="faceColorCommen(11)" ></div>
-                                   </div>
-                                   <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="faceColorCommen(12)" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="faceColorChange('#ca47ff')" ></div>
                                    </div>
                               </div>
                          </div>
