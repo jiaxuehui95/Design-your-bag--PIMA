@@ -9,8 +9,8 @@
                               <path id="handle-color4" stroke="#130F06" d="m226.14 58.405s-0.108-0.191-0.325-0.549c-3.102-5.104-28.442-44.038-78.675-41.701-53.75 2.5-62.75 47.5-62.75 47.5l-2.25-13s17-48.25 61.25-48.5 66.5 19.5 77.5 41.75 5.25 14.5 5.25 14.5z" fill="#d0ff87"/>
                               <path id="handle-color5" stroke="#130F06" d="m255.64 107.66l-20.5 3.5s3 3.5 0-6-10-30-14.5-43-27-64-75-59c-54.591 5.687-59 37-56.5 61s9 58 9 58l-21.5 4s-18.5-112 59-124.5 113 79.995 120 106z" fill="#d0ff87"/>
 
-<svg id="sad" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px"
-	 width="50px" height="50px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+<svg id="sad" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px"
+	 width="80px" height="80px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
 <g>
 	<path style="fill:#E09B2D;" d="M126.306,385.694c-88.801-88.802-95.798-228.426-20.998-325.242
@@ -41,8 +41,8 @@
 </g>
 </svg>
 
-<svg id="happy" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
-	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink"
+<svg id="happy" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="226px" y="173px"
+	 width="80px" height="80px"  xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
 <path style="fill:#E09B2D;" d="M126.306,385.694c-88.801-88.802-95.798-228.426-20.998-325.242
@@ -82,8 +82,8 @@
 </g>
 </svg>
 
-<svg id="kiss" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
-	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink"
+<svg id="kiss" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="226px" y="173px"
+	 width="80px" height="80px"  xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.004" cy="256.004" r="246.855"/>
 <path style="fill:#E09B2D;" d="M126.308,385.694c-88.802-88.802-95.799-228.426-20.999-325.241
@@ -115,8 +115,8 @@
 </g>
 </svg>
 
-<svg id="laughing" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="256px" y="153px"
-	 width="50px" height="50px"  xmlns:xlink="http://www.w3.org/1999/xlink"
+<svg id="laughing" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="226px" y="173px"
+	 width="80px" height="80px"  xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="255.996" cy="256.006" r="218.495"/>
 <path style="fill:#E09B2D;" d="M141.207,370.794c-78.6-78.6-84.793-202.183-18.586-287.875c-7.334,5.666-14.39,11.859-21.117,18.586
@@ -171,7 +171,7 @@
 </g>
 </svg>
 
-<svg id="surprised" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+<svg id="surprised" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px" viewBox="0 0 512.001 512.001" style="display: none; enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 <circle style="fill:#F7B239;" cx="256.005" cy="256.004" r="246.855"/>
 <path style="fill:#E09B2D;" d="M126.308,385.694c-88.802-88.802-95.799-228.426-20.999-325.241
 	c-8.286,6.401-16.258,13.399-23.858,20.999c-96.401,96.401-96.401,252.698,0,349.099s252.698,96.401,349.099,0
@@ -219,7 +219,7 @@
 
 </svg>
 
-	<svg version="1.1" id="atom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="atom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 470 470" style="display:none;enable-background:new 0 0 470 470;" xml:space="preserve">
 <g>
 	<path style="fill:#D5E6DA;" d="M40.65,246.972c2.116-3.562,6.718-4.73,10.279-2.615l138.051,82.063
@@ -275,7 +275,7 @@
 </g>
 	</svg>
 
-	<svg version="1.1" id="snowman" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="snowman" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 511.998 511.998" style="display:none; enable-background:new 0 0 511.998 511.998;" xml:space="preserve">
 <g>
 
@@ -395,7 +395,7 @@
 	c-18.232,1.334-35.13-11.543-38.707-29.457l-4.995-25.013l79.035-5.774C150.841,125.315,149.535,150.781,149.534,150.791z"/>
 	</svg>
 
-	<svg version="1.1" id="cherry" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="cherry" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 512 512" style="display: none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <path style="fill:#5EAC24;" d="M339.469,25.194c-0.14,0.271-0.321,0.541-0.501,0.812c-21.144,30.387-81.407,96.736-224.43,87.472
 	c-6.005-0.381-12.161-0.912-18.467-1.574c0,0,1.694-3.288,5.293-8.702c18.236-27.42,85.517-109.388,230.084-93.708
@@ -438,7 +438,7 @@
 
 </svg>
 
-	<svg version="1.1" id="watermelon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="watermelon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 511.999 511.999" style="display:none; enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
 <path style="fill:#5EAC24;" d="M504.367,149.305c-9.042,120.387-103.681,216.91-223.228,228.888
 	c-8.272,0.83-16.656,1.255-25.141,1.255c-131.191,0-238.699-101.433-248.368-230.143c-0.689-9.143,6.652-16.909,15.815-16.909
@@ -471,7 +471,7 @@
 
 </svg>
 
-<svg version="1.1" id="strawberry" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+<svg version="1.1" id="strawberry" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 512 512" style="display:none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <path style="fill:#368B4C;" d="M278.331,149.454c-5.628,1.853-11.686,3.465-18.205,4.807c0,0-3.605-8.682-5.878-22.13
 	c-5.047-29.891-3.515-83.364,58.84-117.481c3.725-2.033,7.671-4.005,11.836-5.898c8.101-3.675,17.544,1.142,19.386,9.843
@@ -551,7 +551,7 @@
 
 </svg>
 
-	<svg version="1.1" id="speechbubble" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="speechbubble" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 470 470" style="display:none; enable-background:new 0 0 470 470;" xml:space="preserve">
 <g>
 	<path style="fill:#FFFFFF;" d="M455,235c0-121.309-98.691-220-220-220S15,113.692,15,235c0,44.492,13.222,87.357,38.236,123.961
@@ -594,7 +594,7 @@
 
 
 
-	<svg version="1.1" id="galaxy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="galaxy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 376.038 376.038" style="display:none; enable-background:new 0 0 376.038 376.038;" xml:space="preserve">
 <g>
 	<circle style="fill:#4A7984;" cx="188.031" cy="187.982" r="155.382"/>
@@ -825,7 +825,7 @@
 </g>
 </svg>
 
-<svg version="1.1" id="galaxy1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+<svg version="1.1" id="galaxy1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 461.274 461.274" style="display: none; enable-background:new 0 0 461.274 461.274;" xml:space="preserve">
 <g>
 	<path style="fill:#20CE55;" d="M255.58,273.983c28.284,59.397,113.717-87.497,145.247-55.77
@@ -942,7 +942,7 @@
 </svg>
 
 
-	<svg version="1.1" id="galaxy2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="galaxy2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 58.3 58.3" style="display:none; enable-background:new 0 0 58.3 58.3;" xml:space="preserve">
 <g>
 	<circle style="fill:#61537C;" cx="28" cy="28.15" r="25"/>
@@ -992,7 +992,7 @@
 
 
 
-	<svg version="1.1" id="galaxy3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="galaxy3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 512 512" style="display : none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <path style="fill:#FFA644;" d="M485.304,384.696c2.929,2.93,2.929,7.678,0,10.607c-1.465,1.464-3.385,2.196-5.304,2.196
 	s-3.839-0.732-5.304-2.196L470,390.608l-4.696,4.696c-1.465,1.464-3.385,2.196-5.304,2.196s-3.839-0.732-5.304-2.196
@@ -1056,7 +1056,7 @@
 
 
 
-	<svg version="1.1" id="galaxy4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="galaxy4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 51 51" style="display:none; enable-background:new 0 0 51 51;" xml:space="preserve">
 <g>
 	<path style="fill:#FFDB2B;" d="M42.5,47h-34c-2.2,0-4-1.8-4-4V10c0-2.2,1.8-4,4-4h34c2.2,0,4,1.8,4,4v33C46.5,45.2,44.7,47,42.5,47
@@ -1087,7 +1087,7 @@
 
 
 
-	<svg version="1.1" id="alien" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="256px" y="153px" width="50px" height="50px"
+	<svg version="1.1" id="alien" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="226px" y="173px" width="80px" height="80px"
 	 viewBox="0 0 512 512" style="display:none; enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
 	<path style="fill:#FFCF00;" d="M272,456h49.758l12.891-64.461C357.984,388.289,376,368.211,376,344c0,2.732-0.299,5.391-0.74,8H360

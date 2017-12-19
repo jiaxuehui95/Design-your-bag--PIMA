@@ -246,7 +246,10 @@ function sizeBag(){
 
 function texte() {
     document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
+}
 
+function efface() {
+    document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = "";
 }
 
 function emoji(){
@@ -365,26 +368,26 @@ function emojiLocate() {
     var radio = document.getElementsByName("emojiLocate");
     if (radio[0].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "256");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "153");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "226");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "173");
         }
     }
     if (radio[1].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "193");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "153");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "56");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "183");
         }
     }
     if (radio[2].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "226");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "269");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "156");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "223");
         }
     }
     if (radio[3].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "226");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "173");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "156");
+            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "263");
         }
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 
      <meta charset="UTF-8">
@@ -306,19 +306,19 @@
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-3 col-sm-12">
                                         <input name="emojiLocate" type="radio" checked  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
-                                        <span>Poignée droite</span>
+                                        <span>Droite</span>
                                    </div>
                                    <div class="col-md-3 col-sm-12">
                                         <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
-                                        <span>Poignée gauche</span>
+                                        <span>Gauche</span>
                                    </div>
                                    <div class="col-md-3 col-sm-12">
                                         <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
-                                        <span>Poche</span>
+                                        <span>Centre</span>
                                    </div>
                                    <div class="col-md-3 col-sm-12">
                                         <input name="emojiLocate" type="radio"  style="display: inline-block; margin-right: 10px" onclick="emojiLocate()"/ >
-                                        <span>centre</span>
+                                        <span>Font</span>
                                    </div>
                               </div>
                          </div>
@@ -331,11 +331,16 @@
                          <div id="text-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-12 col-sm-12">
+                                   <form>
                                         <input id="nidewenzi" style="outline: none" type="text" maxlength="5">
+                                        <div style="display: inline-block">
                                         <div class="buttonStart" onclick="texte()" style=" display: inline-block; font-size: 10px; width: 70px; border: 1px gray solid;
                            height: 25px; margin-left: 10px; text-align: center; line-height: 2">
                                              <span>Confirmer</span>
                                         </div>
+                                             <input style="border: 1px solid gray; padding-top: 3px; padding-bottom: 1px; margin-left: 10px;outline: medium;" type="reset" onclick="efface()" value="Effacer">
+                                        </div>
+                                   </form>
                                    </div>
                               </div>
                               <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->

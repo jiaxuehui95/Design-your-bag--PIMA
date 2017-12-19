@@ -393,6 +393,9 @@ function texte() {
     document.getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
 
 }
+function efface() {
+    document.getElementById("yourText").innerHTML = "";
+}
 
 function emoji(){
     var radio = document.getElementsByName("emoji");
