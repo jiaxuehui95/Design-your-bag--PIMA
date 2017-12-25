@@ -43,27 +43,19 @@
         <form name="search_sell" action="" method="POST" id="search_sell" style=" font-size: 15px">
             <label>Les paramètres :      </label>
 
-            <label for="month" style="margin-left: 20px">Mois</label>
-            <select id="month" style="margin-left: 20px" >
-                <option value ="1">Janvier</option>
-                <option value ="2">Février</option>
-                <option value="3">Mars</option>
-                <option value="4">Avril</option>
-                <option value ="5">Mai</option>
-                <option value ="6">Juin</option>
-                <option value="7">Juillet</option>
-                <option value="8">Août</option>
-                <option value ="9">Septembre</option>
-                <option value ="10">Octobre</option>
-                <option value="11">Novembre</option>
-                <option value="12">Décembre</option>
+            <label for="state" style="margin-left: 20px">Status: </label>
+            <select id="state" style="margin-left: 20px" >
+                <option value ="0">-None-</option>
+                <option value ="2">?</option>
+                <option value="3">?</option>
             </select>
-            <label for="year" style="margin-left: 20px">Année</label>
-            <select id="year" style="margin-left: 20px" >
-                <option value ="1">2018</option>
-                <option value ="2">2017</option>
-                <option value="3">2016</option>
-            </select>
+
+            <label for="id" style="margin-left: 20px">ID: </label>
+            <input style="width: 70px" id="id" type="text" name="id" />
+
+            <label for="client" style="margin-left: 20px">Client: </label>
+            <input style="width: 70px" id="client" type="text" name="client" />
+
             <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
 
@@ -73,9 +65,10 @@
                 <th>#</th>
                 <th>Taille</th>
                 <th>Adresse</th>
-                <th>Statut</th>
                 <th>Client</th>
                 <th>Temps</th>
+                <th>Set Status</th>
+
             </tr>
             </thead>
             <tbody>
@@ -83,25 +76,44 @@
                 <th scope="row">60</th>
                 <td>S</td>
                 <td>EVRY</td>
-                <td>1</td>
                 <td>Dinghao</td>
                 <td>2017-12-05 23:43:34</td>
+                <td><select id="SetState" style="margin-left: 20px" >
+                        <option value ="0">-None-</option>
+                        <option value ="2">?</option>
+                        <option value="3">?</option>
+                    </select>
+                    <button>SET</button>
+                </td>
+
             </tr>
             <tr>
                 <th scope="row">62</th>
                 <td>S</td>
                 <td>EVRY</td>
-                <td>1</td>
                 <td>Dinghao</td>
                 <td>2017-12-05 23:43:35</td>
+                <td><select id="SetState" style="margin-left: 20px" >
+                        <option value ="0">-None-</option>
+                        <option value ="2">?</option>
+                        <option value="3">?</option>
+                    </select>
+                    <button>SET</button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">63</th>
                 <td>M</td>
                 <td>EVRY</td>
-                <td>1</td>
                 <td>Dinghao</td>
                 <td>2017-12-05 23:43:36</td>
+                <td><select id="SetState" style="margin-left: 20px" >
+                        <option value ="0">-None-</option>
+                        <option value ="2">?</option>
+                        <option value="3">?</option>
+                    </select>
+                    <button>SET</button>
+                </td>
             </tr>
             </tbody>
         </table>

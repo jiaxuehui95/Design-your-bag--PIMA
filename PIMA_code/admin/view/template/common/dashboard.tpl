@@ -45,6 +45,7 @@
 
             <label for="month" style="margin-left: 20px">Mois</label>
             <select id="month" style="margin-left: 20px" >
+                <option value ="0">-None-</option>
                 <option value ="1">Janvier</option>
                 <option value ="2">Février</option>
                 <option value="3">Mars</option>
