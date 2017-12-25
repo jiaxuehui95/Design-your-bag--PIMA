@@ -40,39 +40,68 @@
             <p>Nombre de client total:  <?php echo $num_user?> </p>
         </div>
 
-        <form name="foo" action="" method="POST" id="foo">
-            <label for="bar">A bar</label>
-            <input id="bar" name="bar" type="text" value="" />
-            <input type="submit" value="Send" />
+        <form name="search_client" action="" method="POST" id="search_client" style=" font-size: 15px">
+            <label>Les paramètres :      </label>
+
+            <label for="month" style="margin-left: 20px">Mois</label>
+            <select id="month" style="margin-left: 20px" >
+                <option value ="1">Janvier</option>
+                <option value ="2">Février</option>
+                <option value="3">Mars</option>
+                <option value="4">Avril</option>
+                <option value ="5">Mai</option>
+                <option value ="6">Juin</option>
+                <option value="7">Juillet</option>
+                <option value="8">Août</option>
+                <option value ="9">Septembre</option>
+                <option value ="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Décembre</option>
+            </select>
+            <label for="year" style="margin-left: 20px">Année</label>
+            <select id="year" style="margin-left: 20px" >
+                <option value ="1">2018</option>
+                <option value ="2">2017</option>
+                <option value="3">2016</option>
+            </select>
+            <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
 
         <table class="table table-bordered">
             <thead>
             <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Numéro de téléphone</th>
+                <th>Email</th>
+                <th>Address</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>LI</td>
+                <td>Dinghao</td>
+                <td>0783665346</td>
+                <td>dinghaoli666@gmail.com</td>
+                <td>Evry</td>
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>LI</td>
+                <td>Dinghao</td>
+                <td>0783665346</td>
+                <td>dinghaoli666@gmail.com</td>
+                <td>Evry</td>
             </tr>
             <tr>
                 <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td>LI</td>
+                <td>Dinghao</td>
+                <td>0783665346</td>
+                <td>dinghaoli666@gmail.com</td>
+                <td>Evry</td>
             </tr>
             </tbody>
         </table>
