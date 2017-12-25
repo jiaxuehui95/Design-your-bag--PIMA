@@ -72,10 +72,10 @@
                     <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray" >Sac à dos</div></a>
                </div>
                <div  style="width: 300px; text-align: center; display: inline-block;">
-                    <a href="<?php echo $href_hand ?>" ><div style="font-size: 30px; color: black; ">Sac à main</div></a>
+                    <a href="<?php echo $href_hand ?>" ><div style="font-size: 30px; color: black; ">Sac d'ordinateur</div></a>
                </div>
                <div  style="width: 300px; text-align: center;display: inline-block;">
-                    <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black; ">Sac d'ordinateur</div></a>
+                    <a href="<?php echo $href_computer ?>" ><div style="font-size: 30px; color: black; ">Sac à main</div></a>
                </div>
 
           </div>

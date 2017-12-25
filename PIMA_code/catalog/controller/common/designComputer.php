@@ -1,5 +1,5 @@
 <?php
-class ControllerCommonDesignHand extends Controller {
+class ControllerCommonDesignComputer extends Controller {
 	public function index() {
 		
 		$data['logged'] = $this->customer->isLogged();
@@ -15,6 +15,6 @@ class ControllerCommonDesignHand extends Controller {
         $data['href_computer']= $this->url->link('common/designComputer');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('common/designHand',$data));
+		$this->response->setOutput($this->load->view('common/designComputer',$data));
 	}
 }

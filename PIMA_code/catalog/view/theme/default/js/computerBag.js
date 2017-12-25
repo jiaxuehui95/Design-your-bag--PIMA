@@ -66,7 +66,7 @@ function emoji(){
             document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         }
     }
-    for(i;i<=emojis.length;i++)
+    for(i;i<emojis.length;i++)
     {
         if(radio[i].checked)
         {

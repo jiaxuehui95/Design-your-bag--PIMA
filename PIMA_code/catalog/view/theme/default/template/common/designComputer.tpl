@@ -19,8 +19,7 @@
      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
      <script src="catalog/view/theme/default/js/snap.svg.js"></script>
-     <script src="catalog/view/theme/default/js/handBag.js"></script>
-     <script src="catalog/view/theme/default/js/jqery.js"></script>
+     <script src="catalog/view/theme/default/js/briefcase.js"></script>
 
 </head>
 <body>
@@ -72,10 +71,10 @@
                     <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black;" >Sac à dos</div></a>
                </div>
                <div  style="width: 300px; text-align: center; display: inline-block;">
-                    <a href="<?php echo $href_hand ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray">Sac d'ordinateu</div></a>
+                    <a href="<?php echo $href_hand ?>" ><div style="font-size: 30px; color: black; ">Sac d'ordinateur</div></a>
                </div>
                <div  style="width: 300px; text-align: center;display: inline-block;">
-                    <a href="<?php echo $href_computer ?>" ><div style="font-size: 30px; color: black; ">Sac à main</div></a>
+                    <a href="<?php echo $href_computer ?>" ><div style="font-size: 30px; color: black; border: 1px solid gray">Sac à main</div></a>
                </div>
 
           </div>
@@ -87,7 +86,7 @@
                     </div>
 
                     <div class="col-md-5 col-sm-12">
-                         <embed height="350px" weight="350px" id="handBag" src="catalog/view/theme/default/handBag.svg"></embed>
+                         <embed height="320px" weight="320px" id="briefCase" src="catalog/view/theme/default/briefcase.svg"></embed>
                     </div>
 
                     <div class="col-md-7 col-sm-12">
@@ -102,7 +101,7 @@
                               <div  style="font-size: 20px;margin-top: 10px">Corps</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="baseColorChange('#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #986C48" onclick="baseColorChange('#986C48')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="baseColorChange('#1b6d85')"></div>
@@ -142,7 +141,7 @@
                               <div  style="font-size: 20px;margin-top: 10px">Poignée </div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="handleColorChange('#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #604530" onclick="handleColorChange('#604530')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
                                         <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="handleColorChange('#1b6d85')"></div>
@@ -179,44 +178,84 @@
                                         <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="handleColorChange('#ca47ff')" ></div>
                                    </div>
                               </div>
-                              <div style="font-size: 20px;margin-top: 10px">face</div>
+                              <div style="font-size: 20px;margin-top: 10px">Couverture</div>
                               <div class="row">
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #272C40" onclick="faceColorChange('#272C40')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #CE9965" onclick="coverColorChange('#CE9965')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="faceColorChange('#1b6d85')"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="coverColorChange('#1b6d85')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="faceColorChange('brown')"></div>
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="coverColorChange('brown')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="faceColorChange('#2b542c')"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="coverColorChange('#2b542c')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="faceColorChange('#d27b53')"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="coverColorChange('#d27b53')"></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="faceColorChange('#e96ba8')"></div>
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="coverColorChange('#e96ba8')"></div>
                                    </div>
 
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="faceColorChange('#d0ff87')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="coverColorChange('#d0ff87')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="faceColorChange('#fcff1b')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="coverColorChange('#fcff1b')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="faceColorChange('#ffb3b7')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="coverColorChange('#ffb3b7')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="faceColorChange('#ffa03a')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="coverColorChange('#ffa03a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="faceColorChange('#ff477a')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="coverColorChange('#ff477a')" ></div>
                                    </div>
                                    <div class="col-md-1 col-sm-12">
-                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="faceColorChange('#ca47ff')" ></div>
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="coverColorChange('#ca47ff')" ></div>
+                                   </div>
+                              </div>
+                              <div style="font-size: 20px;margin-top: 10px">Accessoire</div>
+                              <div class="row">
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #FFD16C" onclick="AccessoireChange('#FFD16C')" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #1b6d85" onclick="AccessoireChange('#1b6d85')"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: brown" onclick="AccessoireChange('brown')"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #2b542c" onclick="AccessoireChange('#2b542c')"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d27b53" onclick="AccessoireChange('#d27b53')"></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #e96ba8" onclick="AccessoireChange('#e96ba8')"></div>
+                                   </div>
+
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #d0ff87" onclick="AccessoireChange('#d0ff87')" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #fcff1b" onclick="AccessoireChange('#fcff1b')" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffb3b7" onclick="AccessoireChange('#ffb3b7')" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ffa03a" onclick="AccessoireChange('#ffa03a')" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ff477a" onclick="AccessoireChange('#ff477a')" ></div>
+                                   </div>
+                                   <div class="col-md-1 col-sm-12">
+                                        <div style="width: 20px; height: 20px; background-color: #ca47ff" onclick="AccessoireChange('#ca47ff')" ></div>
                                    </div>
                               </div>
                          </div>
