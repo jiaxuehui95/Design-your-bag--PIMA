@@ -36,8 +36,8 @@
 <div class="main">
     <div class="hipsum">
         <div class="jumbotron">
-            <h1>Commandes</h1>
-            <p> </p>
+            <h1>Vente </h1>
+            <p>Volume de vente total:  ?? </p>
         </div>
 
         <form name="search_sell" action="" method="POST" id="search_sell" style=" font-size: 15px">

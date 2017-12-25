@@ -6,10 +6,7 @@ class ControllerCommonDashboard extends Controller {
 
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
-		
-		$data['herf']=  $this->url->link('common/a', 'token=' . $this->session->data['token'], true);
 
-        $data['href_dashboard']= $this->url->link('common/dashboard');
 		
 		$this->response->setOutput($this->load->view('common/dashboard', $data));
 	}
