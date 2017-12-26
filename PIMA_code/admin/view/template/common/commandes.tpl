@@ -64,9 +64,40 @@
                 <td><?php echo $product['client'] ?></td>
                 <td><?php echo $product['date_added'] ?></td>
                 <td><select id="SetState" style="margin-left: 20px" >
-                        <option value ="0">-None-</option>
-                        <option value ="2">?</option>
-                        <option value="3">?</option>
+
+                    <?php
+                        if ($product['status'] == '0'){
+                    ?>
+                        <option value ="0" selected="selected" >0</option>
+                    <?php
+                        }else{
+                    ?>
+                            <option value ="0">0</option>
+                    <?php }?>
+
+
+            <?php
+                        if ($product['status'] == '1'){
+                    ?>
+            <option value ="1" selected="selected" >1</option>
+            <?php
+                        }else{
+                    ?>
+            <option value ="1">1</option>
+            <?php }?>
+
+
+            <?php
+                        if ($product['status'] == '2'){
+                    ?>
+            <option value ="2" selected="selected" >2</option>
+            <?php
+                        }else{
+                    ?>
+            <option value ="2">2</option>
+            <?php }?>
+
+
                     </select>
                     <button>SET</button>
                 </td>
