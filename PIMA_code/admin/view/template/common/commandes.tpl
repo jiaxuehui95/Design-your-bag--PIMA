@@ -46,8 +46,9 @@
             <label for="state" style="margin-left: 20px">Status: </label>
             <select id="state" style="margin-left: 20px" >
                 <option value ="0">-None-</option>
-                <option value ="2">?</option>
-                <option value="3">?</option>
+                <option value ="1">1</option>
+                <option value ="2">2</option>
+                <option value="3">3</option>
             </select>
 
             <label for="id" style="margin-left: 20px">ID: </label>
@@ -86,34 +87,6 @@
                     <button>SET</button>
                 </td>
 
-            </tr>
-            <tr>
-                <th scope="row">62</th>
-                <td>S</td>
-                <td>EVRY</td>
-                <td>Dinghao</td>
-                <td>2017-12-05 23:43:35</td>
-                <td><select id="SetState" style="margin-left: 20px" >
-                        <option value ="0">-None-</option>
-                        <option value ="2">?</option>
-                        <option value="3">?</option>
-                    </select>
-                    <button>SET</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">63</th>
-                <td>M</td>
-                <td>EVRY</td>
-                <td>Dinghao</td>
-                <td>2017-12-05 23:43:36</td>
-                <td><select id="SetState" style="margin-left: 20px" >
-                        <option value ="0">-None-</option>
-                        <option value ="2">?</option>
-                        <option value="3">?</option>
-                    </select>
-                    <button>SET</button>
-                </td>
             </tr>
             </tbody>
         </table>
