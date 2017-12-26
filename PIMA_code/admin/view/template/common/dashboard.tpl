@@ -40,11 +40,11 @@
             <p>Nombre de client total:  <?php echo $num_user?> </p>
         </div>
 
-        <form name="search_client" action="" method="POST" id="search_client" style=" font-size: 15px">
+        <form name="search_client" action=" <?php echo $action ?> " method="POST" id="search_client" style=" font-size: 15px">
             <label>Les paramètres :      </label>
 
-            <label for="month" style="margin-left: 20px">Mois</label>
-            <select id="month" style="margin-left: 20px" >
+            <label for="month" style="margin-left: 20px" >Mois</label>
+            <select id="month" style="margin-left: 20px" name='month'>
                 <option value ="0">-None-</option>
                 <option value ="1">Janvier</option>
                 <option value ="2">Février</option>
@@ -59,11 +59,12 @@
                 <option value="11">Novembre</option>
                 <option value="12">Décembre</option>
             </select>
-            <label for="year" style="margin-left: 20px">Année</label>
-            <select id="year" style="margin-left: 20px" >
-                <option value ="1">2018</option>
-                <option value ="2">2017</option>
-                <option value="3">2016</option>
+            <label for="year" style="margin-left: 20px" >Année</label>
+            <select id="year" style="margin-left: 20px" name= 'year'>
+                <option value ="0">-None-</option>
+                <option value ="2018">2018</option>
+                <option value ="2017">2017</option>
+                <option value="2016">2016</option>
             </select>
             <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
@@ -77,33 +78,21 @@
                 <th>Numéro de téléphone</th>
                 <th>Email</th>
                 <th>Address</th>
+                <th>AddData</th>
             </tr>
             </thead>
             <tbody>
+            <?php foreach($clients as $client) {?>
             <tr>
                 <th scope="row">1</th>
-                <td>LI</td>
-                <td>Dinghao</td>
-                <td>0783665346</td>
-                <td>dinghaoli666@gmail.com</td>
-                <td>Evry</td>
+                <td><?php echo $client['firstname'] ?></td>
+                <td><?php echo $client['lastname'] ?></td>
+                <td><?php echo $client['telephone'] ?></td>
+                <td><?php echo $client['email'] ?></td>
+                <td><?php echo $client['address']?></td>
+                <td><?php echo $client['date_added']?></td>
             </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>LI</td>
-                <td>Dinghao</td>
-                <td>0783665346</td>
-                <td>dinghaoli666@gmail.com</td>
-                <td>Evry</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>LI</td>
-                <td>Dinghao</td>
-                <td>0783665346</td>
-                <td>dinghaoli666@gmail.com</td>
-                <td>Evry</td>
-            </tr>
+            <?php } ?>
             </tbody>
         </table>
         <!--
