@@ -32,7 +32,7 @@
             </select>
 
             <label for="client" style="margin-left: 20px">Email: </label>
-            <input style="width: 70px" id="client" type="text" name="client"  onclick="clearID()"/>
+            <input style="width: 198px" id="client" type="text" name="client"  onclick="clearID()"/>
 
             <label style="margin-left: 20px"> OU </label>
 
