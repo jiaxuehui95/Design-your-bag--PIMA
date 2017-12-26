@@ -1,7 +1,13 @@
 <?php
 class ModelCommonCustomer extends Model {
 
-		
+    
+    public function getCustomer($customer_id) {
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "customer WHERE customer_id = '" . (int)$customer_id . "'");
+
+		return $query->row;
+    }
+    
     public function getTotalCustomers() {
         $query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "customer ");
 

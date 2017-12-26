@@ -37,18 +37,18 @@
     <div class="hipsum">
         <div class="jumbotron">
             <h1>Commandes</h1>
-            <p> </p>
+            <p>Volume de commandes total:  <?php echo $num_user?> </p>
         </div>
 
         <form name="search_sell" action="" method="POST" id="search_sell" style=" font-size: 15px">
             <label>Les paramètres :      </label>
 
             <label for="state" style="margin-left: 20px">Status: </label>
-            <select id="state" style="margin-left: 20px" >
-                <option value ="0">-None-</option>
+            <select id="state" style="margin-left: 20px" name="status" >
+                <option value ="3">-None-</option>
+                <option value ="0">0</option>
                 <option value ="1">1</option>
                 <option value ="2">2</option>
-                <option value="3">3</option>
             </select>
 
             <label for="id" style="margin-left: 20px">ID: </label>
@@ -73,12 +73,13 @@
             </tr>
             </thead>
             <tbody>
+            <?php foreach($products as $product) {?>
             <tr>
-                <th scope="row">60</th>
-                <td>S</td>
-                <td>EVRY</td>
-                <td>Dinghao</td>
-                <td>2017-12-05 23:43:34</td>
+                <th scope="row"><?php echo $product['product_id']?></th>
+                <td><?php echo $product['size'] ?></td>
+                <td><?php echo $product['address'] ?></td>
+                <td><?php echo $product['client'] ?></td>
+                <td><?php echo $product['date_added'] ?></td>
                 <td><select id="SetState" style="margin-left: 20px" >
                         <option value ="0">-None-</option>
                         <option value ="2">?</option>
@@ -86,8 +87,8 @@
                     </select>
                     <button>SET</button>
                 </td>
-
             </tr>
+            <?php } ?>
             </tbody>
         </table>
         <!--
