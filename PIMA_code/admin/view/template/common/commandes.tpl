@@ -12,26 +12,6 @@
 
 <?php echo $column_left ?>
 
-<!-- Content -->
-<!-- Ajax
-<script>
-    function showHint(str) {
-        if (str.length == 0) {
-            document.getElementById("txtHint").innerHTML = "";
-            return;
-        } else {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("txtHint").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("GET", "gethint.php?q=" + str, true);
-            xmlhttp.send();
-        }
-    }
-</script>
- -->
 
 <div class="main">
     <div class="hipsum">
@@ -44,18 +24,21 @@
             <label>Les paramètres :      </label>
 
             <label for="state" style="margin-left: 20px">Status: </label>
-            <select id="state" style="margin-left: 20px" name="status" >
+            <select id="state" style="margin-left: 20px" name="status"  onclick="clearID()" >
                 <option value ="3">-None-</option>
                 <option value ="0">0</option>
                 <option value ="1">1</option>
                 <option value ="2">2</option>
             </select>
 
-            <label for="id" style="margin-left: 20px">ID: </label>
-            <input style="width: 70px" id="id" type="text" name="id" />
+            <label for="client" style="margin-left: 20px">Email: </label>
+            <input style="width: 70px" id="client" type="text" name="client"  onclick="clearID()"/>
 
-            <label for="client" style="margin-left: 20px">Client: </label>
-            <input style="width: 70px" id="client" type="text" name="client" />
+            <label style="margin-left: 20px"> OU </label>
+
+
+            <label for="id" style="margin-left: 20px">ID: </label>
+            <input style="width: 70px" id="id" type="text" name="id" onclick="clearClient()" />
 
             <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
@@ -66,7 +49,7 @@
                 <th>#</th>
                 <th>Taille</th>
                 <th>Adresse</th>
-                <th>Client</th>
+                <th>Email</th>
                 <th>Temps</th>
                 <th>Set Status</th>
 
