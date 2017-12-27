@@ -58,7 +58,8 @@
             <form>
             <?php foreach($products as $product) {?>
             <tr>
-                <th scope="row"><?php echo $product['product_id']?></th>
+            <form name="search_sell" action="" method="POST" id="set_states">
+                <th scope="row"><?php echo $product['product_id']?><input type="hidden" name="id" value="<?php echo $product['product_id']?>" /> </th>
                 <td><?php echo $product['size'] ?></td>
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['client'] ?></td>
