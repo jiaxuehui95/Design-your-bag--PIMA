@@ -1,6 +1,10 @@
 <?php
 class ModelCommonProduct extends Model {
         
+    public function getProduct($id){
+        $query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "product_sac WHERE customer_id = ". $id);
+    }
+
     public function getTotalProducts() {
         $query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "product_sac ");
 
@@ -83,6 +87,11 @@ class ModelCommonProduct extends Model {
         $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE status =".  $status . " AND  customer_id= ". $id);
         
         return $query->rows;
+    }
+
+    public function changerProductStatus($id, $status){
+        $query = $this->db->query("UPDATE ". DB_PREFIX. "product_sac SET status = " . $status . "WHERE product_id = ".$id);
+        return $query->row;
     }
 
 }
