@@ -5,7 +5,6 @@ class ControllerCommonCommandes extends Controller {
         $this->load->model("common/customer");
 
 		if ($this->request->server['REQUEST_METHOD'] == 'POST' ) {
-            $this->log->write($this->request->post);
 			if($this->request->post['status']==3 && $this->request->post['id']=='' && $this->request->post['client']==''){
 				$data['num_user'] = $this->model_common_product->getTotalProducts();
                 $data['products'] = $this->model_common_product->getTotalProductsInfo();
@@ -18,6 +17,7 @@ class ControllerCommonCommandes extends Controller {
 			else if($this->request->post['id']=='' && $this->request->post['client']==''){
 				$data['num_user'] = $this->model_common_product->getTotalProductsByStatus($this->request->post);
                 $data['products'] = $this->model_common_product->getProductsInfoByStatus($this->request->post);
+                $this->log->write($data['products']);
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
                     $product['client']=$client['firstname'];
@@ -25,16 +25,38 @@ class ControllerCommonCommandes extends Controller {
             }
 
             else if($this->request->post['id']=='' && $this->request->post['status']==3 ){
-                $ids= $this->model_common_customer->getTotalCustomerIdsByFirstname($this->request->post);
-				$data['num_user'] = $this->model_common_product->getTotalProductsBy($this->request->post);
-                $data['products'] = $this->model_common_product->getProductsInfoBy($this->request->post);
+                
+                if($product=$this->model_common_customer->getCustomerIdByEmail($this->request->post)){
+				    $data['num_user'] = $this->model_common_product->getTotalProductsByCustomerId($product['customer_id']);
+                    $data['products'] = $this->model_common_product->getProductsInfoByCustomerId($product['customer_id']);
+                }
+                else{
+                    $data['num_user'] =0;
+                    $data['products'] =array();
+                }
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
                     $product['client']=$client['firstname'];
                 }
             }
 
-            else if($this->request->post['status']==3 && $this->request->post['client']==''){
+            else if($this->request->post['id']==''){
+
+                if($product=$this->model_common_customer->getCustomerIdByEmail($this->request->post)){
+				    $data['num_user'] = $this->model_common_product->getTotalProductsByCustomerIdAndStatus($product['customer_id'],$this->request->post['status']);
+                    $data['products'] = $this->model_common_product->getProductsInfoByCustomerIdAndStatus($product['customer_id'],$this->request->post['status']);
+                }
+                else{
+                    $data['num_user'] =0;
+                    $data['products'] =array();
+                }
+                    foreach($data['products'] as &$product) {
+                    $client= $this->model_common_customer->getCustomer($product['customer_id']);
+                    $product['client']=$client['firstname'];
+                }
+            }
+            
+			else{
 				$data['num_user'] = $this->model_common_product->getTotalProductsByProductId($this->request->post);
                 $data['products'] = $this->model_common_product->getProductsInfoByProductId($this->request->post);
                 foreach($data['products'] as &$product) {
@@ -42,13 +64,8 @@ class ControllerCommonCommandes extends Controller {
                     $product['client']=$client['firstname'];
                 }
             }
-            
-			else{
-				$data['num_user'] = $this->model_common_product->getTotalProductsByYearAndMonth($this->request->post);
-				$data['products'] = $this->model_common_product->getProductsInfoByYearAndMonth($this->request->post);
-			}
 
-			$this->log->write($data['products'] );
+			
 		}
 
 		else{

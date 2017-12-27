@@ -61,6 +61,30 @@ class ModelCommonProduct extends Model {
         return $query->rows;
     }
 
+    public function getTotalProductsByCustomerId($id){
+        $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "product_sac  WHERE customer_id = ".$id );
+        
+        return $query->row['total'];
+    }
+
+    public function getProductsInfoByCustomerId($id){
+        $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE customer_id =". $id);
+        
+        return $query->rows;
+    }
+
+    public function getTotalProductsByCustomerIdAndStatus($id,$status){
+        $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "product_sac  WHERE status = ". $status ." AND customer_id = ". $id );
+        
+        return $query->row['total'];
+    }
+
+    public function getProductsInfoByCustomerIdAndStatus($id,$status){
+        $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE status =".  $status . " AND  customer_id= ". $id);
+        
+        return $query->rows;
+    }
+
 }
     
 ?>

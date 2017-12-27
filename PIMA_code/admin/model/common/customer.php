@@ -20,6 +20,12 @@ class ModelCommonCustomer extends Model {
 		return $query->rows;
     }
 
+    public function getCustomerIdByEmail($date){
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "customer WHERE  email = '" . $this->db->escape(utf8_strtolower($date['client'])) . "'");
+        
+        return $query->row;
+    
+    }
     public function getTotalCustomersByYear($date){
         $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "customer  WHERE year(date_added) = ".$date['year'] );
         
