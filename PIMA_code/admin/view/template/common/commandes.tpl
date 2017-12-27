@@ -55,7 +55,7 @@
 
             </tr>
             </thead>
-            <tbody>
+            <form>
             <?php foreach($products as $product) {?>
             <tr>
                 <th scope="row"><?php echo $product['product_id']?></th>
@@ -63,7 +63,8 @@
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['client'] ?></td>
                 <td><?php echo $product['date_added'] ?></td>
-                <td><select id="SetState" style="margin-left: 20px" >
+                <form name="search_sell" action="" method="POST" id="set_states">
+                <td><select id="SetState" name="newState" style="margin-left: 20px" >
 
                     <?php
                         if ($product['status'] == '0'){
@@ -99,8 +100,8 @@
 
 
                     </select>
-                    <button>SET</button>
-                </td>
+                <input type="submit" value="Set" style="width: 40px"/>
+            </td></form>
             </tr>
             <?php } ?>
             </tbody>
