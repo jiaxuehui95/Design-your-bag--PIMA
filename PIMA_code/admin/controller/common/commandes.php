@@ -10,7 +10,7 @@ class ControllerCommonCommandes extends Controller {
                 $data['products'] = $this->model_common_product->getTotalProductsInfo();
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
-                    $product['client']=$client['firstname'];
+                    $product['client']=$client['email'];
                 }
 			}
 
@@ -20,7 +20,7 @@ class ControllerCommonCommandes extends Controller {
                 $this->log->write($data['products']);
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
-                    $product['client']=$client['firstname'];
+                    $product['client']=$client['email'];
                 }
             }
 
@@ -36,7 +36,7 @@ class ControllerCommonCommandes extends Controller {
                 }
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
-                    $product['client']=$client['firstname'];
+                    $product['client']=$client['email'];
                 }
             }
 
@@ -52,7 +52,7 @@ class ControllerCommonCommandes extends Controller {
                 }
                     foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
-                    $product['client']=$client['firstname'];
+                    $product['client']=$client['email'];
                 }
             }
             
@@ -61,7 +61,7 @@ class ControllerCommonCommandes extends Controller {
                 $data['products'] = $this->model_common_product->getProductsInfoByProductId($this->request->post);
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
-                    $product['client']=$client['firstname'];
+                    $product['client']=$client['email'];
                 }
             }
 
@@ -73,7 +73,7 @@ class ControllerCommonCommandes extends Controller {
             $data['products'] = $this->model_common_product->getTotalProductsInfo();
             foreach($data['products'] as &$product) {
                 $client= $this->model_common_customer->getCustomer($product['customer_id']);
-                $product['client']=$client['firstname'];
+                $product['client']=$client['email'];
 			}
         }
 
