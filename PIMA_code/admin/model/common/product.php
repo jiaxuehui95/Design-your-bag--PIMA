@@ -90,7 +90,7 @@ class ModelCommonProduct extends Model {
     }
 
     public function changerProductStatus($id, $status){
-        $query = $this->db->query("UPDATE ". DB_PREFIX. "product_sac SET status = " . $status . "WHERE product_id = ".$id);
+        $query = $this->db->query("UPDATE ". DB_PREFIX. "product_sac SET status = " . $status . " WHERE product_id = ".$id);
         return $query->row;
     }
 

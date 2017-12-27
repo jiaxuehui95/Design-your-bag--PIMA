@@ -20,7 +20,7 @@
             <p>Volume de commandes total:  <?php echo $num_user?> </p>
         </div>
 
-        <form name="search_sell" action="" method="POST" id="search_sell" style=" font-size: 15px">
+        <form name="search_sell" action="<?php echo $action ?>" method="POST" id="search_sell" style=" font-size: 15px">
             <label>Les paramètres :      </label>
 
             <label for="state" style="margin-left: 20px">Status: </label>
@@ -55,16 +55,15 @@
 
             </tr>
             </thead>
-            <form>
+        
             <?php foreach($products as $product) {?>
             <tr>
-            <form name="search_sell" action="" method="POST" id="set_states">
+            <form name="search_sell" action=" <?php echo $set ?>" method="POST" id="set_states">
                 <th scope="row"><?php echo $product['product_id']?><input type="hidden" name="id" value="<?php echo $product['product_id']?>" /> </th>
                 <td><?php echo $product['size'] ?></td>
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['client'] ?></td>
                 <td><?php echo $product['date_added'] ?></td>
-                <form name="search_sell" action="" method="POST" id="set_states">
                 <td><select id="SetState" name="newState" style="margin-left: 20px" >
 
                     <?php

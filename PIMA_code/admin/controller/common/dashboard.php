@@ -25,7 +25,7 @@ class ControllerCommonDashboard extends Controller {
 			foreach($data['clients'] as &$client) {
 				$client['address']= $this->model_common_customer->getAddressByCustomerId($client['customer_id']);
 			}
-			$this->log->write($data['clients'] );
+			
 		}
 
 		else{

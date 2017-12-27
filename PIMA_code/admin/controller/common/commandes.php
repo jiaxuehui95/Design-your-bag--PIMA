@@ -3,7 +3,7 @@ class ControllerCommonCommandes extends Controller {
     public function index() {
 		$this->load->model("common/product");
         $this->load->model("common/customer");
-
+        
 		if ($this->request->server['REQUEST_METHOD'] == 'POST' ) {
 			if($this->request->post['status']==3 && $this->request->post['id']=='' && $this->request->post['client']==''){
 				$data['num_user'] = $this->model_common_product->getTotalProducts();
@@ -17,7 +17,7 @@ class ControllerCommonCommandes extends Controller {
 			else if($this->request->post['id']=='' && $this->request->post['client']==''){
 				$data['num_user'] = $this->model_common_product->getTotalProductsByStatus($this->request->post);
                 $data['products'] = $this->model_common_product->getProductsInfoByStatus($this->request->post);
-                $this->log->write($data['products']);
+               
                 foreach($data['products'] as &$product) {
                     $client= $this->model_common_customer->getCustomer($product['customer_id']);
                     $product['client']=$client['email'];
@@ -78,7 +78,8 @@ class ControllerCommonCommandes extends Controller {
         }
 
 		$data['action'] = $this->url->link('common/commandes', 'token=' . $this->session->data['token'], true);
-		$data['header'] = $this->load->controller('common/header');
+        $data['set'] = $this->url->link('common/set', 'token=' . $this->session->data['token'], true);
+        $data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$this->response->setOutput($this->load->view('common/commandes', $data));
 	    

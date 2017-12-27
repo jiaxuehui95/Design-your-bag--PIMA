@@ -18,7 +18,7 @@ class ControllerCommonSells extends Controller {
 				$data['products'] = $this->model_common_product->getProductsInfoByYearAndMonth($this->request->post);
 			}
 
-			$this->log->write($data['products'] );
+			
 		}
 
 		else{
