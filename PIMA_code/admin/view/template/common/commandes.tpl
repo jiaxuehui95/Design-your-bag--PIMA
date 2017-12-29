@@ -25,10 +25,11 @@
 
             <label for="state" style="margin-left: 20px">Status: </label>
             <select id="state" style="margin-left: 20px" name="status"  onclick="clearID()" >
-                <option value ="3">-None-</option>
+                <option value ="4">-None-</option>
                 <option value ="0">0</option>
                 <option value ="1">1</option>
                 <option value ="2">2</option>
+                <option value ="3">3</option>
             </select>
 
             <label for="client" style="margin-left: 20px">Email: </label>
@@ -96,6 +97,16 @@
                         }else{
                     ?>
             <option value ="2">2</option>
+            <?php }?>
+
+            <?php
+                        if ($product['status'] == '3'){
+                    ?>
+            <option value ="3" selected="selected" >3</option>
+            <?php
+                        }else{
+                    ?>
+            <option value ="3">3</option>
             <?php }?>
 
 

@@ -5,7 +5,7 @@ class ControllerCommonCommandes extends Controller {
         $this->load->model("common/customer");
         
 		if ($this->request->server['REQUEST_METHOD'] == 'POST' ) {
-			if($this->request->post['status']==3 && $this->request->post['id']=='' && $this->request->post['client']==''){
+			if($this->request->post['status']==4 && $this->request->post['id']=='' && $this->request->post['client']==''){
 				$data['num_user'] = $this->model_common_product->getTotalProducts();
                 $data['products'] = $this->model_common_product->getTotalProductsInfo();
                 foreach($data['products'] as &$product) {
@@ -24,7 +24,7 @@ class ControllerCommonCommandes extends Controller {
                 }
             }
 
-            else if($this->request->post['id']=='' && $this->request->post['status']==3 ){
+            else if($this->request->post['id']=='' && $this->request->post['status']==4 ){
                 
                 if($product=$this->model_common_customer->getCustomerIdByEmail($this->request->post)){
 				    $data['num_user'] = $this->model_common_product->getTotalProductsByCustomerId($product['customer_id']);
