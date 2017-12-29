@@ -87,6 +87,10 @@
 
                     <div class="col-md-5 col-sm-12">
                          <embed height="320px" weight="320px" id="briefCase" src="catalog/view/theme/default/briefcase.svg"></embed>
+                         <div id="zoomer" class="col-md-5 col-sm-12" style="display:none">
+                              <div id="text" style="font-size: 40px; color: black; border-style: solid; width: 180px; height: 70px; border-width: 1px">
+                              </div>
+                         </div>
                     </div>
 
                     <div class="col-md-7 col-sm-12">

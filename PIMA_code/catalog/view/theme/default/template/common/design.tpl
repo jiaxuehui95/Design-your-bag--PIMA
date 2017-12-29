@@ -88,13 +88,13 @@
 
                     <div class="col-md-5 col-sm-12">
                          <div id="canvas"></div>
+                         <div id="zoomer" class="col-md -5 col-sm-12" style="display:none">
+                              <div id="text" style="font-size: 40px; color: black; border-style: double; width: 150px; height: 90px; border-width: 15px">
+                              </div>
+                          </div>
                     </div>
 
-                    <div class="col-md-5 col-sm-12">
-                         <div style="font-size: 25px; color: gray; border: 1px solid gray; " >
 
-                         </div>
-                    </div>
 
                     <div class="col-md-7 col-sm-12">
                          <h2>Votre projet</h2>
@@ -443,7 +443,7 @@
                                                        <span>Confirmer</span>
                                                   </div>
                                                   <input style="border: 1px solid gray; padding-top: 3px; padding-bottom: 1px; margin-left: 10px;outline: medium;" type="reset" onclick="efface()" value="Effacer">
-                                                  <input style="border: 1px solid gray; padding-top: 3px; padding-bottom: 1px; margin-left: 10px;outline: medium;" type="reset" onclick="" value="Agrandir">
+                                                  <!---<input style="border: 1px solid gray; padding-top: 3px; padding-bottom: 1px; margin-left: 10px;outline: medium;" type="reset" onclick="zoomer()" value="Zoomer">--->
                                              </div>
                                         </form>
                                    </div>

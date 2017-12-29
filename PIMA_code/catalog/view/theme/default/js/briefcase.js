@@ -57,10 +57,18 @@ function sizeBag(){
 }
 
 function texte() {
+    if(document.getElementById("zoomer").getAttribute("style")==="display:none") {
+        document.getElementById("zoomer").setAttribute("style", "text-align: center; margin-left: 50px; margin-top: 40px");
+    }
+
+    document.getElementById("text").innerHTML = document.getElementById('nidewenzi').value;
     document.getElementById("briefCase").getSVGDocument().getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
 }
 
 function efface() {
+    if(document.getElementById("zoomer").getAttribute("style")==="text-align: center; margin-left: 50px; margin-top: 40px") {
+        document.getElementById("zoomer").setAttribute("style", "display:none");
+    }
     document.getElementById("briefCase").getSVGDocument().getElementById("yourText").innerHTML = "";
 }
 

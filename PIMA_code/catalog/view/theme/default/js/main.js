@@ -59,12 +59,23 @@ function sizeBag(){
 }
 
 function texte() {
+    if(document.getElementById("zoomer").getAttribute("style")==="display:none") {
+        document.getElementById("zoomer").setAttribute("style", "text-align: center; margin-left: 169px;");
+    }
+
     document.getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
 
+    document.getElementById("text").innerHTML = document.getElementById('nidewenzi').value;
 }
+
 function efface() {
     document.getElementById("yourText").innerHTML = "";
+    if(document.getElementById("zoomer").getAttribute("style")==="text-align: center; margin-left: 169px;") {
+        document.getElementById("zoomer").setAttribute("style", "display:none");
+    }
 }
+
+
 
 
 
