@@ -75,7 +75,50 @@
                         <p >ID:   <?php echo $product['product_id']?>  </p>
                         <p >Taille:   <?php echo $product['size']?>  </p>
                         <p >Adresse: <?php echo $product['address']?>  </p>
-                        <p >Statut:  <?php echo $product['status']?>  </p>
+                        <p >Statut:    </p>
+                    
+                        <?php if ($product['status']==3) { ?>
+                        <div class="progress" style = "margin:auto; margin-bottom: 20px">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">90% 完成（成功）</span>
+                            </div>
+                        </div>
+                        <h2>Terminer</h2>
+                        <?php }?>
+
+                        <?php if ($product['status']==2) { ?>
+                        <!-- 订单已在途-->
+                        <div class="progress"style = "margin:auto; margin-bottom: 20px">
+                            <div class="progress-bar progress-bar-info" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">30% 完成（信息）</span>
+                            </div>
+                        </div>
+                        <h2>livraison en cour</h2>
+                          <?php } ?>
+
+                        <?php if ($product['status']==1) { ?>
+                        <!-- 订单已成立-->
+                        <div class="progress" style = "margin:auto; margin-bottom: 20px">
+                            <div class="progress-bar progress-bar-warning" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 30%;">
+                            <span class="sr-only">20% 完成（警告）</span>
+                            </div>
+
+                        </div>
+                        <h2>En cour</h2>
+                        <?php } ?>
+
+                        <?php if ($product['status']==0) { ?>
+                        <!-- 客户已创造订单-->
+                        <div class="progress" style = "margin:auto; margin-bottom: 20px">
+                            <div class="progress-bar progress-bar-danger" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 10%;">
+                            <span class="sr-only">10% 完成（危险）</span>
+                            </div>
+
+                        </div>
+                        <h2>commaned été créer</h2>  
+                        <?php } ?>
+
+
                     <div class="blog-post-format">
                         <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
                         <span><i class="fa fa-date"></i><?php echo $product['date_added']?></span>
