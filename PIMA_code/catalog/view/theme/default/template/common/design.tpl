@@ -90,6 +90,12 @@
                          <div id="canvas"></div>
                     </div>
 
+                    <div class="col-md-5 col-sm-12">
+                         <div style="font-size: 25px; color: gray; border: 1px solid gray; " >
+
+                         </div>
+                    </div>
+
                     <div class="col-md-7 col-sm-12">
                          <h2>Votre projet</h2>
                          <div>
