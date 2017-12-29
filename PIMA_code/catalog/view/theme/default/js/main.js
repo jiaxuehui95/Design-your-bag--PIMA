@@ -66,6 +66,8 @@ function efface() {
     document.getElementById("yourText").innerHTML = "";
 }
 
+
+
 function emoji(){
     var radio = document.getElementsByName("emoji");
     var i=1;
@@ -914,7 +916,7 @@ function myBagImage()
 function zoomBox() {this.index.apply(this, arguments)}
 zoomBox.prototype = {
     index: function(win,zoom) {
-        var win=document.getElementById(win);
+        var win=document.getElementById(yourText);
         var box=document.getElementById(zoom);
         var img=box.getElementsByTagName('IMG')[0];
         var zoom=img.width/win.getElementsByTagName('IMG')[0].width;

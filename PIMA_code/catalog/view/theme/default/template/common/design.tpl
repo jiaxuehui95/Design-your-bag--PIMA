@@ -437,6 +437,7 @@
                                                        <span>Confirmer</span>
                                                   </div>
                                                   <input style="border: 1px solid gray; padding-top: 3px; padding-bottom: 1px; margin-left: 10px;outline: medium;" type="reset" onclick="efface()" value="Effacer">
+                                                  <input style="border: 1px solid gray; padding-top: 3px; padding-bottom: 1px; margin-left: 10px;outline: medium;" type="reset" onclick="" value="Agrandir">
                                              </div>
                                         </form>
                                    </div>
