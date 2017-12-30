@@ -1,4 +1,4 @@
-var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054", size="S";
+var text='', size="M";
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
@@ -9,19 +9,16 @@ function handleColorChange(color)
     document.getElementById("handBag").getSVGDocument().getElementById("handle-color3").setAttribute("fill", color);
     document.getElementById("handBag").getSVGDocument().getElementById("handle-color4").setAttribute("fill", color);
     document.getElementById("handBag").getSVGDocument().getElementById("handle-color5").setAttribute("fill", color);
-    handleColor=color;
 }
 
 function baseColorChange(color)
 {
     document.getElementById("handBag").getSVGDocument().getElementById("base-color").setAttribute("fill", color);
-    handleColor=color;
 }
 
 function faceColorChange(color)
 {
     document.getElementById("handBag").getSVGDocument().getElementById("face-color").setAttribute("fill", color);
-    handleColor=color;
 }
 
 
@@ -50,10 +47,12 @@ function sizeBag(){
 
 function texte() {
     document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
+    text=document.getElementById('nidewenzi').value;
 }
 
 function efface() {
     document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = "";
+    text='';
 }
 
 function emoji(){
@@ -186,8 +185,7 @@ function getStatusBack(){
 
 function save() {
     var image = new Image();
-    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
-    window.localStorage.setItem('bagImage', image.src);
+    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById("handBag").getSVGDocument().getElementById('handBagSVG').outerHTML);
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
     image.src = (image.src).replace(/\&/g, "%26");  
@@ -197,12 +195,11 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
-        "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
+    xmlHttp.send("kind=handBag"+"&size="+size+"&text="+text+"&image="+image.src);
 }
 function download() {
     var image = new Image();
-    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById("handBag").getSVGDocument().getElementById('handBagSVG').outerHTML);
     var a = document.createElement('a');
     //  a.href = canvas.toDataURL('image/png');
     a.href=image.src;

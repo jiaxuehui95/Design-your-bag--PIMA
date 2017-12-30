@@ -1,7 +1,7 @@
 <?php
 class ModelProductProduct extends Model {
     public function addProduct($id, $data,$image) {
-        $this->db->query("INSERT INTO " . DB_PREFIX . "product_sac SET customer_id = '" . (int)$id . "', handleColor = '" . $this->db->escape($data['handleColor']) ."', baseColor = '" . $this->db->escape($data['baseColor']) ."', coverColor = '" . $this->db->escape($data['coverColor']) ."', pocketTopColor = '" . $this->db->escape($data['pocketTopColor']) . "', pocketBaseColor = '" . $this->db->escape($data['pocketBaseColor']) . "', size = '" . $this->db->escape($data['size']). "', image = '" . $image . "',address= ' ', status= '0', date_added = NOW()");
+        $this->db->query("INSERT INTO " . DB_PREFIX . "product_sac SET customer_id = '" . (int)$id . "', size = '" . $this->db->escape($data['size'])."', text ='". $this->db->escape($data['text'])."', kind ='".$this->db->escape($data['kind']). "', image = '" . $this->db->escape($data['image']) . "',address= ' ', status= '0', date_added = NOW()");
         $address_id = $this->db->getLastId();
         return $address_id;
     }

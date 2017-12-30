@@ -7,34 +7,29 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
-var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054", size="S";
+var size="M", text='';
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
 function handleColorChange(color) {
     document.getElementById("handle-color").setAttribute("fill", color);
-    handleColor=color;
 }
 
 function baseColorChange(color) {
     document.getElementById("base-color").setAttribute("fill", color);
-    baseColor=color;
 }
 
 
 function coverColorChange(color) {
     document.getElementById("cover-color").setAttribute("fill", color);
-    coverColor=color;
 }
 
 function pocketTopColorChange(color) {
     document.getElementById("pocket").setAttribute("fill", color);
-    pocketTopColor=color;
 }
 
 function pocketBaseColorChange(color) {
     document.getElementById("pocket-base-color").setAttribute("fill", color);
-    pocketBaseColor=color;
 }
 
 
@@ -64,12 +59,14 @@ function texte() {
     }
 
     document.getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
+    text=document.getElementById('nidewenzi').value;
 
     document.getElementById("text").innerHTML = document.getElementById('nidewenzi').value;
 }
 
 function efface() {
     document.getElementById("yourText").innerHTML = "";
+    text='';
     if(document.getElementById("zoomer").getAttribute("style")==="text-align: center; margin-left: 169px;") {
         document.getElementById("zoomer").setAttribute("style", "display:none");
     }
@@ -219,18 +216,18 @@ function getStatusBack(){
 function save() {
     var image = new Image();
     image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
-    window.localStorage.setItem('bagImage', image.src);
+    console.log('bagImage', image.src);
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
-    image.src = (image.src).replace(/\&/g, "%26");  
-    image.src = (image.src).replace(/\+/g, "%2B");
-    
+   //  image.src = (image.src).replace(/\=/g, "&3D");
+     image.src = (image.src).replace(/\&/g, "%26");
+     image.src = (image.src).replace(/\+/g, "%2B");
+
     xmlHttp.open("POST", url, true);
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
-        "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
+    xmlHttp.send("kind=packpack"+"&size="+size+"&text="+text+"&image="+image.src);
 }
 function download() {
     var image = new Image();

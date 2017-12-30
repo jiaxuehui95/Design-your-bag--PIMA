@@ -1,27 +1,24 @@
-var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054", size="S";
+var text='', size="M";
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
 function handleColorChange(color)
 {
-    document.getElementById("handBag").getSVGDocument().getElementById("handle-color1").setAttribute("fill", color);
-    document.getElementById("handBag").getSVGDocument().getElementById("handle-color2").setAttribute("fill", color);
-    document.getElementById("handBag").getSVGDocument().getElementById("handle-color3").setAttribute("fill", color);
-    document.getElementById("handBag").getSVGDocument().getElementById("handle-color4").setAttribute("fill", color);
-    document.getElementById("handBag").getSVGDocument().getElementById("handle-color5").setAttribute("fill", color);
-    handleColor=color;
+    document.getElementById("briefCase").getSVGDocument().getElementById("handle-color1").setAttribute("fill", color);
+    document.getElementById("briefCase").getSVGDocument().getElementById("handle-color2").setAttribute("fill", color);
+    document.getElementById("briefCase").getSVGDocument().getElementById("handle-color3").setAttribute("fill", color);
+    document.getElementById("briefCase").getSVGDocument().getElementById("handle-color4").setAttribute("fill", color);
+    document.getElementById("briefCase").getSVGDocument().getElementById("handle-color5").setAttribute("fill", color);
 }
 
 function baseColorChange(color)
 {
-    document.getElementById("handBag").getSVGDocument().getElementById("base-color").setAttribute("fill", color);
-    handleColor=color;
+    document.getElementById("briefCase").getSVGDocument().getElementById("base-color").setAttribute("fill", color);
 }
 
 function faceColorChange(color)
 {
-    document.getElementById("handBag").getSVGDocument().getElementById("face-color").setAttribute("fill", color);
-    handleColor=color;
+    document.getElementById("briefCase").getSVGDocument().getElementById("face-color").setAttribute("fill", color);
 }
 
 
@@ -29,31 +26,33 @@ function sizeBag(){
     var radio = document.getElementsByName("size");
      if(radio[0].checked)
     {
-         document.getElementById("handBag").setAttribute("height","300px");
-        document.getElementById("handBag").setAttribute("weight","300px");
+         document.getElementById("briefCase").setAttribute("height","300px");
+        document.getElementById("briefCase").setAttribute("weight","300px");
         size="S";
     }
     if(radio[1].checked)
     {
-        document.getElementById("handBag").setAttribute("height","350px");
-        document.getElementById("handBag").setAttribute("weight","350px");
+        document.getElementById("briefCase").setAttribute("height","350px");
+        document.getElementById("briefCase").setAttribute("weight","350px");
         size="M";
     }
     if(radio[2].checked)
     {
-        document.getElementById("handBag").setAttribute("height","400px");
-        document.getElementById("handBag").setAttribute("weight","400px");
+        document.getElementById("briefCase").setAttribute("height","400px");
+        document.getElementById("briefCase").setAttribute("weight","400px");
         size="L";
     }
 
 }
 
 function texte() {
-    document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
+    document.getElementById("briefCase").getSVGDocument().getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
+    text= document.getElementById('nidewenzi').value;
 }
 
 function efface() {
-    document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = "";
+    document.getElementById("briefCase").getSVGDocument().getElementById("yourText").innerHTML = "";
+    text='';
 }
 
 function emoji(){
@@ -63,17 +62,17 @@ function emoji(){
     {
         for(i in emojis)
         {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
         }
     }
     for(i;i<emojis.length;i++)
     {
         if(radio[i].checked)
         {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
         }
         else
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
 }
 
@@ -81,26 +80,26 @@ function emojiLocate() {
     var radio = document.getElementsByName("emojiLocate");
     if (radio[0].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "226");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "173");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "226");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "173");
         }
     }
     if (radio[1].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "56");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "183");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "56");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "183");
         }
     }
     if (radio[2].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "156");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "223");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "156");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "223");
         }
     }
     if (radio[3].checked) {
         for(i in emojis) {
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "156");
-            document.getElementById("handBag").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "263");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("x", "156");
+            document.getElementById("briefCase").getSVGDocument().getElementById(emojis[i]).setAttribute("y", "263");
         }
     }
 }
@@ -186,8 +185,7 @@ function getStatusBack(){
 
 function save() {
     var image = new Image();
-    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
-    window.localStorage.setItem('bagImage', image.src);
+    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('computerBagSVG').outerHTML);
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
     image.src = (image.src).replace(/\&/g, "%26");  
@@ -197,12 +195,11 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
-        "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
+    xmlHttp.send("kind=computerBag"+"&size="+size+"&text="+text+"&image="+image.src);
 }
 function download() {
     var image = new Image();
-    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('computerBagSVG').outerHTML);
     var a = document.createElement('a');
     //  a.href = canvas.toDataURL('image/png');
     a.href=image.src;
