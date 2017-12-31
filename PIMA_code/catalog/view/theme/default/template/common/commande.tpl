@@ -70,7 +70,9 @@
                 </div>
                 <?php foreach($products as $product ){ ?>
                 <div class="blog-post-thumb">
-                    <div style="display: inline-block;">
+                    <div class="row" style="margin-bottom: 100px">
+                        <div class=" col-md-6 col-sm-12">
+                              <div style="display: inline-block;">
                     <h2>Produit</h2>
                         <p >ID:   <?php echo $product['product_id']?>  </p>
                         <p >Taille:   <?php echo $product['size']?>  </p>
@@ -127,9 +129,11 @@
                         <a href="single-post.html" class="btn btn-default">More Details</a>
                     </div>
                     </div>
-                   <img style="display: inline-block; margin-bottom: 200px" src="<?php echo $product['image']?>" height="300px" wigth="300px">
-                       
-                </div>
+                        </div>
+                        <div class=" col-md-6 col-sm-12">
+                            <img style="display: inline-block; margin-bottom: 100px" src="<?php echo $product['image']?>" height="300px" width="300px">
+                        </div>
+                    </div>
                 <?php }?>
             </div>
 

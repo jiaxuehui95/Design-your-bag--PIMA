@@ -216,10 +216,14 @@ function getStatusBack(){
 function save() {
     var image = new Image();
     image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
-    console.log('bagImage', image.src);
+    var node = document.createElement("img");
+    node.src=image.src;
+    document.getElementById("text-content").appendChild(node);
+
+   // console.log('bagImage', image.src);
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
-   //  image.src = (image.src).replace(/\=/g, "&3D");
+     //image.src = (image.src).replace(/\=/g, "&3D");
      image.src = (image.src).replace(/\&/g, "%26");
      image.src = (image.src).replace(/\+/g, "%2B");
 
@@ -227,7 +231,7 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("kind=packpack"+"&size="+size+"&text="+text+"&image="+image.src);
+    xmlHttp.send("kind=backpack"+"&size="+size+"&text="+text+"&image="+image.src);
 }
 function download() {
     var image = new Image();

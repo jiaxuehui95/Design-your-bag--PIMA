@@ -20,7 +20,6 @@
 
      <script src="catalog/view/theme/default/js/snap.svg.js"></script>
      <script src="catalog/view/theme/default/js/main.js"></script>
-     <script src="catalog/view/theme/default/js/jqery.js"></script>
 
 </head>
 <body>

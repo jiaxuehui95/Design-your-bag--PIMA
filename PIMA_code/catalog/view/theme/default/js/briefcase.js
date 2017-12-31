@@ -1,4 +1,4 @@
-var handleColor="#272C40",baseColor="#272C40",coverColor="#272C40",pocketTopColor="#4D556B", pocketBaseColor="#394054", size="S"; accessoireColor="red";
+var text='', size="M";
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
@@ -202,7 +202,7 @@ function getStatusBack(){
 
 function save() {
     var image = new Image();
-    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
+    image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById("briefCase").getSVGDocument().getElementById('computerBagSVG').outerHTML);
     window.localStorage.setItem('bagImage', image.src);
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
@@ -213,12 +213,11 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("handleColor="+handleColor+"&baseColor="+baseColor+"&coverColor="+coverColor+
-        "&pocketTopColor="+pocketTopColor+"&pocketBaseColor="+pocketBaseColor+"&size="+size+"&image="+image.src);
+    xmlHttp.send("kind=computerBag"+"&size="+size+"&text="+text+"&image="+image.src);
 }
 function download() {
     var image = new Image();
-    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById('backpack').outerHTML);
+    image.src = 'data:image/svg+xml;base64,' + window.btoa(document.getElementById("briefCase").getSVGDocument().getElementById('computerBagSVG').outerHTML);
     var a = document.createElement('a');
     //  a.href = canvas.toDataURL('image/png');
     a.href=image.src;
