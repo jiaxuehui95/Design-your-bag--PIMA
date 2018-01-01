@@ -102,25 +102,25 @@ class ModelCommonProduct extends Model {
     }
 
     public function getTotalProductsByKindAndYear($kind,$year){
-        $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "product_sac  WHERE kind = ' ".$kind ." '  AND year(date_added) = ". $year);
+        $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "product_sac  WHERE kind = '". $kind ."'  AND year(date_added) = ". $year);
         
         return $query->row['total'];
     }
 
     public function getProductsInfoByKindAndYear($kind,$year){
-        $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE kind =' ".$kind . " '  AND year(date_added) = ". $year);
+        $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE kind = '". $kind . "'  AND year(date_added) = ". $year);
         
         return $query->rows;
     }
 
     public function getTotalProductsByYearAndMonthAndKind($date){
-        $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "product_sac  WHERE year(date_added) = ".$date['year'] ." AND month(date_added) = ".$date['month'] . " AND kind = ' ".$date['type']. "' ");
+        $query = $this->db->query("SELECT COUNT(*) AS total  FROM ". DB_PREFIX. "product_sac  WHERE year(date_added) = ".$date['year'] ." AND month(date_added) = ".$date['month'] . " AND kind = '".$date['type']. "' ");
         
         return $query->row['total'];
     }
 
     public function getProductsInfoByYearAndMonthAndKind($date){
-        $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE year(date_added) =". $date['year']." AND month(date_added) = ".$date['month'] . " AND month(date_added) = ' ".$date['type']. "' ");
+        $query = $this->db->query("SELECT * FROM ". DB_PREFIX. "product_sac  WHERE year(date_added) =". $date['year']." AND month(date_added) = ".$date['month'] . " AND kind = '".$date['type']. "' ");
         
         return $query->rows;
     }

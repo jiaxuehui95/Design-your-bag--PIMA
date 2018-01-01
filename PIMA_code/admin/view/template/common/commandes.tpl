@@ -67,9 +67,9 @@
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['client'] ?></td>
                 <td><?php echo $product['date_added'] ?></td>
-                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px" onclick="showBag(<?php echo $product['product_id']?>)"></td>
+                <td><img style="display: inline-block; " src="<?php echo $product['image']?>" height="100px" wigth="100px" onclick="showBag(<?php echo $product['product_id']?>)"></td>
             <div id="<?php echo $product['product_id']?>" class="modal" onclick="closeBag(<?php echo $product['product_id']?>)">
-            <img style="display: inline-block;" src="<?php echo $product['image']?>" height="500px" wigth="500px">
+            <img style="display: inline-block; margin:100px" src="<?php echo $product['image']?>" height="500px" wigth="500px">
             </div>
                 <td><select id="SetState" name="newState" style="margin-left: 20px" >
 
