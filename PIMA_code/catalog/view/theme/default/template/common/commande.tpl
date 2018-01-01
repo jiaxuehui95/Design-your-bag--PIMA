@@ -82,48 +82,44 @@
 
 
                         <?php if ($product['status']==3) { ?>
-                                  <p>Terminer</p>
+                                  <p style="color: #ff647a;">Terminer</p>
                         <div class="progress" style = "margin:auto; margin-bottom: 20px">
                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
                             <span class="sr-only">90% 完成（成功）</span>
                             </div>
                         </div>
-                        <h2 style="color: #ff647a;">Terminer</h2>
-                        <?php }?>
+                         <?php }?>
 
                         <?php if ($product['status']==2) { ?>
                         <!-- 订单已在途-->
-                                  <p>livraison en cour</p>
+                                  <p style="color: #ff647a;">livraison en cour</p>
                         <div class="progress"style = "margin:auto; margin-bottom: 20px">
                             <div class="progress-bar progress-bar-info" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                             <span class="sr-only">30% 完成（信息）</span>
                             </div>
                         </div>
-                        <h2 style="color: #ff647a;">livraison en cour</h2>
                           <?php } ?>
 
                         <?php if ($product['status']==1) { ?>
                         <!-- 订单已成立-->
-                                  <p>En cour</p>
+                                  <p style="color: #ff647a;">En cour</p>
                         <div class="progress" style = "margin:auto; margin-bottom: 20px">
                             <div class="progress-bar progress-bar-warning" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 30%;">
                             <span class="sr-only">20% 完成（警告）</span>
                             </div>
 
                         </div>
-                        <h2 style="color: #ff647a;">En cour de préparation</h2>
                         <?php } ?>
 
                         <?php if ($product['status']==0) { ?>
                         <!-- 客户已创造订单-->
-                                  <p>commaned été créer</p>
+                                  <p style="color: #ff647a;">commaned été créer</p>
                         <div class="progress" style = "margin:auto; margin-bottom: 20px">
                             <div class="progress-bar progress-bar-danger" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 10%;">
                             <span class="sr-only">10% 完成（危险）</span>
                             </div>
 
                         </div>
-                        <h2 style="color: #ff647a;">commaned été créer</h2>
                         <?php } ?>
 
 
