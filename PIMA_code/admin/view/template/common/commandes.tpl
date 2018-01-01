@@ -60,55 +60,59 @@
         
             <?php foreach($products as $product) {?>
             <tr>
+            </div>
             <form name="search_sell" action=" <?php echo $set ?>" method="POST" id="set_states">
                 <th scope="row"><?php echo $product['product_id']?><input type="hidden" name="id" value="<?php echo $product['product_id']?>" /> </th>
                 <td><?php echo $product['size'] ?></td>
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['client'] ?></td>
                 <td><?php echo $product['date_added'] ?></td>
-                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px"></td>
+                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px" onclick="showBag(<?php echo $product['product_id']?>)"></td>
+            <div id="<?php echo $product['product_id']?>" class="modal" onclick="closeBag(<?php echo $product['product_id']?>)">
+            <img style="display: inline-block;" src="<?php echo $product['image']?>" height="500px" wigth="500px">
+            </div>
                 <td><select id="SetState" name="newState" style="margin-left: 20px" >
 
                     <?php
                         if ($product['status'] == '0'){
                     ?>
-                        <option value ="0" selected="selected" >0</option>
+                        <option value ="0" selected="selected" >Commande créée</option>
                     <?php
                         }else{
                     ?>
-                            <option value ="0">0</option>
+                            <option value ="0">Commande créée</option>
                     <?php }?>
 
 
             <?php
                         if ($product['status'] == '1'){
                     ?>
-            <option value ="1" selected="selected" >1</option>
+            <option value ="1" selected="selected" >En cours de préparation</option>
             <?php
                         }else{
                     ?>
-            <option value ="1">1</option>
+            <option value ="1">En cours de préparation</option>
             <?php }?>
 
 
             <?php
                         if ($product['status'] == '2'){
                     ?>
-            <option value ="2" selected="selected" >2</option>
+            <option value ="2" selected="selected" >Livraison en cour</option>
             <?php
                         }else{
                     ?>
-            <option value ="2">2</option>
+            <option value ="2">Livraison en cour</option>
             <?php }?>
 
             <?php
                         if ($product['status'] == '3'){
                     ?>
-            <option value ="3" selected="selected" >3</option>
+            <option value ="3" selected="selected" >Terminée</option>
             <?php
                         }else{
                     ?>
-            <option value ="3">3</option>
+            <option value ="3">Terminée</option>
             <?php }?>
 
 

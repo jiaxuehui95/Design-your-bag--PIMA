@@ -351,3 +351,19 @@ $('#menu-action').hover(function() {
 });
 
 
+// 点击按钮打开弹窗
+showBag = function(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+// 点击 <span> (x), 关闭弹窗
+closeBag = function(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+// 在用户点击其他地方时，关闭弹窗
+window.onclick = function(event) {
+    if (event.target == modal) {
+        document.getElementById('myModal').style.display = "none";
+    }
+}

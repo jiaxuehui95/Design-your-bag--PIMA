@@ -69,9 +69,9 @@
             <label for="type" style="margin-left: 20px">Type</label>
             <select id="type" style="margin-left: 20px" name="type">
                 <option value ="0">-None-</option>
-                <option value ="1">1</option>
-                <option value ="2">2</option>
-                <option value ="3">3</option>
+                <option value ="backpack">backpack</option>
+                <option value ="handBag">handBag</option>
+                <option value ="computerBag">computerBag</option>
             </select>
             <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
@@ -80,6 +80,7 @@
             <thead>
             <tr>
                 <th>#</th>
+                <th>Type</th>
                 <th>Taille</th>
                 <th>Adresse</th>
                 <th>Statut</th>
@@ -92,11 +93,15 @@
             <?php foreach($products as $product) {?>
             <tr>
                 <th scope="row"><?php echo $product['product_id']?></th>
+                <td>Type</td>
                 <td><?php echo $product['size'] ?></td>
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['status'] ?></td>
                 <td><?php echo $product['customer_id'] ?></td>
-                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px"></td>
+                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px" onclick="showBag(<?php echo $product['product_id']?>)"></td>
+            <div id="<?php echo $product['product_id']?>" class="modal" onclick="closeBag(<?php echo $product['product_id']?>)">
+            <img style="display: inline-block;" src="<?php echo $product['image']?>" height="500px" wigth="500px">
+            </div>
             <td><?php echo $product['date_added']?></td>
             </tr>
             <?php } ?>
