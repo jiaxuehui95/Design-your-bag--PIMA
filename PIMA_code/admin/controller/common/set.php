@@ -1,7 +1,6 @@
 <?php
 class ControllerCommonSet extends Controller {
 	public function index() {
-		$this->log->write($this->request->post);
         $this->load->model("common/product");
 
         if ($this->request->server['REQUEST_METHOD'] == 'POST' ) {
