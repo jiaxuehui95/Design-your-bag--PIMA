@@ -106,7 +106,7 @@
                             </div>
 
                         </div>
-                        <h2 style="color: #ff647a;">En cour</h2>
+                        <h2 style="color: #ff647a;">En cour de préparation</h2>
                         <?php } ?>
 
                         <?php if ($product['status']==0) { ?>
