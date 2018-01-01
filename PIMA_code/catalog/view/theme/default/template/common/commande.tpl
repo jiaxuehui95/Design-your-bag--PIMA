@@ -88,6 +88,7 @@
                             <span class="sr-only">90% 完成（成功）</span>
                             </div>
                         </div>
+                        <h2 style="color: #ff647a;">Terminer</h2>
                         <?php }?>
 
                         <?php if ($product['status']==2) { ?>
@@ -98,6 +99,7 @@
                             <span class="sr-only">30% 完成（信息）</span>
                             </div>
                         </div>
+                        <h2 style="color: #ff647a;">livraison en cour</h2>
                           <?php } ?>
 
                         <?php if ($product['status']==1) { ?>
@@ -109,6 +111,7 @@
                             </div>
 
                         </div>
+                        <h2 style="color: #ff647a;">En cour de préparation</h2>
                         <?php } ?>
 
                         <?php if ($product['status']==0) { ?>
@@ -120,6 +123,7 @@
                             </div>
 
                         </div>
+                        <h2 style="color: #ff647a;">commaned été créer</h2>
                         <?php } ?>
 
 
@@ -127,7 +131,7 @@
                         <span><a href="#"><img src="catalog/view/theme/default/images/author-image1.jpg" class="img-responsive img-circle"><?php echo $firstname ?></a></span>
                         <span><i class="fa fa-date"></i><?php echo $product['date_added']?></span>
                     </div>
-                  
+
                     </div>
                         </div>
                         <div class=" col-md-6 col-sm-12">
