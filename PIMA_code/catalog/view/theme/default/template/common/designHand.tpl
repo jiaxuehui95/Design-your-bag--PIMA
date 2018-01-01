@@ -358,7 +358,7 @@
                               <a href="<?php echo $href_confirmer ?>" style="padding-left: 20px">
                                    <div class="buttonStart" style=" display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                            height: 70px; padding-top: 20px; text-align: center" onclick="save()">
-                                        <span>Passer la commande</span>
+                                        <span id="confirm">Passer la commande(40€)</span>
                                    </div>
                               </a>
                               <?php } ?>

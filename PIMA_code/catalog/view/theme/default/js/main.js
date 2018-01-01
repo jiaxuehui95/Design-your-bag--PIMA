@@ -7,7 +7,7 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
-var size="M", text='';
+var size="M", text='', price=60, isText=0;
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
@@ -32,6 +32,49 @@ function pocketBaseColorChange(color) {
     document.getElementById("pocket-base-color").setAttribute("fill", color);
 }
 
+function computPrice() {
+    var radio = document.getElementsByName("emoji");
+    if(size==='S')
+    {
+        price=55;
+        if(document.getElementById('nidewenzi').value!==''&&!radio[0].checked)
+        {
+            price=65
+        }
+        if((document.getElementById('nidewenzi').value!==''&&radio[0].checked)||(document.getElementById('nidewenzi').value===''&&!radio[0].checked))
+        {
+            price=60
+        }
+
+    }
+    if(size==='M')
+    {
+        price=60;
+        if(document.getElementById('nidewenzi').value!==''&&!radio[0].checked)
+        {
+            price=70
+        }
+        if((document.getElementById('nidewenzi').value!==''&&radio[0].checked)||(document.getElementById('nidewenzi').value===''&&!radio[0].checked))
+        {
+            price=65
+        }
+
+    }
+    if(size==='L')
+    {
+        price=65;
+        if(document.getElementById('nidewenzi').value!==''&&!radio[0].checked)
+        {
+            price=75
+        }
+        if((document.getElementById('nidewenzi').value!==''&&radio[0].checked)||(document.getElementById('nidewenzi').value===''&&!radio[0].checked))
+        {
+            price=70
+        }
+    }
+    document.getElementById('confirm').innerHTML="Passer la commande"+price+"€";
+
+}
 
 function sizeBag(){
     var radio = document.getElementsByName("size");
@@ -39,22 +82,23 @@ function sizeBag(){
     {
          document.getElementById("backpack").setAttribute("viewBox","0 0 500 500");
         size="S";
+       computPrice();
     }
     if(radio[1].checked)
     {
         document.getElementById("backpack").setAttribute("viewBox","40 30 400 400");
         size="M";
+        computPrice();
     }
-    if(radio[2].checked)
-    {
-         document.getElementById("backpack").setAttribute("viewBox","60 60 350 350");
-        size="L";
+    if(radio[2].checked) {
+        document.getElementById("backpack").setAttribute("viewBox", "60 60 350 350");
+        size = "L";
+        computPrice();
     }
-
 }
 
 function texte() {
-    if(document.getElementById("zoomer").getAttribute("style")==="display:none") {
+    if(document.getElementById('nidewenzi').value!==''&&document.getElementById("zoomer").getAttribute("style")==="display:none") {
         document.getElementById("zoomer").setAttribute("style", "text-align: center; margin-left: 169px;");
     }
 
@@ -62,14 +106,19 @@ function texte() {
     text=document.getElementById('nidewenzi').value;
 
     document.getElementById("text").innerHTML = document.getElementById('nidewenzi').value;
+    computPrice();
 }
 
+
 function efface() {
+
     document.getElementById("yourText").innerHTML = "";
+    document.getElementById('nidewenzi').value='';
     text='';
-    if(document.getElementById("zoomer").getAttribute("style")==="text-align: center; margin-left: 169px;") {
+    if(document.getElementById('nidewenzi').value===''&&document.getElementById("zoomer").getAttribute("style")==="text-align: center; margin-left: 169px;") {
         document.getElementById("zoomer").setAttribute("style", "display:none");
     }
+    computPrice();
 }
 
 
@@ -90,11 +139,18 @@ function emoji(){
     {
         if(radio[i].checked)
         {
+            price+=5;
+            document.getElementById('confirm').innerHTML="Passer la commande"+price+"€";
+
             document.getElementById(emojis[i-1]).setAttribute("style", "display: block; enable-background:new 0 0 512.001 512.001;");
         }
-        else
-            document.getElementById(emojis[i-1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+        else {
+            document.getElementById(emojis[i - 1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
+            price-=5;
+            document.getElementById('confirm').innerHTML="Passer la commande"+price+"€";
+        }
     }
+    computPrice();
 }
 
 function emojiLocate() {
@@ -216,11 +272,10 @@ function getStatusBack(){
 function save() {
     var image = new Image();
     image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
-    var node = document.createElement("img");
-    node.src=image.src;
-    document.getElementById("text-content").appendChild(node);
+    // var node = document.createElement("img");
+    // node.src=image.src;
+    // document.getElementById("text-content").appendChild(node);
 
-   // console.log('bagImage', image.src);
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";
      //image.src = (image.src).replace(/\=/g, "&3D");
@@ -231,7 +286,7 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("kind=backpack"+"&size="+size+"&text="+text+"&image="+image.src);
+    xmlHttp.send("kind=backpack"+"&size="+size+"&text="+text+"&image="+image.src+"&price="+price);
 }
 function download() {
     var image = new Image();

@@ -73,19 +73,19 @@
 
                 <div class="col-md-12 col-sm-12" style="margin-bottom: 50px">
                     <h2 style="display: block;">Votre Sac</h2>
-                    <div class="col-md-12 col-sm-6" style="text-align: center">
-                        <div style="display: inline-block">
-                        <p>Prix: 100$</p>
-                        <p >Size:  <?php echo $product['size']?>  </p>
+                    <div class="col-md-12 col-sm-6" >
+                        <div >
+                            <!--应该是包的图片--><img style="display: inline-block;"  height="300px" width="300px" src="<?php echo $product['image']?>">
+
+                        </div>
+                        <div >
+                        <h3>Prix: <?php echo $product['price']?> €</h3>
+                        <h3 >Size:  <?php echo $product['size']?>  </h3>
 
 
                         <?php if ($product['text']!='') { ?>
-                          <p >Text:  <?php echo $product['text']?>  </p>
+                          <h3 >Text:  <?php echo $product['text']?>  </h3>
                         <?php }?>
-                        </div>
-                        <div style="display: inline-block">
-                            <!--应该是包的图片--><img style="display: inline-block;"  height="300px" width="300px" src="<?php echo $product['image']?>">
-
                         </div>
                         
                    <!--     <p >Texte sur logo: 显示文字 </p>

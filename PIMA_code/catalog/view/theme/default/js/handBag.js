@@ -1,4 +1,4 @@
-var text='', size="M";
+var text='', size="M", price=40;
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
@@ -21,6 +21,49 @@ function faceColorChange(color)
     document.getElementById("handBag").getSVGDocument().getElementById("face-color").setAttribute("fill", color);
 }
 
+function computPrice() {
+    var radio = document.getElementsByName("emoji");
+    if(size==='S')
+    {
+        price=35;
+        if(document.getElementById('nidewenzi').value!==''&&!radio[0].checked)
+        {
+            price=45
+        }
+        if((document.getElementById('nidewenzi').value!==''&&radio[0].checked)||(document.getElementById('nidewenzi').value===''&&!radio[0].checked))
+        {
+            price=40
+        }
+
+    }
+    if(size==='M')
+    {
+        price=40;
+        if(document.getElementById('nidewenzi').value!==''&&!radio[0].checked)
+        {
+            price=50
+        }
+        if((document.getElementById('nidewenzi').value!==''&&radio[0].checked)||(document.getElementById('nidewenzi').value===''&&!radio[0].checked))
+        {
+            price=45
+        }
+
+    }
+    if(size==='L')
+    {
+        price=45;
+        if(document.getElementById('nidewenzi').value!==''&&!radio[0].checked)
+        {
+            price=55
+        }
+        if((document.getElementById('nidewenzi').value!==''&&radio[0].checked)||(document.getElementById('nidewenzi').value===''&&!radio[0].checked))
+        {
+            price=50
+        }
+    }
+    document.getElementById('confirm').innerHTML="Passer la commande"+price+"€";
+
+}
 
 function sizeBag(){
     var radio = document.getElementsByName("size");
@@ -29,18 +72,21 @@ function sizeBag(){
          document.getElementById("handBag").setAttribute("height","300px");
         document.getElementById("handBag").setAttribute("weight","300px");
         size="S";
+        computPrice();
     }
     if(radio[1].checked)
     {
         document.getElementById("handBag").setAttribute("height","350px");
         document.getElementById("handBag").setAttribute("weight","350px");
         size="M";
+        computPrice()
     }
     if(radio[2].checked)
     {
         document.getElementById("handBag").setAttribute("height","400px");
         document.getElementById("handBag").setAttribute("weight","400px");
         size="L";
+        computPrice()
     }
 
 }
@@ -48,11 +94,14 @@ function sizeBag(){
 function texte() {
     document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = document.getElementById('nidewenzi').value;
     text=document.getElementById('nidewenzi').value;
+    computPrice()
 }
 
 function efface() {
+    document.getElementById('nidewenzi').value='';
     document.getElementById("handBag").getSVGDocument().getElementById("yourText").innerHTML = "";
     text='';
+    computPrice()
 }
 
 function emoji(){
@@ -74,6 +123,7 @@ function emoji(){
         else
             document.getElementById("handBag").getSVGDocument().getElementById(emojis[i-1]).setAttribute("style", "display: none; enable-background:new 0 0 512.001 512.001;");
     }
+    computPrice()
 }
 
 function emojiLocate() {
@@ -195,7 +245,7 @@ function save() {
     xmlHttp.onreadystatechange = getStatusBack;
     xmlHttp.setRequestHeader("Content-Type",
         "application/x-www-form-urlencoded;");
-    xmlHttp.send("kind=handBag"+"&size="+size+"&text="+text+"&image="+image.src);
+    xmlHttp.send("kind=handBag"+"&size="+size+"&text="+text+"&image="+image.src+"&price="+price);
 }
 function download() {
     var image = new Image();
