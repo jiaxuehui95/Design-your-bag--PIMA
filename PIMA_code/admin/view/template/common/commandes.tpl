@@ -52,6 +52,7 @@
                 <th>Adresse</th>
                 <th>Email</th>
                 <th>Temps</th>
+                <th>Image</th>
                 <th>Set Status</th>
 
             </tr>
@@ -65,6 +66,7 @@
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['client'] ?></td>
                 <td><?php echo $product['date_added'] ?></td>
+                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px"></td>
                 <td><select id="SetState" name="newState" style="margin-left: 20px" >
 
                     <?php

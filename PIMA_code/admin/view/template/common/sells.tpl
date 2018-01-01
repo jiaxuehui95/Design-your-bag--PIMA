@@ -84,6 +84,7 @@
                 <th>Adresse</th>
                 <th>Statut</th>
                 <th>Client</th>
+                <th>Image</th>
                 <th>Temps</th>
             </tr>
             </thead>
@@ -95,7 +96,8 @@
                 <td><?php echo $product['address'] ?></td>
                 <td><?php echo $product['status'] ?></td>
                 <td><?php echo $product['customer_id'] ?></td>
-                <td><?php echo $product['date_added']?></td>
+                <td><img style="display: inline-block;" src="<?php echo $product['image']?>" height="100px" wigth="100px"></td>
+            <td><?php echo $product['date_added']?></td>
             </tr>
             <?php } ?>
             </tbody>
