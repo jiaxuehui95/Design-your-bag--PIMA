@@ -66,6 +66,13 @@
                 <option value ="2017">2017</option>
                 <option value="2016">2016</option>
             </select>
+            <label for="type" style="margin-left: 20px">Type</label>
+            <select id="type" style="margin-left: 20px" name="type">
+                <option value ="0">-None-</option>
+                <option value ="1">1</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+            </select>
             <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
 
