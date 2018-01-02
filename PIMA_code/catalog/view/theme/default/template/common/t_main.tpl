@@ -84,25 +84,25 @@
 
                 <div class="col-md-12 col-sm-12" style="margin-top: 10px">
                     <div class="col-md-4 col-sm-4" style="text-align: center">
-                        <h3 style="font-weight: 400">15€</h3>
+                        <h3 style="font-weight: 400">35€</h3>
                     </div>
                     <div class="col-md-4 col-sm-4" style="text-align: center">
-                        <h3 style="font-weight: 400">20€</h3>
+                        <h3 style="font-weight: 400">40€</h3>
                     </div>
                     <div class="col-md-4 col-sm-4" style="text-align: center">
-                        <h3 style="font-weight: 400">25€</h3>
+                        <h3 style="font-weight: 400">45€</h3>
                     </div>
                 </div>
 
                 <div class="col-md-12 col-sm-12" style="display: block;text-align: center; margin-top: 10px">
                     <div class="col-md-4 col-sm-4" style="text-align: center; display: inline-block;">
-                        <a href="<?php echo $href_hand ?>" ><div style="font-size: 25px; color: gray; border: 1px solid gray" >Petit(19cm*16cm)</div></a>
+                        <a href="<?php echo $href_hand ?>"onclick="sizeBag('S')" ><div style="font-size: 25px; color: gray; border: 1px solid gray" >Petit(19cm*16cm)</div></a>
                     </div>
                     <div  class="col-md-4 col-sm-4" style="text-align: center; display: inline-block;">
-                        <a href="<?php echo $href_hand ?>" ><div style="font-size: 25px; color: gray; border: 1px solid gray">Moyen(26cm*20cm)</div></a>
+                        <a href="<?php echo $href_hand ?>" onclick="sizeBag('M')"><div style="font-size: 25px; color: gray; border: 1px solid gray">Moyen(26cm*20cm)</div></a>
                     </div>
                     <div  class="col-md-4 col-sm-4" style="text-align: center;display: inline-block;">
-                        <a href="<?php echo $href_hand ?>" ><div style="font-size: 25px; color: gray; border: 1px solid gray">Grand(34cm*24cm)</div></a>
+                        <a href="<?php echo $href_hand ?>"onclick="sizeBag('L')" ><div style="font-size: 25px; color: gray; border: 1px solid gray">Grand(34cm*24cm)</div></a>
                     </div>
 
                 </div>

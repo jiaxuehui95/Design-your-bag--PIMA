@@ -84,25 +84,25 @@
 
                 <div class="col-md-12 col-sm-12" style="margin-top: 10px">
                     <div class="col-md-4 col-sm-4" style="text-align: center">
-                        <h3 style="font-weight: 400">15€</h3>
-                    </div>
-                    <div class="col-md-4 col-sm-4" style="text-align: center">
                         <h3 style="font-weight: 400">20€</h3>
                     </div>
                     <div class="col-md-4 col-sm-4" style="text-align: center">
                         <h3 style="font-weight: 400">25€</h3>
                     </div>
+                    <div class="col-md-4 col-sm-4" style="text-align: center">
+                        <h3 style="font-weight: 400">30€</h3>
+                    </div>
                 </div>
 
                 <div class="col-md-12 col-sm-12" style="display: block;text-align: center; margin-top: 10px">
                     <div class="col-md-4 col-sm-4" style="text-align: center; display: inline-block;">
-                        <a href="<?php echo $href_computer ?>" ><div style="font-size: 25px; color: gray; border: 1px solid gray" >Petit(39cm*27cm)</div></a>
+                        <a href="<?php echo $href_computer ?>" onclick="sizeBag('S')" ><div style="font-size: 25px; color: gray; border: 1px solid gray" >Petit(39cm*27cm)</div></a>
                     </div>
                     <div  class="col-md-4 col-sm-4" style="text-align: center; display: inline-block;">
-                        <a href="<?php echo $href_computer ?>" ><div style="font-size: 25px; color: gray; border: 1px solid gray">Moyen(41cm*30cm)</div></a>
+                        <a href="<?php echo $href_computer ?>"  onclick="sizeBag('M')"><div style="font-size: 25px; color: gray; border: 1px solid gray">Moyen(41cm*30cm)</div></a>
                     </div>
                     <div  class="col-md-4 col-sm-4" style="text-align: center;display: inline-block;">
-                        <a href="<?php echo $href_computer ?>" ><div style="font-size: 25px; color: gray; border: 1px solid gray">Grand(43cm*34cm)</div></a>
+                        <a href="<?php echo $href_computer ?>"  onclick="sizeBag('L')"><div style="font-size: 25px; color: gray; border: 1px solid gray">Grand(43cm*34cm)</div></a>
                     </div>
 
                 </div>

@@ -1,4 +1,4 @@
-var text='', size="M",price=25;
+var text='',  size=window.localStorage.getItem('size'),price;
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
@@ -77,29 +77,29 @@ function AccessoireChange(color)
     accessoireColor=color;
 }
 
+function sizeBag(s) {
 
-function sizeBag(){
-    var radio = document.getElementsByName("size");
-     if(radio[0].checked)
+    window.localStorage.setItem('size', s)
+}
+
+function changeSize() {
+    var radio=document.getElementsByName('size');
+    if(radio[0].checked)
     {
-         document.getElementById("briefCase").setAttribute("height","280px");
-        document.getElementById("briefCase").setAttribute("weight","280px");
+        //   document.getElementById("backpack").setAttribute("viewBox","0 0 500 500");
         size="S";
-        computPrice()
+        computPrice();
     }
     if(radio[1].checked)
     {
-        document.getElementById("briefCase").setAttribute("height","320px");
-        document.getElementById("briefCase").setAttribute("weight","320px");
+        // document.getElementById("backpack").setAttribute("viewBox","40 30 400 400");
         size="M";
-        computPrice()
+        computPrice();
     }
-    if(radio[2].checked)
-    {
-        document.getElementById("briefCase").setAttribute("height","350px");
-        document.getElementById("briefCase").setAttribute("weight","350px");
-        size="L";
-        computPrice()
+    if(radio[2].checked) {
+        // document.getElementById("backpack").setAttribute("viewBox", "60 60 350 350");
+        size = "L";
+        computPrice();
     }
 
 }
@@ -186,6 +186,18 @@ function colorUpDown() {
     }
 }
 function sizeUpDown() {
+    var radio=document.getElementsByName('size');
+    if(size==='S')
+    {
+        radio[0].checked=true;
+    }if(size==='M')
+    {
+        radio[1].checked=true;
+    }if(size==='L')
+    {
+        radio[2].checked=true;
+    }
+
     if(document.getElementById("size").getAttribute("src")==="catalog/view/theme/default/down.png")
     {
         document.getElementById("size").setAttribute("src","catalog/view/theme/default/up.png");

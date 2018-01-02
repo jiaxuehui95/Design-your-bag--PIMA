@@ -7,7 +7,7 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
-var size="M", text='', price=60, isText=0;
+var size=window.localStorage.getItem('size'), text='', price;
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
@@ -72,29 +72,36 @@ function computPrice() {
             price=70
         }
     }
-    document.getElementById('confirm').innerHTML="Passer la commande"+price+"€";
+    document.getElementById('confirm').innerHTML="Passer la commande("+price+"€)";
 
 }
 
-function sizeBag(){
-    var radio = document.getElementsByName("size");
-     if(radio[0].checked)
+
+function sizeBag(s) {
+
+    window.localStorage.setItem('size', s)
+}
+
+function changeSize() {
+    var radio=document.getElementsByName('size');
+    if(radio[0].checked)
     {
-         document.getElementById("backpack").setAttribute("viewBox","0 0 500 500");
+        //   document.getElementById("backpack").setAttribute("viewBox","0 0 500 500");
         size="S";
-       computPrice();
+        computPrice();
     }
     if(radio[1].checked)
     {
-        document.getElementById("backpack").setAttribute("viewBox","40 30 400 400");
+        // document.getElementById("backpack").setAttribute("viewBox","40 30 400 400");
         size="M";
         computPrice();
     }
     if(radio[2].checked) {
-        document.getElementById("backpack").setAttribute("viewBox", "60 60 350 350");
+        // document.getElementById("backpack").setAttribute("viewBox", "60 60 350 350");
         size = "L";
         computPrice();
     }
+
 }
 
 function texte() {
@@ -194,6 +201,18 @@ function emojiLocate() {
     }
 }
 function sizeUpDown() {
+    var radio=document.getElementsByName('size');
+    if(size==='S')
+    {
+        radio[0].checked=true;
+    }if(size==='M')
+    {
+        radio[1].checked=true;
+    }if(size==='L')
+    {
+        radio[2].checked=true;
+    }
+
     if(document.getElementById("size").getAttribute("src")==="catalog/view/theme/default/down.png")
     {
         document.getElementById("size").setAttribute("src","catalog/view/theme/default/up.png");
@@ -269,12 +288,15 @@ function getStatusBack(){
     }
 }
 
+
+
 function save() {
     var image = new Image();
     image.src ='data:image/svg+xml;base64,'+window.btoa(document.getElementById('backpack').outerHTML);
     // var node = document.createElement("img");
     // node.src=image.src;
     // document.getElementById("text-content").appendChild(node);
+
 
     xmlHttp = createXMLHttpRequest();
     var url = "index.php?route=common/product";

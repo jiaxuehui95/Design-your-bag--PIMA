@@ -318,21 +318,21 @@
                          <div id="size-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / >
+                                        <input id="sizeS" name="size" type="radio" onclick="changeSize()" style="display: inline-block; margin-right: 10px" / >
                                         <div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" >
-                                             <span>S 40*60</span>
+                                             <span>S 33*25</span>
                                         </div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" checked style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / >
+                                        <input id="sizeM" name="size" type="radio"  onclick="changeSize()" style="display: inline-block; margin-right: 10px" / >
                                         <div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" >
-                                             <span>M 60*80</span>
+                                             <span>M 39*27</span>
                                         </div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()"/ >
+                                        <input id="sizeL" name="size" type="radio"  onclick="changeSize()" style="display: inline-block; margin-right: 10px" / >
                                         <div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; ">
-                                             <span>L 80*100</span>
+                                             <span>L 44*33</span>
                                         </div>
                                    </div>
                               </div>
@@ -461,7 +461,21 @@
                               <a href="<?php echo $href_confirmer ?>" style="padding-left: 20px">
                                    <div class="buttonStart" style=" display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                            height: 70px; padding-top: 20px; text-align: center" onclick="save()">
-                                        <span id="confirm">Passer la commande(60€)</span>
+                                        <span id="confirm" >Passer la commande(<script>
+                                                if(window.localStorage.getItem('size')==='S')
+                                                {
+                                                    document.write(55);
+
+                                                }
+                                                if(window.localStorage.getItem('size')==='M')
+                                                {
+                                                    document.write(60);
+
+                                                }
+                                                if(window.localStorage.getItem('size')==='L')
+                                                {
+                                                    document.write(65);
+                                                }</script>€)</span>
                                    </div>
                               </a>
                               <?php } ?>

@@ -271,13 +271,13 @@
                          <div id="size-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 40*60</span></div>
+                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="changeSize()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 40*60</span></div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio"  checked style="display: inline-block; margin-right: 10px" onclick="sizeBag()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 60*80</span></div>
+                                        <input name="size" type="radio"  checked style="display: inline-block; margin-right: 10px" onclick="changeSize()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 60*80</span></div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="sizeBag()"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>L 80*100</span></div>
+                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="changeSize()"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>L 80*100</span></div>
                                    </div>
                               </div>
                          </div>
@@ -402,7 +402,21 @@
                               <a href="<?php echo $href_confirmer ?>" style="padding-left: 20px">
                                    <div class="buttonStart" style=" display: inline-block; font-size: 20px; width: 350px; border: 1px black solid;
                            height: 70px; padding-top: 20px; text-align: center" onclick="save()">
-                                        <span id="confirm">Passer la commande(25€)</span>
+                                        <span id="confirm">Passer la commande(<script>
+                                                if(window.localStorage.getItem('size')==='S')
+                                                {
+                                                    document.write(20);
+
+                                                }
+                                                if(window.localStorage.getItem('size')==='M')
+                                                {
+                                                    document.write(25);
+
+                                                }
+                                                if(window.localStorage.getItem('size')==='L')
+                                                {
+                                                    document.write(30);
+                                                }</script>€)</span>
                                    </div>
                               </a>
                               <?php } ?>
