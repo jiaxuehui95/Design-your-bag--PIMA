@@ -42,7 +42,6 @@
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="<?php echo $href_index ?>">Accueil</a></li>
-                    <li><a href="<?php echo $href_design ?>" >Personnalisation</a></li>
                     <?php if ($logged) { ?>
                       <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
                       <li><a href="<?php echo $href_logout ?>">Déconnexion</a></li>
@@ -71,22 +70,7 @@
                </div>
 
           </div>
-           <div class="row">
-                <div class="col-md-3 col-sm-3">
-
-               </div>
-               <div class="col-md-6 col-sm-6">
-                    <a class="noChangeLink" href="<?php echo $href_design ?>">
-                    <div class="buttonStart" style="font-size: 40px; width: 600px; border: 1px black solid;
-                      height: 100px; padding-top: 20px; margin-left: -25px;"> 
-                          <span>Commencer à concevoir</span>
-                    </div>
-                    </a>
-               </div>
-                <div class="col-md-3 col-sm-3">
-
-               </div>
-          </div>
+          
      </div>
 </section>
 
@@ -95,45 +79,61 @@
      <div class="container">
           <div class="row">
 
-               <div class="col-md-4 col-sm-6">
+               <div class="col-md-4 col-sm-6"  style="text-align: center">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/bag1.jpeg" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
+                              <img src="catalog/view/theme/default/images/bag1.jpeg" height="300px"  width="300px"  alt="Portfolio">
                                         <div class="portfolio-item">
                                              <h3></h3>
                                              <small></small>
                                         </div>
-                                   </div>
                          </div>
-                    </a>
+                   <div >
+                       <a class="noChangeLink" href="<?php echo $tdos ?>"  >
+                           <div class="buttonStart" style="font-size: 20px; width: 250px; border: 1px black solid;
+                      height: 50px; padding-top: 20px; line-height: 0.4;margin: auto">
+                               <span>Commencer à concevoir</span>
+                           </div>
+                       </a>
+                   </div>
+               </div>
+
+               <div class="col-md-4 col-sm-6" >
+                         <div class="portfolio-thumb" >
+                             <div height="300px" width="300px">
+                              <img src="catalog/view/theme/default/images/handBag.png" height="300px"  width="300px" alt="Portfolio">
+                                        <div class="portfolio-item">
+                                             <h3></h3>
+                                             <small></small>
+                                        </div>
+                             </div>
+                         </div>
+                   <div >
+                       <a class="noChangeLink" href="<?php echo $tmain ?>"  >
+                           <div class="buttonStart" style="font-size: 20px; width: 250px; border: 1px black solid;
+                      height: 50px; padding-top: 20px; line-height: 0.4;margin-left: 25px ;text-align: center" >
+                               <span>Commencer à concevoir</span>
+                           </div>
+                       </a>
+                   </div>
                </div>
 
                <div class="col-md-4 col-sm-6">
-                         <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/handBag.png" height="300px" width="300px"  class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3></h3>
-                                             <small></small>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
+                         <div class="portfolio-thumb" height="300px" width="300px">
+                              <img src="catalog/view/theme/default/images/computerBag.png" height="300px" width="300px"  alt="Portfolio">
 
-               <div class="col-md-4 col-sm-6">
-                         <div class="portfolio-thumb">
-                              <a >
-                              <img src="catalog/view/theme/default/images/computerBag.png" height="300px" width="300px" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
                                         <div class="portfolio-item">
                                              <h3></h3>
                                              <small></small>
                                         </div>
-                                   </div>
-                              </a>
                          </div>
-                    </a>
+                   <div >
+                       <a class="noChangeLink" href="<?php echo $tcomputer ?>"  >
+                           <div class="buttonStart" style="font-size: 20px; width: 250px; border: 1px black solid;
+                      height: 50px; padding-top: 20px; line-height: 0.4;margin-left: 25px;text-align: center">
+                               <span>Commencer à concevoir</span>
+                           </div>
+                       </a>
+                   </div>
                </div>
                </div>
 

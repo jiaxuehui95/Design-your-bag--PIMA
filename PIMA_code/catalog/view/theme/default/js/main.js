@@ -7,7 +7,22 @@ Copyright 2016
 http://www.hellomichael.com/
 */
 
-var size=window.localStorage.getItem('size'), text='', price;
+var size=0, text='', price;
+size=window.localStorage.getItem('size')
+if(window.localStorage.getItem('size')==='S')
+{
+    price=55;
+
+}
+if(window.localStorage.getItem('size')==='M')
+{
+    price=60
+
+}
+if(window.localStorage.getItem('size')==='L')
+{
+    price=65
+}
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 

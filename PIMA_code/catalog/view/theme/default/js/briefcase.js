@@ -1,7 +1,20 @@
 var text='',  size=window.localStorage.getItem('size'),price;
 var emojis= new Array(18);
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
+if(window.localStorage.getItem('size')==='S')
+{
+    price=20;
 
+}
+if(window.localStorage.getItem('size')==='M')
+{
+    price=25
+
+}
+if(window.localStorage.getItem('size')==='L')
+{
+    price=30
+}
 
 function computPrice() {
     var radio = document.getElementsByName("emoji");

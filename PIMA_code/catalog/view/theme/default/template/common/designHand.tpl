@@ -238,7 +238,7 @@
                               </div>
                          </div>
                          <div>
-                              <h3 style="display: inline-block">Emoji</h3>
+                              <h3 style="display: inline-block">Emoji  (+5€)</h3>
                               <div style="display: inline-block" onclick="emojiUpDown()">
                                    <img id="emoji" style="margin-bottom: 8px" height="20px" width="20px" src="catalog/view/theme/default/down.png">
                               </div>
@@ -324,7 +324,7 @@
                               </div>
                          </div>
                          <div>
-                              <h3 style="display: inline-block">Texte</h3>
+                              <h3 style="display: inline-block">Texte sur logo  (+5€)</h3>
                               <div style="display: inline-block" onclick="textUpDown()">
                                    <img id="text" style="margin-bottom: 8px" height="20px" width="20px" src="catalog/view/theme/default/down.png">
                               </div>

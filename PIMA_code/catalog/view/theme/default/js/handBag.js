@@ -1,5 +1,19 @@
 var size=window.localStorage.getItem('size'), text='', price;
 var emojis= new Array(18);
+if(window.localStorage.getItem('size')==='S')
+{
+    price=35;
+
+}
+if(window.localStorage.getItem('size')==='M')
+{
+    price=40
+
+}
+if(window.localStorage.getItem('size')==='L')
+{
+    price=45
+}
 emojis=["sad","kiss","happy","laughing","surprised","atom","snowman","cherry","watermelon","strawberry","speechbubble","galaxy","galaxy1","galaxy2","galaxy3","galaxy4","alien"]
 
 function handleColorChange(color)
