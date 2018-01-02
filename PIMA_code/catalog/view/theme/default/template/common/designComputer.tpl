@@ -271,13 +271,13 @@
                          <div id="size-content" style="display: none">
                               <div class="row" style="padding-bottom: 20px">
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="changeSize()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 40*60</span></div>
+                                        <input name="size" type="radio"  style="display: inline-block; margin-right: 10px" onclick="changeSize()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>S 39*27</span></div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio"  checked style="display: inline-block; margin-right: 10px" onclick="changeSize()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 60*80</span></div>
+                                        <input name="size" type="radio"  checked style="display: inline-block; margin-right: 10px" onclick="changeSize()" / ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke;" ><span>M 41*30</span></div>
                                    </div>
                                    <div class="col-md-4 col-sm-12">
-                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="changeSize()"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>L 80*100</span></div>
+                                        <input name="size" type="radio" style="display: inline-block; margin-right: 10px" onclick="changeSize()"/ ><div style="width: 100px;display: inline-block; height: 25px; text-align:center; background-color: whitesmoke; "><span>L 43*34</span></div>
                                    </div>
                               </div>
                          </div>
