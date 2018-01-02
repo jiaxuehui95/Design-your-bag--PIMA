@@ -4,6 +4,11 @@ class ControllerCommonIndex extends Controller {
 		$this->load->model('extension/extension');
 
 		$data['logged'] = $this->customer->isLogged();
+
+		$data['tcomputer']= $this->url->link('common/tcomputer');
+		$data['tdos']= $this->url->link('common/tdos');
+		$data['tmain']= $this->url->link('common/tmain');
+
 		$data['href_index']= $this->url->link('common/index');
 		$data['href_design']= $this->url->link('common/design');
 		$data['href_about']= $this->url->link('common/about');
@@ -12,6 +17,7 @@ class ControllerCommonIndex extends Controller {
 		$data['href_login']= $this->url->link('common/login');
 		$data['href_logout']= $this->url->link('common/logout');
 		$data['footer'] = $this->load->controller('common/footer');
+
 		$this->response->setOutput($this->load->view('common/index',$data));
 	}
 }
