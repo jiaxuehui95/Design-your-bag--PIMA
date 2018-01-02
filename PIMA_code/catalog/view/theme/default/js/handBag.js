@@ -75,7 +75,7 @@ function computPrice() {
             price=50
         }
     }
-    document.getElementById('confirm').innerHTML="Passer la commande"+price+"€";
+    document.getElementById('confirm').innerHTML="Passer la commande("+price+")€";
 
 }
 
