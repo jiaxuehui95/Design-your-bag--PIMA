@@ -65,7 +65,7 @@
 <section id="about">
 
      <div class="container">
-          <div class="row" style="display: block;text-align: center;">
+          <div class="row" style="display: none;text-align: center;">
                <div style="width: 300px; text-align: center; display: inline-block;">
                     <a href="<?php echo $href_design ?>" ><div style="font-size: 30px; color: black;" >Sac à dos</div></a>
                </div>
