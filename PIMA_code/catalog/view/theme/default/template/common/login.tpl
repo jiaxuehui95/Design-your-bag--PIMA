@@ -44,7 +44,7 @@
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="<?php echo $href_index ?>">Accueil</a></li>
-                    <li><a href="<?php echo $href_design ?>" >Personnalisation</a></li>
+                    
                     <li><a href="<?php echo $href_register ?>">Register</a></li>
                     <li><a href="<?php echo $href_login ?>">Connexion</a></li>
 

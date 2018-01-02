@@ -44,7 +44,7 @@
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="<?php echo $href_index ?>">Accueil</a></li>
-                    <li><a href="<?php echo $href_design ?>" >Personnalisation</a></li>
+                    
                     <?php if ($logged) { ?>
                     <li><a href="<?php echo $href_compte ?>">Mon Compte</a></li>
                     <li><a href="<?php echo $href_logout ?>">Déconnexion</a></li>
