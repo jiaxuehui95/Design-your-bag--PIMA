@@ -7,6 +7,8 @@ class ControllerCommonCommande extends Controller {
 		$products= $this->model_product_product-> getProductsByCustomerId($customer_id);
         $data['products']=$products;
         $data['firstname']=$this->customer->getFirstName();
+
+        $data['action']= $this->url->link('common/confirmer');
         $data['href_index']= $this->url->link('common/index');
 		$data['href_design']= $this->url->link('common/design');
 		$data['href_about']= $this->url->link('common/about');

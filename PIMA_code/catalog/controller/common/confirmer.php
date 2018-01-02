@@ -5,10 +5,21 @@ class ControllerCommonConfirmer extends Controller {
 	public function index() {
 		
 		$data['logged'] = $this->customer->isLogged();
-		$id= $this->session->data['pro_id'];
+		
 		$this->load->language('common/confirmer');
 		$this->load->model('product/product');
 		$this->load->model('account/customer');
+
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && isset($this->request->post['product_id']))
+		{
+			$id = $this->request->post['product_id'];
+		}
+		else
+		{
+			$id= $this->session->data['pro_id'];
+		}
+		
+		$this->log->write($id);
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$this->model_product_product->editProduct($this->request->post,$id);

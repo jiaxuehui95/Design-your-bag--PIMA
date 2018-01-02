@@ -70,7 +70,7 @@
                 </div>
                 <?php foreach($products as $product ){ ?>
 
-                <form name="confirmer" action=" <?php echo $confirmer ?>" method="POST" id="confirmer">
+                <form name="confirmer" action=" <?php echo $action ?>" method="POST" id="confirmer">
 
                 <div class="blog-post-thumb">
                     <div class="row" style="margin-bottom: 100px">
@@ -122,7 +122,7 @@
                             <span class="sr-only">10% 完成（危险）</span>
                             </div>                        
                         </div>
-                        <input type="text" value="<?php echo $product['status']?>" style="margin-left: 20px; display:none" />
+                        <input type="text" value="<?php echo $product['product_id']?>" style="margin-left: 20px; display:none" name="product_id" />
                         <input type="submit" value="Confirmer" style="margin-left: 20px" />
                         <?php } ?>
 
