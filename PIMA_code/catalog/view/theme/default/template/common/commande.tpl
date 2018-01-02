@@ -69,6 +69,9 @@
                     <h2>Mes achats</h2>
                 </div>
                 <?php foreach($products as $product ){ ?>
+
+                <form name="confirmer" action=" <?php echo $confirmer ?>" method="POST" id="confirmer">
+
                 <div class="blog-post-thumb">
                     <div class="row" style="margin-bottom: 100px">
                         <div class=" col-md-6 col-sm-12">
@@ -117,9 +120,10 @@
                         <div class="progress" style = "margin:auto; margin-bottom: 20px">
                             <div class="progress-bar progress-bar-danger" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 10%;">
                             <span class="sr-only">10% 完成（危险）</span>
-                            </div>
-
+                            </div>                        
                         </div>
+                        <input type="text" value="<?php echo $product['status']?>" style="margin-left: 20px; display:none" />
+                        <input type="submit" value="Confirmer" style="margin-left: 20px" />
                         <?php } ?>
 
 
@@ -134,6 +138,7 @@
                             <img style="display: inline-block; margin-bottom: 100px" src="<?php echo $product['image']?>" height="300px" width="300px">
                         </div>
                     </div>
+                    </form>
                 <?php }?>
             </div>
 
