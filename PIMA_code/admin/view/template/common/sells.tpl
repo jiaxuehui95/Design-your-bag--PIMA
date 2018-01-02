@@ -6,7 +6,7 @@
         <span>Close</span>
     </div>
     <div class="logo">
-         SACSTUDIO Admin
+        SACSTUDIO Admin
     </div>
 </div>
 
@@ -36,15 +36,15 @@
 <div class="main">
     <div class="hipsum">
         <div class="jumbotron">
-            <h1>Clients </h1>
-            <p>Nombre de client total:  <?php echo $num_user?> </p>
+            <h1>Vente </h1>
+            <p>Volume de vente total:  <?php echo $num_user?> </p>
         </div>
 
-        <form name="search_client" action=" <?php echo $action ?> " method="POST" id="search_client" style=" font-size: 15px">
+        <form name="search_sell" action="<?php echo $action ?>" method="POST" id="search_sell" style=" font-size: 15px">
             <label>Les paramètres :      </label>
 
-            <label for="month" style="margin-left: 20px" >Mois</label>
-            <select id="month" style="margin-left: 20px" name='month'>
+            <label for="month" style="margin-left: 20px">Mois</label>
+            <select id="month" style="margin-left: 20px" name="month" >
                 <option value ="0">-None-</option>
                 <option value ="1">Janvier</option>
                 <option value ="2">Février</option>
@@ -59,12 +59,19 @@
                 <option value="11">Novembre</option>
                 <option value="12">Décembre</option>
             </select>
-            <label for="year" style="margin-left: 20px" >Année</label>
-            <select id="year" style="margin-left: 20px" name= 'year'>
+            <label for="year" style="margin-left: 20px">Année</label>
+            <select id="year" style="margin-left: 20px" name="year">
                 <option value ="0">-None-</option>
                 <option value ="2018">2018</option>
                 <option value ="2017">2017</option>
                 <option value="2016">2016</option>
+            </select>
+            <label for="type" style="margin-left: 20px">Type</label>
+            <select id="type" style="margin-left: 20px" name="type">
+                <option value ="0">-None-</option>
+                <option value ="backpack">backpack</option>
+                <option value ="handBag">handBag</option>
+                <option value ="computerBag">computerBag</option>
             </select>
             <input type="submit" value="Chercher" style="margin-left: 20px" />
         </form>
@@ -73,24 +80,29 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Numéro de téléphone</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>AddData</th>
+                <th>Type</th>
+                <th>Taille</th>
+                <th>Adresse</th>
+                <th>Statut</th>
+                <th>Client</th>
+                <th>Image</th>
+                <th>Temps</th>
             </tr>
             </thead>
             <tbody>
-            <?php foreach($clients as $client) {?>
+            <?php foreach($products as $product) {?>
             <tr>
-                <th scope="row">1</th>
-                <td><?php echo $client['firstname'] ?></td>
-                <td><?php echo $client['lastname'] ?></td>
-                <td><?php echo $client['telephone'] ?></td>
-                <td><?php echo $client['email'] ?></td>
-                <td><?php echo $client['address']?></td>
-                <td><?php echo $client['date_added']?></td>
+                <th scope="row"><?php echo $product['product_id']?></th>
+                <td>Type</td>
+                <td><?php echo $product['size'] ?></td>
+                <td><?php echo $product['address'] ?></td>
+                <td><?php echo $product['status'] ?></td>
+                <td><?php echo $product['customer_id'] ?></td>
+                <td><img style="display: inline-block; " src="<?php echo $product['image']?>" height="100px" wigth="100px" onclick="showBag(<?php echo $product['product_id']?>)"></td>
+            <div id="<?php echo $product['product_id']?>" class="modal" onclick="closeBag(<?php echo $product['product_id']?>)">
+            <img style="display: inline-block; margin:100px" src="<?php echo $product['image']?>" height="500px" wigth="500px">
+            </div>
+            <td><?php echo $product['date_added']?></td>
             </tr>
             <?php } ?>
             </tbody>
@@ -114,5 +126,5 @@
 
 
 
-	</body>
+</body>
 </html>
