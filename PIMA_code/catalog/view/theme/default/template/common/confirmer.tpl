@@ -79,24 +79,26 @@
 
                         </div>
                         <div >
-                        <h3>Prix: <?php echo $product['price']?> €</h3>
-                        <h3 >Size:  <?php echo $product['size']?>  </h3>
+                        <h3>Prix: <span><?php echo $product['price']?><span> €</h3>
+                        <input type="text" style="display: none" id="price" value="<?php echo $product['price']?>">
+                        <!--  <h3 id="btc" onclick="getBtc()">BTC price</h3> -->
+                            <h3 >Size:  <?php echo $product['size']?>  </h3>
 
 
-                        <?php if ($product['text']!='') { ?>
-                          <h3 >Text:  <?php echo $product['text']?>  </h3>
-                        <?php }?>
-                        </div>
-                        
-                   <!--     <p >Texte sur logo: 显示文字 </p>
-                        <p>Emoji:表情</p>
-                        <p >Les couleurs:</p>
-                        <h4 style="margin-left: 20px;">Couverture:显示颜色</h4>
-                        <h4 style="margin-left: 20px;">Corps:颜色</h4>
-                        <h4 style="margin-left: 20px;">Poignée:颜色</h4>
-                        <h4 style="margin-left: 20px;">Couverture de la poche:颜色</h4>
-                        <h4 style="margin-left: 20px;">Poche:颜色</h4>
-                    -->
+                            <?php if ($product['text']!='') { ?>
+                              <h3 >Text:  <?php echo $product['text']?>  </h3>
+                            <?php }?>
+                            </div>
+
+                       <!--     <p >Texte sur logo: 显示文字 </p>
+                            <p>Emoji:表情</p>
+                            <p >Les couleurs:</p>
+                            <h4 style="margin-left: 20px;">Couverture:显示颜色</h4>
+                            <h4 style="margin-left: 20px;">Corps:颜色</h4>
+                            <h4 style="margin-left: 20px;">Poignée:颜色</h4>
+                            <h4 style="margin-left: 20px;">Couverture de la poche:颜色</h4>
+                            <h4 style="margin-left: 20px;">Poche:颜色</h4>
+                        -->
 
                     </div>
                 </div>
@@ -119,12 +121,19 @@
                         </div>
                         <div>
                             <h2  class="col-md-12 col-sm-12" style="display: block" >Choisissez une moyen de payer </h2>
-                                <div class="row" style="margin-left: 30px">
-                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio"  value="Paiement à l'arrivée" /><span>Paiement à l'arrivée</span> </label>
-                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Visa" />Visa </label>
-                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Paypal" />Paypal </label>
-                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="UnionPay" />UnionPay </label>
-                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Alipay" />Alipay </label>
+                                <div class="row" id="pay" style="margin-left: 30px; font-size: 20px">
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio"  value="Paiement à l'arrivée" onclick="CloseBtc()" /><span>Paiement à l'arrivée</span> </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Visa" onclick="ShowBtc()" />BTC </label>
+                                    <!--
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Paypal" onclick="CloseBtc()" />Paypal </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="UnionPay" onclick="CloseBtc()" />UnionPay </label>
+                                    <label><input style="height: 12px; margin-left: 20px; margin-right: 5px" name="Pay" type="radio" value="Alipay" onclick="CloseBtc()" />Alipay </label>
+                                    -->
+
+                                </div>
+                                <div id="payBtc" style="display: none; margin-left: 50px; margin-top: 20px ">
+                                    <p style="color: black; font-size: 20px; font-weight: 500">BTC:  <span id="btc"></span></p> <br/>
+                                    <p style="color: black; font-size: 20px; font-weight: 500">Adresse:  1cmcMKXFeciKZc3WdSdATc2t8SbnUT6hV</p> <img style="width: 80px" src="catalog/view/theme/default/images/btc.jpeg"/>
                                 </div>
                         </div>
 

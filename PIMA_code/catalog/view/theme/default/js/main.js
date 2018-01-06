@@ -1042,3 +1042,70 @@ zoomBox.prototype = {
 window.onload=function (){
     x=new zoomBox('zoomPan','zoom')
 }
+
+function myBagImage()
+{
+    var img = document.createElement('img');
+    img.src = window.localStorage.getItem('bagImage');
+    document.getElementById("contact").appendChild(img);
+}
+
+// function getBtc()
+// {
+//     var xmlhttp;
+//     if (window.XMLHttpRequest)
+//     {// code for IE7+, Firefox, Chrome, Opera, Safari
+//         xmlhttp=new XMLHttpRequest();
+//     }
+//     else
+//     {// code for IE6, IE5
+//         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+//     }
+//     xmlhttp.onreadystatechange=function()
+//     {
+//         if (xmlhttp.readyState==4 && xmlhttp.status==200)
+//         {
+//             js = JSON.parse(xmlhttp.responseText);
+//             document.getElementById("btc").innerHTML=(js.EUR.sell)+(document.getElementById("price").innerHTML);
+//         }
+//     }
+//     xmlhttp.open("GET","https://blockchain.info/fr/ticker",true);
+//     xmlhttp.send();
+// }
+
+function ForDight(Dight,How){
+    Dight = Math.round(Dight*Math.pow(10,How))/Math.pow(10,How);
+    return Dight;
+}
+
+var xmlhttp;
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+}
+else
+{// code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.onreadystatechange=function()
+{
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+        js = JSON.parse(xmlhttp.responseText);
+        var price = Number(document.getElementById("price").value);
+        var btc = Number(js.EUR.sell);
+        var res = price/btc;
+        document.getElementById("btc").innerHTML= ForDight(res, 8);
+    }
+}
+xmlhttp.open("GET","https://blockchain.info/fr/ticker",true);
+xmlhttp.send();
+
+
+function ShowBtc() {
+    document.getElementById('payBtc').style.display="block";
+}
+
+function CloseBtc() {
+    document.getElementById('payBtc').style.display="none";
+}

@@ -283,9 +283,3 @@ function download() {
     a.click();
 }
 
-function myBagImage()
-{
-    var img = document.createElement('img');
-    img.src = window.localStorage.getItem('bagImage');
-    document.getElementById("contact").appendChild(img);
-}
