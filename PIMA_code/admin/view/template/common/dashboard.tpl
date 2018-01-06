@@ -84,7 +84,7 @@
             <tbody>
             <?php foreach($clients as $client) {?>
             <tr>
-                <th scope="row">1</th>
+                <th scope="row"><?php echo $client['customer_id'] ?></th>
                 <td><?php echo $client['firstname'] ?></td>
                 <td><?php echo $client['lastname'] ?></td>
                 <td><?php echo $client['telephone'] ?></td>
