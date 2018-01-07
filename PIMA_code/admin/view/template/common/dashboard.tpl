@@ -78,7 +78,7 @@
                 <th>Numéro de téléphone</th>
                 <th>Email</th>
                 <th>Address</th>
-                <th>AddData</th>
+                <th>AddDate</th>
             </tr>
             </thead>
             <tbody>
