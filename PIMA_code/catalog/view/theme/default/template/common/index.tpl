@@ -65,7 +65,7 @@
           <div class="row">
 
                <div class="col-md-12 col-sm-12">
-                    <h2>Les sacs créatifs. </br>Nous sommes de jeunes designers et concentrés sur l'identité de marque.</h2>
+                    <h2>LE DESIGNER, C'EST VOUS </br>Bien plus qu'un sac.. Nous vous proposons d'en créer un  juste pour vous, original et unique!</h2>
                     <hr>
                </div>
 
@@ -81,7 +81,7 @@
 
                <div class="col-md-4 col-sm-6"  style="text-align: center">
                          <div class="portfolio-thumb">
-                              <img src="catalog/view/theme/default/images/bag1.jpeg" height="300px"  width="300px"  alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/back1.jpg" height="300px"  width="300px"  alt="Portfolio">
                                         <div class="portfolio-item">
                                              <h3></h3>
                                              <small></small>
@@ -100,7 +100,7 @@
                <div class="col-md-4 col-sm-6" >
                          <div class="portfolio-thumb" >
                              <div height="300px" width="300px">
-                              <img src="catalog/view/theme/default/images/handBag.png" height="300px"  width="300px" alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/handBag1.png" height="300px"  width="300px" alt="Portfolio">
                                         <div class="portfolio-item">
                                              <h3></h3>
                                              <small></small>
@@ -119,7 +119,7 @@
 
                <div class="col-md-4 col-sm-6">
                          <div class="portfolio-thumb" height="300px" width="300px">
-                              <img src="catalog/view/theme/default/images/computerBag.png" height="300px" width="300px"  alt="Portfolio">
+                              <img src="catalog/view/theme/default/images/computerBag1.png" height="300px" width="300px"  alt="Portfolio">
 
                                         <div class="portfolio-item">
                                              <h3></h3>

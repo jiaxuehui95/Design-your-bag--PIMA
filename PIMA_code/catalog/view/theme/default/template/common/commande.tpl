@@ -116,7 +116,7 @@
 
                         <?php if ($product['status']==0) { ?>
                         <!-- 客户已创造订单-->
-                                  <p style="color: #ff647a;">commaned été créer</p>
+                                  <p style="color: #ff647a;">commande été créer</p>
                         <div class="progress" style = "margin:auto; margin-bottom: 20px">
                             <div class="progress-bar progress-bar-danger" role="progressbar"aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"style="width: 10%;">
                             <span class="sr-only">10% 完成（危险）</span>
