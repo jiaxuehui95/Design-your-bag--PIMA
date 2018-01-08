@@ -12,7 +12,7 @@
 ## Bilan de l'itération précédente  
 ### Évènements 
 *Quels sont les évènements qui ont marqué l'itération précédente? Répertoriez ici les évènements qui ont eu un impact sur ce qui était prévu à l'itération précédente.*
-> - les stand up n'étaientt pas très fréquents à cause des vacances de 15J  .
+> - les stand up n'étaient pas très fréquents à cause des vacances de 15J  .
  
 
 
@@ -26,17 +26,17 @@
 ### Liste des User Stories terminées
 *Quelles sont les User Stories qui ont été validées par le PO à la fin de l'itération ?*
 
->-l'utilisateur peut zoomer sur l’étiquette du sac pour voir son texte
->-un utilisateur peut personnaliser avec 12 couleurs
->-un utilisateur peut voir les modeles de sac depuis la page d'acceuil.
->-un utilisateur peut choisir entre 3 modèle de sac
->-un utilisateur doit avoir un repère pour la taille de son sac
->-un utilisateur peut choisir entre 11 emojis pour personnaliser son sac .
->-en tant qu'admin je peux voir le profil de tout les utilisateur du site
->-en tant qu'admin je peux changer le statut d'une commande et consulter les commandes.
->-Dans la page de commande, l'utilisateur peut retourner pour remplir l'adresse et le paiement dans la page de confirmer
->-L'affichage du status du sac dans la page de mes achats : suivi de la commande
->-en tant qu'admin je peux acceder à la page pour la gestion du site
+> -l'utilisateur peut zoomer sur l’étiquette du sac pour voir son texte
+> -un utilisateur peut personnaliser avec 12 couleurs
+> -un utilisateur peut voir les modeles de sac depuis la page d'acceuil.
+> -un utilisateur peut choisir entre 3 modèle de sac
+> -un utilisateur doit avoir un repère pour la taille de son sac
+> -un utilisateur peut choisir entre 11 emojis pour personnaliser son sac .
+> -en tant qu'admin je peux voir le profil de tout les utilisateur du site
+> -en tant qu'admin je peux changer le statut d'une commande et consulter les commandes.
+> -Dans la page de commande, l'utilisateur peut retourner pour remplir l'adresse et le paiement dans la page de confirmer
+> -L'affichage du status du sac dans la page de mes achats : suivi de la commande
+> -en tant qu'admin je peux acceder à la page pour la gestion du site
  
 
 
