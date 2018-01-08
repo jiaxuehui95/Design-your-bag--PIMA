@@ -26,14 +26,14 @@
 ### Liste des User Stories terminées
 *Quelles sont les User Stories qui ont été validées par le PO à la fin de l'itération ?*
 
->-un client  peut écrire sur l'étiquette de  son sac sélectionné .
->-en tant qu'utilisateur je dois obligatoirement fournir l'email pour m'inscrire
->-l'utilisateur peut voir  l'image personnalisée de son sac en consultant l'historique de ses achats 
->-l'utilisateur  peut personnaliser son sac avec 6 couleurs : bleu noir rouge vert rose orange 
->-en tant qu'utilisateur je peux voir la photo modifiée quand je change la taille de mon sac
->-un utilisateur peut changer la couleur, la taille, ajouter un émoticône et écrire sur son sac dans la même page design
->-en tant qu'utilisateur je peux voir la photo modifiée quand je change la taille de mon sac
->-un utilisateur peut ajouter des émoticônes sur la ceinture droite de son sac
+> - un client  peut écrire sur l'étiquette de  son sac sélectionné .
+> - en tant qu'utilisateur je dois obligatoirement fournir l'email pour m'inscrire
+> - l'utilisateur peut voir  l'image personnalisée de son sac en consultant l'historique de ses achats 
+> - l'utilisateur  peut personnaliser son sac avec 6 couleurs : bleu noir rouge vert rose orange 
+> - en tant qu'utilisateur je peux voir la photo modifiée quand je change la taille de mon sac
+> - un utilisateur peut changer la couleur, la taille, ajouter un émoticône et écrire sur son sac dans la même page design
+> - en tant qu'utilisateur je peux voir la photo modifiée quand je change la taille de mon sac
+> - un utilisateur peut ajouter des émoticônes sur la ceinture droite de son sac
 
 
 ## Rétrospective de l'itération précédente
@@ -60,15 +60,22 @@
 
 ### Titre des User Stories reportées  
 *Lister ici les éléments des itérations précédentes qui ont été reportés à l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
->-un client peut suivre sa commande une fois son sac acheté .
->-en tant q'utilisateur, je  peux ajouter plusieurs modèles de sacs dans mon panier .
+> - un client peut suivre sa commande une fois son sac acheté .
+> - en tant q'utilisateur, je  peux ajouter plusieurs modèles de sacs dans mon panier .
 
 ### Titre des nouvelles User Stories  
 *Lister ici les nouveaux éléments pour l'itération suivante. Ces éléments ont dû être revus et corrigés par le PO.*
->-un utilisateur peut positionner son emojis sur toute les parties du sac
->-un utilisateur peut modifier la couleur et la taille du texte ecrit sur l'étiquette du sac
->-un utilisateur peut choisir entre 11 emojis pour personnaliser son sac .
->-un utilisateur peut personnaliser avec 12 couleurs : noir bleu rouge vert rose orange , blanc gris vert clair mauve jaune 
+> - l'utilisateur peut zoomer sur l’étiquette du sac pour voir son texte
+> - un utilisateur peut personnaliser avec 12 couleurs
+> - un utilisateur peut voir les modeles de sac depuis la page d'acceuil.
+> - un utilisateur peut choisir entre 3 modèle de sac
+> - un utilisateur doit avoir un repère pour la taille de son sac
+> - un utilisateur peut choisir entre 11 emojis pour personnaliser son sac .
+> - en tant qu'admin je peux voir le profil de tout les utilisateur du site
+> - en tant qu'admin je peux changer le statut d'une commande et consulter les commandes.
+> - Dans la page de commande, l'utilisateur peut retourner pour remplir l'adresse et le paiement dans la page de confirmer
+> - L'affichage du status du sac dans la page de mes achats : suivi de la commande
+> - en tant qu'admin je peux acceder à la page pour la gestion du site
  
 
 ## Confiance 
